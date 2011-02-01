@@ -1,0 +1,10 @@
+prefix void: <http://rdfs.org/ns/void#>
+select distinct ?dumpFile
+where {
+  graph <http://logd.tw.rpi.edu/vocab/Dataset>  {
+    ?dataset a void:Dataset;
+             void:vocabulary <http://inference-web.org/2.0/pml-provenance.owl#>;
+             void:dataDump   ?dumpFile .
+  }
+} 
+order by ?dataset

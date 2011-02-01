@@ -1,0 +1,4 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+
+[] void:dumpFile <http://rio.cs.utep.edu/ciserver/ciprojects/GravityMapPML/GravityDatasetGravTroyNY_04250456636475617.owl>; a pml:Document, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
