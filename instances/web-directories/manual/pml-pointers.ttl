@@ -1,6 +1,15 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 
+#
 [] void:dumpFile <http://inference-web.org/proofs/wino/>;                    a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
+
+#
 [] void:dumpFile <http://inference-web.org/proofs/tonys.moto.stanford.edu/>; a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
+
+#
+# Stephan Zednick generated a prototype harvester to hit load the observer logs from their 
+# public URL (http://mlso.hao.ucar.edu/cgi-bin/mlso_logs.cgi) and generate PML from them. 
+# The PML can be found at http://escience.rpi.edu/2010/mlso/PML/.
+#
 [] void:dumpFile <http://escience.rpi.edu/2010/mlso/PML/>;                   a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .  
