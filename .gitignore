@@ -1,4 +1,9 @@
-instances/web-directories/source/
-instances/sparql-listings/source/
-instances/documents/automatic/
-instances/documents/source/
+instances/web-directories/source/      # 
+instances/web-directories/automatic/   #
+                                       #
+instances/sparql-listings/source/      #
+instances/sparql-listings/automatic/   #
+                                       #
+instances/documents/automatic/         #
+instances/documents/source/            #
+.DS_Store

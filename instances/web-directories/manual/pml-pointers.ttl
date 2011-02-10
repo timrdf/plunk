@@ -2,14 +2,39 @@
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 
 #
-[] void:dumpFile <http://inference-web.org/proofs/wino/>;                    a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
+[]  void:dumpFile <http://inference-web.org/proofs/wino/>;                    a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
 
 #
-[] void:dumpFile <http://inference-web.org/proofs/tonys.moto.stanford.edu/>; a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
+[]  void:dumpFile <http://inference-web.org/proofs/tonys.moto.stanford.edu/>; a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
 
 #
 # Stephan Zednick generated a prototype harvester to hit load the observer logs from their 
 # public URL (http://mlso.hao.ucar.edu/cgi-bin/mlso_logs.cgi) and generate PML from them. 
-# The PML can be found at http://escience.rpi.edu/2010/mlso/PML/.
+# The PML can be found at http://escience.rpi.edu/2010/mlso/PML/. (for TWC's SPCDIS project)
 #
-[] void:dumpFile <http://escience.rpi.edu/2010/mlso/PML/>;                   a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .  
+[]  void:dumpFile <http://escience.rpi.edu/2010/mlso/PML/>;                   a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
+   rdfs:comment """Stephan Zednick generated a prototype harvester to hit load the observer logs from their 
+public URL (http://mlso.hao.ucar.edu/cgi-bin/mlso_logs.cgi) and generate PML from them. 
+The PML can be found at http://escience.rpi.edu/2010/mlso/PML/. (for TWC's SPCDIS project)""" .
+
+[] void:dumpFile <http://www.rpi.edu/~michaj6/escience/pml/>;                a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment """Currently, I have a small sampling of PML for SPCDIS uploaded to my RPI home directory, at:
+
+http://www.rpi.edu/~michaj6/escience/pml/
+
+Content for SPCDIS can be found in 3 subdirectories:
+
+/agent/chip/
+/rule/chip/
+/nodeset/chip/
+
+In turn, for /nodeset/chip/, there are 9 subdirectories - each corresponding to a single day's worth of processing done by the Chromospheric Helium-I Imaging Pipeline (CHIP) - a data-processing pipeline for solar images maintained by the National Center for Atmospheric Research (NCAR).
+
+A description of the CHIP pipeline, at the level of detail modeled by my PML, can be found at:
+
+http://tw.rpi.edu/web/project/SPCDIS/UserAnnotations/CaseStudyACOS
+
+Let me know if you have any questions about these materials
+
+Thanks,
+James""" .
