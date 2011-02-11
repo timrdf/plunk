@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"
+xml:lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 7 December 2008), see www.w3.org" />
+<title>Provenance XG Final Report</title>
+<meta http-equiv="Content-Type" content=
+"text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css"
+href="http://www.w3.org/StyleSheets/TR/W3C-XGR" charset="utf-8" />
+</head>
+<body style="display: inherit;">
+<div class="head">
+<p><a href="http://www.w3.org/"><img width="72" height="48" src=
+"http://www.w3.org/Icons/w3c_home" alt="W3C" /></a><a href=
+"http://www.w3.org/2005/Incubator/XGR/"><img alt=
+"W3C Incubator Report" src=
+"http://www.w3.org/2005/Incubator/images/XGR" height="48" width=
+"160" /></a></p>
+<h1>Provenance XG Final Report</h1>
+
+<h2 id="w3c-incubator-group-report-08-dec-2010"><acronym title=
+"World Wide Web Consortium">W3C</acronym> Incubator Group Report 08
+December 2010</h2>
+<dl>
+<dt>This Version:</dt>
+<dd><a href=
+"http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/">http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/</a></dd>
+<dt>Latest Published Version:</dt>
+<dd><a href=
+"http://www.w3.org/2005/Incubator/prov/XGR-prov/">http://www.w3.org/2005/Incubator/prov/XGR-prov/</a></dd>
+  
+<dt>Editors:</dt>
+<dd>Yolanda Gil, University of Southern California Information Sciences Institute (USC / ISI)</dd>
+<dd>James Cheney, University of Edinburgh (School of Informatics)</dd>
+<dd>Paul Groth, VU University Amsterdam</dd>
+<dd>Olaf Hartig, Humboldt-Universit&auml;t zu Berlin</dd>
+<dd>Simon Miles, King&acute;s College London</dd>
+<dd>Luc Moreau, University of Southampton</dd>
+<dd>Paulo Pinheiro da Silva, Rensselaer Polytechnic Institute</dd>
+
+<dt>Contributors:</dt>
+<dd>Sam Coppens, IBB TELIS, Ghent University</dd>
+<dd>Daniel Garijo, Universidad Polit&eacute;cnica de Madrid</dd>
+<dd>Jose Manuel Gomez, Isoco</dd>
+<dd>Paolo Missier, University of Manchester</dd>
+<dd>Jim Myers, RPI</dd>
+<dd>Satya Sahoo, Case Western Reserve University</dd>
+<dd>Jun Zhao, University of Oxford</dd>
+
+</dl>
+<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+
+<hr /></div>
+<div id="abstract" class="introductory section">
+<h2 id="abstract-1">Abstract</h2>
+<p>Given the increased interest in provenance in the Semantic Web area and in the Web community at large, the W3C established the Provenance Incubator Group as part of the W3C Incubator Activity with a charter to provide a state-of-the art understanding and develop a roadmap in the area of provenance and possible recommendations for standardization efforts. This document summarizes the findings of the group.</p>
+
+</div>
+<div id="sotd" class="introductory section">
+<h2 id="sotd-heading">Status of This Document</h2>
+<p><em>This section describes the status of this document at the time of its publication. Other documents may supersede	 this document. A list of <a href="/2005/Incubator/XGR/">Final Incubator Group Reports</a> is available. See also the <a href="http://www.w3.org/TR/">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+<p>This document was published by the <a href=
+"http://www.w3.org/2005/Incubator/prov/"> W3C Provenance Incubator Group</a> as an Incubator Group
+Report. If you wish to make comments regarding this document,
+please send them to <a href=
+"mailto:public-xg-prov@w3.org">public-xg-prov@w3.org.</a>
+ All feedback is welcome.</p>
+<p>Publication of this document by <acronym title=
+"World Wide Web Consortium">W3C</acronym> as part of the
+<acronym title="World Wide Web Consortium">W3C</acronym> Incubator
+Activity indicates no endorsement of its content by <acronym title=
+"World Wide Web Consortium">W3C</acronym>, nor that <acronym title=
+"World Wide Web Consortium">W3C</acronym> has, is, or will be
+allocating any resources to the issues addressed by it.
+Participation in Incubator Groups and publication of Incubator
+Group Reports at the <acronym title=
+"World Wide Web Consortium">W3C</acronym> site are benefits of
+
+<acronym title="World Wide Web Consortium">W3C</acronym>
+Membership.</p>
+<p>Incubator Groups have as a goal to produce work that can be
+implemented on a Royalty Free basis, as defined in the
+<acronym title="World Wide Web Consortium">W3C</acronym> Patent
+Policy. Participants in this Incubator Group have agreed to offer
+patent licenses according to the <acronym title=
+"World Wide Web Consortium">W3C</acronym> Royalty-Free licensing
+requirements described in Section 5 of the <acronym title=
+"World Wide Web Consortium">W3C</acronym> Patent Policy for any
+portions of the XG Reports produced by this XG that are
+subsequently incorporated into a <acronym title=
+"World Wide Web Consortium">W3C</acronym> Recommendation produced
+by a Working Group which is chartered to take the XG Report as an
+input.</p>
+
+</div>
+<div id="toc" class="section">
+<table class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Table of Contents</h2></div>
+<ul>
+
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#What_is_provenance"><span class="tocnumber">2</span> <span class="toctext">What is provenance</span></a>
+<ul>
+<li class="toclevel-2"><a href="#A_Working_Definition_of_Provenance"><span class="tocnumber">2.1</span> <span class="toctext">A Working Definition of Provenance</span></a></li>
+<li class="toclevel-2"><a href="#Provenance.2C_Metadata.2C_and_Trust"><span class="tocnumber">2.2</span> <span class="toctext">Provenance, Metadata, and Trust</span></a>
+
+<ul>
+<li class="toclevel-3"><a href="#Provenance_and_Metadata"><span class="tocnumber">2.2.1</span> <span class="toctext">Provenance and Metadata</span></a></li>
+<li class="toclevel-3"><a href="#Provenance_and_Trust"><span class="tocnumber">2.2.2</span> <span class="toctext">Provenance and Trust</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Alternative_Views_on_Provenance"><span class="tocnumber">2.3</span> <span class="toctext">Alternative Views on Provenance</span></a></li>
+</ul>
+</li>
+
+<li class="toclevel-1"><a href="#Importance_of_provenance"><span class="tocnumber">3</span> <span class="toctext">Importance of provenance</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Original_Use_Cases"><span class="tocnumber">3.1</span> <span class="toctext">Original Use Cases</span></a></li>
+<li class="toclevel-2"><a href="#Flagship_Scenarios"><span class="tocnumber">3.2</span> <span class="toctext">Flagship Scenarios</span></a>
+<ul>
+<li class="toclevel-3"><a href="#News_Aggregator_Scenario"><span class="tocnumber">3.2.1</span> <span class="toctext">News Aggregator Scenario</span></a></li>
+
+<li class="toclevel-3"><a href="#Disease_Outbreak_Scenario"><span class="tocnumber">3.2.2</span> <span class="toctext">Disease Outbreak Scenario</span></a></li>
+<li class="toclevel-3"><a href="#Business_Contract_Scenario"><span class="tocnumber">3.2.3</span> <span class="toctext">Business Contract Scenario</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Requirements_for_provenance"><span class="tocnumber">4</span> <span class="toctext">Requirements for provenance</span></a>
+<ul>
+
+<li class="toclevel-2"><a href="#Provenance_Dimensions"><span class="tocnumber">4.1</span> <span class="toctext">Provenance Dimensions</span></a></li>
+<li class="toclevel-2"><a href="#Content_Requirements"><span class="tocnumber">4.2</span> <span class="toctext">Content Requirements</span></a></li>
+<li class="toclevel-2"><a href="#Management_Requirements"><span class="tocnumber">4.3</span> <span class="toctext">Management Requirements</span></a></li>
+<li class="toclevel-2"><a href="#Use_Requirements"><span class="tocnumber">4.4</span> <span class="toctext">Use Requirements</span></a></li>
+<li class="toclevel-2"><a href="#Requirements_on_RDF_for_supporting_Provenance"><span class="tocnumber">4.5</span> <span class="toctext">Requirements on RDF for supporting Provenance</span></a></li>
+
+<li class="toclevel-2"><a href="#Summary"><span class="tocnumber">4.6</span> <span class="toctext">Summary</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#State_of_the_art_and_technology_gaps"><span class="tocnumber">5</span> <span class="toctext">State of the art and technology gaps</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Provenance_Bibliography"><span class="tocnumber">5.1</span> <span class="toctext">Provenance Bibliography</span></a></li>
+<li class="toclevel-2"><a href="#Provenance_Vocabularies"><span class="tocnumber">5.2</span> <span class="toctext">Provenance Vocabularies</span></a></li>
+
+<li class="toclevel-2"><a href="#Analysis_of_The_State_of_the_Art"><span class="tocnumber">5.3</span> <span class="toctext">Analysis of The State of the Art</span></a>
+<ul>
+<li class="toclevel-3"><a href="#State_of_the_Art_Analysis_of_the_News_Aggregator_Scenario"><span class="tocnumber">5.3.1</span> <span class="toctext">State of the Art Analysis of the News Aggregator Scenario</span></a></li>
+<li class="toclevel-3"><a href="#State_of_the_Art_Analysis_of_the_Disease_Outbreak_Scenario"><span class="tocnumber">5.3.2</span> <span class="toctext">State of the Art Analysis of the Disease Outbreak Scenario</span></a></li>
+<li class="toclevel-3"><a href="#State_of_the_Art_Analysis_of_the_Business_Contract_Scenario"><span class="tocnumber">5.3.3</span> <span class="toctext">State of the Art Analysis of the Business Contract Scenario</span></a></li>
+
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Gap_Analysis"><span class="tocnumber">5.4</span> <span class="toctext">Gap Analysis</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Gap_Analysis_for_the_News_Aggregator_Scenario"><span class="tocnumber">5.4.1</span> <span class="toctext">Gap Analysis for the News Aggregator Scenario</span></a></li>
+<li class="toclevel-3"><a href="#Gap_Analysis_for_the_Disease_Outbreak_Scenario"><span class="tocnumber">5.4.2</span> <span class="toctext">Gap Analysis for the Disease Outbreak Scenario</span></a></li>
+<li class="toclevel-3"><a href="#Gap_Analysis_for_the_Business_Contract_Scenario"><span class="tocnumber">5.4.3</span> <span class="toctext">Gap Analysis for the Business Contract Scenario</span></a></li>
+
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Summary_of_Major_Technology_Gaps_in_the_State_of_the_Art"><span class="tocnumber">5.5</span> <span class="toctext">Summary of Major Technology Gaps in the State of the Art</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Provenance_in_Web_Architecture"><span class="tocnumber">6</span> <span class="toctext">Provenance in Web Architecture</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Overview"><span class="tocnumber">6.1</span> <span class="toctext">Overview</span></a></li>
+
+<li class="toclevel-2"><a href="#Subject_of_Provenance_Information"><span class="tocnumber">6.2</span> <span class="toctext">Subject of Provenance Information</span></a></li>
+<li class="toclevel-2"><a href="#Provenance_Passing"><span class="tocnumber">6.3</span> <span class="toctext">Provenance Passing</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Passing_by_Value"><span class="tocnumber">6.3.1</span> <span class="toctext">Passing by Value</span></a></li>
+<li class="toclevel-3"><a href="#Passing_by_Reference"><span class="tocnumber">6.3.2</span> <span class="toctext">Passing by Reference</span></a></li>
+
+<li class="toclevel-3"><a href="#Passing_Partially_by_Value_and_by_Reference"><span class="tocnumber">6.3.3</span> <span class="toctext">Passing Partially by Value and by Reference</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Embedding_Provenance"><span class="tocnumber">6.4</span> <span class="toctext">Embedding Provenance</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Embedded_at_the_HTTP_Level"><span class="tocnumber">6.4.1</span> <span class="toctext">Embedded at the HTTP Level</span></a></li>
+<li class="toclevel-3"><a href="#Embedded_in_the_Representations"><span class="tocnumber">6.4.2</span> <span class="toctext">Embedded in the Representations</span></a></li>
+
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Provenance_Negotiation"><span class="tocnumber">6.5</span> <span class="toctext">Provenance Negotiation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#A_Roadmap_for_Provenance_on_the_Web"><span class="tocnumber">7</span> <span class="toctext">A Roadmap for Provenance on the Web</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Broad_Recommendations"><span class="tocnumber">7.1</span> <span class="toctext">Broad Recommendations</span></a></li>
+
+<li class="toclevel-2"><a href="#Short-Term_and_Long-Term_Priorities"><span class="tocnumber">7.2</span> <span class="toctext">Short-Term and Long-Term Priorities</span></a></li>
+<li class="toclevel-2"><a href="#Bootstrapping_Provenance_Standards"><span class="tocnumber">7.3</span> <span class="toctext">Bootstrapping Provenance Standards</span></a></li>
+<li class="toclevel-2"><a href="#Potential_for_Immediate_Impact"><span class="tocnumber">7.4</span> <span class="toctext">Potential for Immediate Impact</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Recommendations"><span class="tocnumber">8</span> <span class="toctext">Recommendations</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Proposed_Charter_for_a_Provenance_Interchange_Working_Group"><span class="tocnumber">8.1</span> <span class="toctext">Proposed Charter for a Provenance Interchange Working Group</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+</div>
+
+<div id="introduction" class="section">
+
+<a name="Introduction" id="Introduction"></a><h1> <span class="mw-headline">1. Introduction </span></h1>
+<p>Provenance refers to the sources of information, such as entities and processes, involved in producing or delivering an artifact. The provenance of information is crucial in deciding whether information is to be trusted, how it should be integrated with other diverse information sources, and how to give credit to its originators when reusing it. In an open and inclusive environment such as the Web, users find information that is often contradictory or questionable. People make trust judgments based on provenance that may or may not be explicitly offered to them. Reasoners in the Semantic Web would benefit from explicit representations of provenance to make informed trust judgments about the information they use. With the arrival of massive amounts of Semantic Web data (eg,  <a href="http://esw.w3.org/SweoIG/TaskForces/CommunityProjects/LinkingOpenData" class="external text" title="http://esw.w3.org/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">Linked Open Data</a>) information about the origin of that data, i.e., provenance, becomes an important factor in developing new Semantic Web applications. Therefore, a crucial enabler of the Semantic Web deployment is the ability to the explicitly express provenance that is accessible and understandable to machines and humans.
+</p><p>Provenance is concerned with a very broad range of sources and uses. For example, businesses may exploit provenance in their quality assurance procedures for manufactured processes. The provenance of a document or an image in terms of its origins and prior ownerships is crucial to describe publication rights and therefore to determine their legal use. In a scientific context, data is integrated depending on the collection and pre-processing methods used. Further, decisions about the validity or reliability of an experimental result are based on how each analysis step was carried out. In this context, provenance can enable reproducibility. Despite this diversity, there are many common threads underpinning the representation, capture, and use of provenance that need to be better understood to enable a new generation of Web applications enabled by provenance.
+</p><p>There are many pockets of research and development that have studied relevant aspects of provenance. The Semantic Web and agents communities have developed algorithms for reasoning about unknown information sources in a distributed network. Logic reasoners can produce justifications for how an answer was derived, and explanations that can help find and fix errors in ontologies. The information retrieval and argumentation communities have investigated ways to amalgamate alternative views and sources of contradictory and complementary information, taking into account its origins. The database and distributed systems communities have looked into the issue of provenance in their respective areas. Provenance has also been studied for workflow systems in e-Science as a means to represent the processes that generate new scientific results. Licensing standards bodies take into account the attribution of information as it is reused in new contexts. However, by and large, these results tend to be shared within their respective communities, without broad dissemination and take up by the Web community.
+</p><p>Given the increased interest in provenance in the Semantic Web area and in the Web community at large, the W3C established the <a href="http://www.w3.org/2005/Incubator/prov/wiki" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki">Provenance Incubator Group</a> as part of the W3C <a href="http://www.w3.org/2005/Incubator/" class="external text" title="http://www.w3.org/2005/Incubator/">Incubator Activity</a> with a <a href="http://www.w3.org/2005/Incubator/prov/charter" class="external text" title="http://www.w3.org/2005/Incubator/prov/charter">charter</a> to provide a state-of-the art understanding and develop a roadmap in the area of provenance and possible recommendations for standardization efforts.  This document summarizes the findings of the group.
+</p>
+</div>
+
+<a name="What_is_provenance" id="What_is_provenance"></a><h1> <span class="mw-headline">2. What is provenance </span></h1>
+<p>Provenance is too broad a term for it to be possible to have one, universal definition - like other related terms such as "process", "accountability",  "causality" or "identity", we can argue about their meanings forever (and philosophers have indeed debated concepts such as identity or causality for thousands of years without converging).  Our goal was to develop a working definition reflecting how the W3C Provenance Incubbator Group views provenance in the context of the Web.  
+</p><p>To develop this view, we first the activities reported in the rest of this document.  That is, we did not start out trying to agree on a definition of provenance but rather the group came to a shared view once we had a common background and context, based on months of discussions.  
+</p>
+<a name="A_Working_Definition_of_Provenance" id="A_Working_Definition_of_Provenance"></a><h3> <span class="mw-headline">2.1 A Working Definition of Provenance </span></h3>
+<p>Provenance is a very broad topic that has many meanings in different contexts.  The W3C Provenance Incubator Group developed a working definition of provenance on the Web:  
+</p>
+<table border="1">
+
+<tr>
+<td> <span style="color:#006400"> Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource.  Provenance provides a critical foundation for assessing authenticity, enabling trust, and allowing reproducibility.  Provenance assertions are a form of contextual metadata and can themselves become important records with their own provenance.</span>
+</td></tr></table>
+<a name="Provenance.2C_Metadata.2C_and_Trust" id="Provenance.2C_Metadata.2C_and_Trust"></a><h3> <span class="mw-headline">2.2 Provenance, Metadata, and Trust</span></h3>
+<p>Provenance is often conflated with metadata and trust.  These terms are related, but they are not the same.
+</p>
+<a name="Provenance_and_Metadata" id="Provenance_and_Metadata"></a><h4> <span class="mw-headline">2.2.1 Provenance and Metadata</span></h4>
+<p>Metadata is used to represent properties of objects (e.g. an image).  Many of those properties have to do with provenance, so the two are often equated.  How does <b>metadata</b> relate to provenance?  
+
+</p><p>Descriptive metadata of a resource only becomes part of its provenance when one also specifies its relationship to deriving the resource. For example, a file can have a metadata property that states its size. But, this, is not typically considered provenance information since it does not relate to how the file was created.  The same file can have metadata regarding its creation date, which would be considered provenance-relevant metadata.  So even though a lot of metadata potentially has to do with provenance, both terms are not equivalent.   In summary, provenance is often represented as metadata, but not all metadata is necessarily provenance.
+</p>
+<a name="Provenance_and_Trust" id="Provenance_and_Trust"></a><h4> <span class="mw-headline">2.2.2 Provenance and Trust</span></h4>
+<p>Trust is a term with many definitions and uses, but in many cases establishing trust in an object or an entity involves analyzing its origins and authenticity.  How does <b>trust</b> relate to provenance?  
+</p><p>Trust is often equated with provenance, and it is indeed related but it is not the same.  Trust is derived from provenance and from other data quality metrics, and typically is a subjective judgment that depends on context and use.  With provenance, the focus is on how to represent, manage, and use information about resource origins, but not on detailed approaches as to how trust may be derived from  it. In essence, provenance is a platform for trust algorithms and approaches on the Web.
+</p><p><b>Authentication</b> is often conflated with provenance because it leads to establishing trust.  However, current mechanisms available for authentication address the verification of an identity or the access to a resource, such as digital signatures and access control.  Provenance information may be used for authentication purposes, for example the creator of a document may provide a signature that can be verified by a third party, but is only one component of authentication.
+</p>
+<a name="Alternative_Views_on_Provenance" id="Alternative_Views_on_Provenance"></a><h3> <span class="mw-headline">2.3 Alternative Views on Provenance </span></h3>
+
+<p>There are other definitions in the literature that emphasize different views of provenance.  Other views include: 1) <a href="http://doi.acm.org/10.1145/1462159.1462162" class="external text" title="http://doi.acm.org/10.1145/1462159.1462162">Provenance as Process</a>, 2) <a href="http://dx.doi.org/10.1016/j.future.2010.07.005" class="external text" title="http://dx.doi.org/10.1016/j.future.2010.07.005">Provenance as a Directed Acyclic Graph</a>, 3) <a href="http://dx.doi.org/10.1007/3-540-44503-X_20" class="external text" title="http://dx.doi.org/10.1007/3-540-44503-X_20">Why-Provenance</a>, 4) <a href="http://doi.acm.org/10.1145/1412331.1412340" class="external text" title="http://doi.acm.org/10.1145/1412331.1412340">Where-Provenance</a>, 5) <a href="http://doi.acm.org/10.1145/1265530.1265535" class="external text" title="http://doi.acm.org/10.1145/1265530.1265535">How-Provenance</a>, 6) Provenance as Annotations, 7) Event oriented view.  Chapter 3 of the survey <a href="http://dx.doi.org/10.1561/1800000010" class="external text" title="http://dx.doi.org/10.1561/1800000010">Foundations of Provenance on the Web</a> for a description of these different views of provenance.  
+</p><p>The following <a href="/2005/Incubator/prov/wiki/Provenance_Survey" title="Provenance Survey"> literature surveys</a> summarize provenance research over the last 10 years:
+
+</p>
+<ul><li> Donovan Artz and Yolanda Gil. <a href="http://dx.doi.org/10.1016/j.websem.2007.03.002" class="external text" title="http://dx.doi.org/10.1016/j.websem.2007.03.002">A Survey of Trust in Computer Science and the Semantic Web</a>, Journal of Web Semantics, Volume 5, Issue 2, 2007.
+</li></ul>
+<ul><li> Rajendra Bose and James Frew. <a href="http://doi.acm.org/10.1145/1057977.1057978" class="external text" title="http://doi.acm.org/10.1145/1057977.1057978">Lineage Retrieval for Scientific Data Processing: A Survey</a>. ACM Computing Surveys, Volume 37, Issue 1, 2005). 
+</li></ul>
+<ul><li> J. Cheney, L. Chiticariu and W.-C. Tan. <a href="http://homepages.inf.ed.ac.uk/jcheney/publications/provdbsurvey.pdf" class="external text" title="http://homepages.inf.ed.ac.uk/jcheney/publications/provdbsurvey.pdf">Provenance in databases: Why, where and how</a>, Foundations and Trends in Databases, 1(4):379-474, 2009.
+</li></ul>
+<ul><li> Juliana Freire, David Koop, Emanuele Santos, Claudio Silva.  <a href="http://doi.ieeecomputersociety.org/10.1109/MCSE.2008.79" class="external text" title="http://doi.ieeecomputersociety.org/10.1109/MCSE.2008.79">Provenance for Computational Tasks: A Survey</a>, Computing Science and Engineering, Vol 10, No 3, pp 11-21, 2008.
+
+</li></ul>
+<ul><li> Luc Moreau, <a href="http://eprints.ecs.soton.ac.uk/21691/" class="external text" title="http://eprints.ecs.soton.ac.uk/21691/">The Foundations for Provenance on the Web</a>, 2010, Foundations and Trends&reg; in Web Science: Vol. 2: No 2-3, pp 99-241. <a href="http://dx.doi.org/10.1561/1800000010" class="external free" title="http://dx.doi.org/10.1561/1800000010">http://dx.doi.org/10.1561/1800000010</a>
+</li></ul>
+<ul><li> Yogesh L. Simmhan, Beth Plale, Dennis Gannon. <a href="http://doi.acm.org/10.1145/1084805.1084812" class="external text" title="http://doi.acm.org/10.1145/1084805.1084812">A survey of data provenance in e-science</a>. ACM SIGMOD Vol 34 ,  No 3, 2005. See also <a href="http://www.cs.indiana.edu/cgi-bin/techreports/TRNNN.cgi?trnum=TR618" class="external text" title="http://www.cs.indiana.edu/cgi-bin/techreports/TRNNN.cgi?trnum=TR618">a longer version</a>.
+</li></ul>
+<a name="Importance_of_provenance" id="Importance_of_provenance"></a><h1> <span class="mw-headline">3. Importance of provenance </span></h1>
+
+<p>In order to provide a better understanding of the need for provenance and its importance, the group carried out the following activities:
+</p>
+<ul><li> <a href="/2005/Incubator/prov/wiki/Use_Cases#Original_Use_Cases_Proposed" title="Use Cases"> Collected use cases</a> from the community, which covered a variety of areas and emphasized different provenance needs and uses
+</li><li> <a href="/2005/Incubator/prov/wiki/User_Requirements#Motivating_Scenarios:_The_Need_for_Provenance" title="User Requirements"> Organized the use cases</a> according to the aspects of provenance that they emphasized
+</li><li> <a href="/2005/Incubator/prov/wiki/User_Requirements#Motivating_Scenarios:_The_Need_for_Provenance" title="User Requirements"> Developed three flagship scenarios</a> that aggregated the original use cases.  Each scenario emphasized different aspects of provenance and focused on a different application area
+
+</li></ul>
+<a name="Original_Use_Cases" id="Original_Use_Cases"></a><h3> <span class="mw-headline">3.1 Original Use Cases </span></h3>
+<p>The group compiled 33 use cases with the aim of developing an understanding of the need for provenance in a variety of situations and application areas.  Each use case follows a <a href="/2005/Incubator/prov/wiki/Use_Case_Template" title="Use Case Template"> template</a> that includes some background and current practices, a description of what can be achieved without the use of provenance and then with the use of some provenance technology. 
+</p><p>The use cases covered a broad range of motivations for provenance.  The topics included eScience, eGovernment, business, manufacturing, cultural heritage, library sciences, engineering design, emergency response, public policy, privacy, linked data, attribution, licensing, trust, metadata management, and others.  
+</p><p>The use cases were reviewed by a team of curators and revised by the authors to ensure sufficient details.  Six use cases were merged as a result of their curation because they overlapped with other use cases.
+</p>
+<a name="Flagship_Scenarios" id="Flagship_Scenarios"></a><h3> <span class="mw-headline">3.2 Flagship Scenarios </span></h3>
+
+<p>After the analysis of the use cases and the identification of the dimensions of concern, the group decided that three broad motivating scenarios should be developed to concisely illustrate the need for provenance.  These scenarios were designed to be representative of the larger set of use cases and cover a broad range of provenance issues:
+</p>
+<ol><li> <b>News Aggregator Scenario</b>: a news aggregator site that assembles news items from a variety of sources (such as news sites, blogs, and tweets), where provenance records can help with verification, credit, and licensing
+</li><li> <b>Disease Outbreak Scenario</b>: a data integration and analysis activity for studying the spread of a disease, involving public policy and scientific research, where provenance records support combining data from very diverse sources, justification of claims and analytic results, and documentation of data analysis processes for validation and reuse
+</li><li> <b>Business Contract Scenario</b>: an engineering contract scenario, where the compliance of a deliverable with the original contract and the analysis of its design process can be done through provenance records
+</li></ol>
+<a name="News_Aggregator_Scenario" id="News_Aggregator_Scenario"></a><h4> <span class="mw-headline">3.2.1 News Aggregator Scenario </span></h4>
+<p>Many web users would like to have mechanisms to automatically determine whether a web document or resource can be used, based on the original source of the content, the licensing information associated with the resource, and any usage restrictions on that content. Furthermore, in cases of mashed-up content it would be useful to be able to ascertain automatically whether or not to trust it by examining the processes that created, processed, and delivered it.  To illustrate these issues, we present the following scenario of a fictitious website, BlogAgg, that aggregates news information and opinion from the Web. 
+
+</p><p>BlogAgg aims to provide rich real time news to its readers automatically. It does this by aggregating information from a wider variety of sources including microblogging websites, news websites, publicly available blogs and other opinion. It is imperative for BlogAgg to present only credible and trusted content on its site to satisfy its customers, attract new business, and avoid legal issues. Importantly, it wants to ensure that the news that it aggregates are correctly attributed to the right person so that they may receive credit. Additionally, it wants to present the most attractive content it can find including images and video. However, unlike other aggregators it wants to track many different web sites to try and find the most up to the date news and information.
+</p><p>Unfortunately for BlogAgg, the source of the information is often not apparent from the data that it aggregates from the Web. In particular, it must employ teams of people to check that selected content is both high-quality and can be used legally. The site owner would like this quality control process to be handled automatically. It is also important to check that it can legally use any pictures or information, and credit appropriate sources. 
+</p><p>For example, one day BlogAgg discovers that #panda is a trendy topic on Twitter. It finds that a tweet "#panda being moved from Chicago Zoo to Florida! Stop it from sweating http://bit.ly/ssurl", is being retweeted across many different microblogging sites. BlogAgg wants to find the correct originator of the microblog who first got the word out. It would like to check if it is a trustworthy source and verify the news story.  It would also like to credit the original source in its site, and in these credits it would like to include the email address of the originator if allowed by that person.
+</p><p>Following the tiny-url, BlogAgg discovers a site protesting the move of the panda. BlogAgg wants to determine what organization is responsible for the site so that its name can run next to the snippet of text that BlogAgg runs. In determining the snippet of text to use, BlogAgg needs to determine whether or not the text originated at the panda protest site or was a quoted from another site. Additionally, the site contains an image of a panda that appears as if it is sweating. BlogAgg would like to automatically use a thumbnail version of this image in its site, therefore, it needs to determine if the image license allows this or if that license has expired and is no longer in force. Furthermore, BlogAgg would like to determine if the image was modified, by whom, and if the underlying image can be reused (i.e. whether the license of the image is actually correct). Additionally, it wants to find out whether any modifications were just touch-ups or were significant modifications. Using the various information about the content it has retrieved, BlogAgg creates an aggregated post. For the post, it provides a visual seal showing how much the site trusts the information. By clicking on the seal, the user can inspect how the post was constructed and from what sources and a description of how the trust rating was derived from those sources. 
+</p><p>Note, that BlogAgg would want to do this same sort of process for thousands to hundreds of thousands a sites a day. It would want to automate its aggregation process as much as possible.  It is important for BlogAgg to be able to detect when this aggregation process does not work in particular when it can not determine the origins of the content it uses. These need to be flagged and reported to BlogAgg&acute;s operators.
+</p><p>The provenance issues highlighted in this scenario include:
+</p>
+<ul><li> checking licenses when reusing content
+</li><li> verifying that a document/resource complies with licensing policies of pieces it reused
+</li><li> integrating unstructured content, ie documents and media (in contrast with integrating structured data)
+</li><li> content aggregation: aggregating RSS feeds, or product information, or news (in the case of the scenario)
+
+</li><li> checking authority
+</li><li> recency of information
+</li><li> verification of original sources
+</li><li> conveying to an end user the derivation of a source of information
+</li><li> versioning and evolution of unstructured content, whether documents or other media (eg images)
+</li><li> tracking user/reuse of content 
+</li><li> scalable provenance management
+</li></ul>
+<a name="Disease_Outbreak_Scenario" id="Disease_Outbreak_Scenario"></a><h4> <span class="mw-headline">3.2.2 Disease Outbreak Scenario</span></h4>
+
+<p>Many uses of the Web involve the combination of data from diverse sources.  Data can only be meaningfully reused if the collection processes are exposed to users.  This enables the assessment of the context in which the data was created, its quality and validity, and the appropriate conditions for use.  Often data is reused across domains of interest that end up mutually influencing each other.  This scenario focuses on the reuse of data across disciplines in both anticipated and unanticipated ways.
+</p><p>Alice is an epidemiologist studying the spread of a new disease called owl flu (a fictitious disease made up for this example), with support from a government grant.  Many studies relevant to public policy are funded by the government, with the expectation that the conclusions will provide guidance for public policy decision-makers.  These decisions need to be justified by a cost-benefit analysis.  In practice, this means that results of studies not only need to be scientifically valid, but the source data, intermediate steps and conclusions all need to be available for other scientists or non-experts to evaluate and reproduce.  In the United Kingdom, for example, there are published guidelines that social scientists like Alice are required to follow in reporting their results.  
+</p><p>Alice&acute;s study involves collecting reports from hospitals and other health services as well as recruiting participants, distributing and collecting surveys, and performing telephone interviews to understand how the disease spreads.  The data collected through this process are initially recorded on paper and then transcribed into an electronic form. The paper records are confidential but need to be retained for a set period of time.
+</p><p>Alice will also use data from public sources (Data.gov, Data.gov.uk), or repositories such as the UK Data Archive (data-archive.ac.uk).  Currently, a number of e-Social Science archives (such as NeISS, e-Stat and NESSTAR) are being developed for keeping and adding value to such data sets, which Alice may also use.  Alice may also seek out "natural experiment" data sources that were originally gathered for some other purpose (such as customer sales records, Tweets on a given day, or free geospatial data).
+</p><p>Once the data are collected and transcribed, Alice processes and interprets the results and writes a report summarizing the conclusions.  Processing the data is labor-intensive, and may involve using a combination of many tools, ranging from spreadsheets, generic statistics packages (such as SPSS or Stata), or analysis packages that cater specifically to Alice&acute;s research area.  Some of the data sources may also provide some querying or analysis processing that Alice uses at the time of obtaining the data.  
+</p><p>Alice may find many challenges in integrating the data in different sources, since units or semantics of fields are not always documented.  When different data sources use different representations, Alice may need to recode or integrate this data by hand or by guessing an appropriate conversion function - subjective choices that may need to be revisited later.  To prepare the final report and make it accessible to other scientists and non-experts, Alice may also make use of advanced visualization tools, for example to plot results on maps.
+</p><p>The conclusions of the report may then be incorporated into policy briefing documents used by civil servants or experts on behalf of the government to identify possible policy decisions that will be made by (non-expert) decision makers, to help avoid or respond to future outbreaks of owl flu. This process may involve considering hypotheticals or reevaluating the primary data using different methodologies than those applied originally by Alice. The report and its linked supporting data may also be provided online for reuse by others or archived permanently in order to permit comparing the predictions made by the study with the actual effects of decisions.  
+</p><p>Bob is a biologist working to develop diagnostic and chemotherapeutic targets in the human pathogen responsible for owl flu. Bob&acute;s experimental data may be combined with data produced in Alice&acute;s epidemiological study, and Bob&acute;s level of trust in this data will be influenced by the detail and consistency of the provenance information accompanying Alice&acute;s data.  Bob generates data using different experiment protocols such as expression profiling, proteome analysis, and creation of new strains of pathogens through gene knockout.  These experiment datasets are also combined with data from external sources such as biology databases (NCBI Entrez Gene/GEO, TriTrypDB, EBI&acute;s ArrayExpress) and information from biomedical literature (PubMed) that have different curation methods and quality associated with them.  Biologists need to judge the quality, timeliness and relevance of these sources, particularly when data needs to be integrated or combined.  
+</p><p>These sources are used to perform "in silico" experiments via scientific workflows or other programming techniques.  These experiments typically involve running several computational steps, for example running machine learning algorithms to cluster gene expression patterns or to classify patients based on genotype and phenotype information.  The results need to meet a high standard of evidence so that the biologists can publish them in peer-reviewed journals.  Therefore, justification information documenting the process used to derive the results is required.  This information can be used to validate the results (by ensuring that certain common errors did not occur), to track down obvious errors or understand surprising results, to understand how different results arising from similar processes and data were obtained, and to reproduce results.  
+</p><p>As more data of owl flu outbreaks and treatments become available over time, Alice&acute;s epidemiological studies and Bob&acute;s research on the behavior of the owl flu virus will need to be updated by repeating the same analytical processes incorporating the new data.
+</p><p>This scenario illustrates several distinctive aspects of provenance:
+</p>
+<ul><li> data integration: combining structured and unstructured data, data from different sources, linked data
+</li><li> archiving: understanding how data sources evolve over time through provenance and versioning information 
+</li><li> justification: summarizing provenance records and other supporting evidence for high-level decision making
+
+</li><li> reuse: using data or analytic products published by others in a new context
+</li><li> repeatability: using provenance to rerun prior analyses with new data
+</li></ul>
+<a name="Business_Contract_Scenario" id="Business_Contract_Scenario"></a><h4> <span class="mw-headline">3.2.3 Business Contract Scenario</span></h4>
+<p>In scientific collaborations and in business, individual entities often enter into some form of contract to provide specific services and/or to follow certain procedures as part of the overall effort.  Proof that work was performed in conformance with the  contract is often required in order to receive payment and/or to settle disputes.  Such proof must, for example, document work that was performed on specific items (samples, artifacts), provide a variety of evidence that would preclude various types of fraud, allow a combination of evidence from multiple witnesses, and be robust enough to allow provision of partial information to protect privacy or trade secrets.  To illustrate such demands of proof, and the other requirements which stem from having such information, we consider the following use case.
+</p><p>Bob&acute;s Website Factory (BWF) is a fictitious company that creates websites which include secured functionality, e.g. for payments.  Customers choose a template website structure, enter specifications according to a questionnaire, upload company graphics, and BWF will create an attractive and distinct website.  The final stage of purchasing a website involves the  customer agreeing to a contract setting out the respective responsibilities of the customer and BWF.  The final contract document, including BWF&acute;s digital signature will be automatically sent by email to both parties.
+</p><p>BWF has agreed a contract with a customer, Customers Inc., for the supply of a website.  Customers Inc. are not happy with the product they receive, and assert that contractual requirements on quality were not met.  Specifically, BWF finds it must defend itself against claims that work to create a site to the specifications was not performed or was performed by someone without adequate training, that the security of payments to the site is faulty due to improper quality control and testing procedures not being followed.  Finally, Customers Inc. claim that records were tampered with to remove evidence of the latter improper practices.
+</p><p>BWF wish to defend themselves by providing proof that the contract was executed as agreed.  However, they have concerns about what information to include in such a proof.  Many websites are not designed from scratch but are based on an existing design in response to the customer&acute;s requests or problems.  Also, sometimes parts of the design of multiple different sites, designed for other customers, are combined to make a new website. Both protecting its own intellectual property and confidential information regarding other customers mean that BWF wishes to reveal only that information needed to defend against Customers Inc.&acute;s claims.
+</p><p>There are many kinds of objects relevant to describing BWF&acute;s development processes, from source code text in programs to images. To provide adequate proof, BWF may need to include documentation on all of these different objects, making it possible to follow the development of a final design through its multiple stages.  The contract number of a site is not enough to unambiguously identify that artifact, as designs move through multiple versions: the proof requires showing that a site was not developed from a <i>version</i> of a design which did not meet requirements or use security software known to be faulty. 
+</p><p>With regard to showing that there was adequate quality control and testing of the newly designed or redesigned sites, BWF needs to demonstrate that a design was approved in independent checks by at least two experts.  In particular, the records should show that the experts were truly independent in their assessments, i.e. they did not both base their judgement on one, possibly erroneous, summarized report of the design. 
+
+</p><p>Finally, Customers Inc. claim that there is a discrepancy in the records, suggesting tampering by BWF to hide their incompetence, as the development division apparently claimed to have received instructions from the experts checking the design that it was OK <i>before</i> the experts themselves claim to have supplied such a report.  BWF suspects, and wishes to check, that this is due to a difference in semantics between the reported times, e.g. in one case it regards the receipt of the report by the developers, in the other it regards the receipt of the <i>acknowledgement</i> of the report from the developers by the experts. These reports should be shared in a format that both parties understand.
+</p><p>The provenance issues highlighted in this scenario include: 
+</p>
+<ul><li> Checking whether past actions comply with stated obligations
+</li><li> Understanding how one product is derived from another
+</li><li> Filtering the information revealed in provenance by privacy and ownership concerns
+</li><li> Discovering where two sources have a hidden mutual dependency
+
+</li><li> Resolving apparent inconsistencies in multiple accounts of the same event
+</li><li> Verifying that those who performed actions had the expertise or authority to do so
+</li></ul>
+<a name="Requirements_for_provenance" id="Requirements_for_provenance"></a><h1> <span class="mw-headline">4. Requirements for provenance </span></h1>
+
+<p>As seen in the previous section, provenance touches on many different domains and applications. Each of these has different requirements for provenance. Here, we present the requirements extracted by the group from the collected use cases. The group produced several detailed documents:
+</p>
+<ul><li> To help organize these requirements, the group developed a set of <a href="/2005/Incubator/prov/wiki/Provenance_Dimensions" title="Provenance Dimensions"> key dimensions for provenance</a>. 
+
+</li></ul>
+<ul><li> The requirements presented here are a summarized version of the user requirements discussed in the incubator group&acute;s report on <a href="http://www.w3.org/2005/Incubator/prov/wiki/User_Requirements" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki/User_Requirements">Requirements for Provenance on the Web</a>. 
+</li></ul>
+<ul><li> The incubator group also collected <a href="http://www.w3.org/2005/Incubator/prov/wiki/Requirements" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki/Requirements">140 technical requirements</a>.  We refer to these technical requirements indirectly, but we do not include them here. 
+</li></ul>
+<ul><li> In the context of the W3C Semantic Web Interests Group and the <a href="http://www.w3.org/2009/12/rdf-ws/" class="external text" title="http://www.w3.org/2009/12/rdf-ws/">RDF Next Steps workshop</a>, the Provenance Incubator Group investigated which requirements could impact any future version of RDF. These requirements were documented in a paper titled "<a href="http://www.w3.org/2005/Incubator/prov/wiki/images/3/3f/RDFNextStep_ProvXG-submitted.pdf" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki/images/3/3f/RDFNextStep_ProvXG-submitted.pdf">Provenance Requirements for the Next Version of RDF</a>" that was <a href="http://www.slideshare.net/junzhao/2010-06-rdfnext" class="external text" title="http://www.slideshare.net/junzhao/2010-06-rdfnext">presented</a> at that workshop.  
+
+</li></ul>
+<a name="Provenance_Dimensions" id="Provenance_Dimensions"></a><h3> <span class="mw-headline">4.1 Provenance Dimensions</span></h3>
+<p>The group found useful to organize requirements and use cases in terms of key dimensions that concern provenance.  An overview of these dimensions is shown in the following table:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th>  Category
+</th><th>  Dimension
+</th><th>  Description
+</th></tr>
+<tr>
+
+<td rowspan="7">Content
+</td></tr>
+<tr>
+<td>  Object
+</td><td>  The artifact that a provenance statement is about.
+</td></tr>
+<tr>
+<td>  Attribution
+</td><td>  The sources or entities that contributed to create the artifact in question.
+</td></tr>
+<tr>
+<td>  Process
+
+</td><td>  The activities (or steps) that were carried out to generate or access the artifact at hand.
+</td></tr>
+<tr>
+<td>  Versioning
+</td><td> Records of changes to an artifact over time and what entities and processes were associated with those changes.
+</td></tr>
+<tr>
+<td>  Justification
+</td><td>  Documentation recording why and how a particular decision is made.
+</td></tr>
+<tr>
+<td>  Entailment
+
+</td><td>  Explanations showing how facts were derived from other facts.
+</td></tr>
+<tr>
+<td rowspan="5">Management
+</td></tr>
+<tr>
+<td>  Publication
+</td><td>  Making provenance available on the Web.
+</td></tr>
+<tr>
+<td>  Access
+</td><td>  The ability to find the provenance for a particular artifact.
+
+</td></tr>
+<tr>
+<td>  Dissemination
+</td><td>  Defining how provenance should be distributed and its access be controlled.
+</td></tr>
+<tr>
+<td>  Scale
+</td><td> Dealing with large amounts of provenance.
+</td></tr>
+<tr>
+<td rowspan="8">Use
+</td></tr>
+<tr>
+
+<td>  Understanding
+</td><td>  How to enable the end user consumption of provenance.
+</td></tr>
+<tr>
+<td>  Interoperability
+</td><td>  Combining provenance produced by multiple different systems.
+</td></tr>
+<tr>
+<td>  Comparison
+</td><td>  Comparing artifacts through their provenance.
+</td></tr>
+
+<tr>
+<td>  Accountability
+</td><td>  Using provenance to assign credit or blame.
+</td></tr>
+<tr>
+<td>  Trust
+</td><td>  Using provenance to make trust judgments.
+</td></tr>
+<tr>
+<td>  Imperfections
+</td><td>  Dealing with imperfections in provenance records.
+
+</td></tr>
+<tr>
+<td>  Debugging
+</td><td>  Using provenance to detect bugs or failures of processes.
+</td></tr></table>
+<p><br />
+</p>
+<a name="Content_Requirements" id="Content_Requirements"></a><h3> <span class="mw-headline">4.2 Content Requirements</span></h3>
+<p>Content refers to the types of information that would need to be represented in a provenance record.  That is, what structures and attributes would need to be defined in order to contain the kinds of provenance information that we envision need to be captured.  
+</p><p>We need to be able to establish  the artifact or <b>object</b> that statements of provenance are about, and be able to refer to that object.  This object can be a variety of things.  On the Web, this will be a web resource, essentially anything that can be identified with a URI, such as web documents, datasets, assertions, or services. Provenance may refer to aspects or portions of an object. For example, objects may be organized in collections, then subgroups selected, then portions of some objects modified, etc.
+
+</p><p><b>Attribution</b> is a critical component of provenance.  It refers to the sources (i.e., typically any web resource that has an associated URI, such as documents, web sites, or data) or entities (i.e., people, organizations, and other identifiable groups) that contributed to the creation of the artifact in question. In addition, the provenance representation of attribution should also enable us to see the true origin of any statement of attribution to an entity.  Technically, this may require that the statement be verified through the use of a an authentication system (perhaps with the use of digital signature).  Additionally, one may want to know whether a statement was made by the original entity or was reconstructed and then asserted by a third party. Attribution may also require some form of anonymization, for privacy or identity protection reasons. 
+</p><p><b>Process</b>  refers to the activities (or steps) that were carried out to generate the artifact.  These activities encompass the execution of a computer program that we can explicitly point to, a physical act that we can only refer to, and some action performed by a person that can only be partially represented. Provenance representations should represent how activities are related to form a process.  Provenance information may need to refer to descriptions of the activities, so that it becomes possible to support reasoning about the processes involved in provenance and support descriptive queries about them.  Processes can be represented at a very abstract level, focusing only on important aspects, or at a very fine-grained level, including minute details sufficient to enable exact reproduction of the process. 
+</p><p>Dealing with <b>evolution and versioning</b> is a critical requirement for a provenance representation.  As an artifact evolves over time, its provenance should be augmented in specific ways that reflect the changes made over prior versions and what entities and processes were associated with those changes.  When one has full control over an artifact and its provenance records this may be a simple matter of good-recording keeping, but this is a challenge in open distributed environments such as the Web.  Consider the representation of provenance when republishing, for example by retweeting, reblogging, or repackaging a document. It should also be possible to represent when a set of changes grant the denomination of a new version of the object in question.  An important aspect to consider is how resource access properties, such as the access time, server accessed, the party accessing the resoource and the party responsible for the server, impacts the version of an artifact.
+</p><p>A particular kind of provenance information is <b>justifications of decisions</b>.  The purpose of a justification is to allow those decisions to be discussed and understood.  Justifications should be backed up by supporting evidence, which needs to be collected according to a well-defined procedure, ideally in an automatic fashion.  It is important to capture both the arguments for and against particular conclusions as well as the ability to capture the evidence behind particular hypotheses.  Technically, this may require systems that are provably correct and cater to long-term preservation. Additionally, if justifications are based on external information, systems must have a mechanism to exchange provenance information. 
+</p><p>Inference may be required to derive information from the original provenance records.  Some provenance information may be directly asserted by the relevant sources of some data or actors in a process, while other information may be derived from that which was asserted.  In general, one fact may <b>entail</b> another, and this is important in the case of provenance data which is inherently describing the past, for which the majority of facts may not now be known. It is also important to capture the assumptions that were used when performing inference. For example, this may require in a RDF triple store that supports inference of the capability to provide the provenance of result given for a SPARQL query.
+
+</p>
+<a name="Management_Requirements" id="Management_Requirements"></a><h3> <span class="mw-headline">4.3 Management Requirements</span></h3>
+<p>Provenance management refers to the mechanisms that make provenance available and accessible in a system. 
+</p><p>An important issue is the <b>publication</b> of provenance.  Provenance information must be made available on the Web.  Related issues include how provenance is exposed, discovered, and distributed.  A transparent provenance representation language must be chosen and made available so others can refer to it in interpreting the provenance.  The publisher of provenance information should be associated with provenance records. Technically, this requires tools to enable such publication. 
+</p><p>Once provenance is available, it must be <b>accessible</b>.  That is, it must be possible to find it by specifying the artifact of interest.  In some cases, it must be possible to determine what the authoritative source of provenance is for some class of entities.  Query formulation and execution mechanisms must be defined for provenance representation.
+</p><p>In realistic settings, provenance information will have to be subject to <b>dissemination control</b>.  Provenance information may be associated with access policies about what aspects of provenance can be made available given a requestor&acute;s credentials.  Provenance may have associated use policies about how an artifact can be used given its origins.  This may include licensing information stated by the artifact&acute;s creators regarding what rights of use are granted for the artifact.  Finally, provenance information may be withheld from access for privacy protection or intellectual property protection. Dissemination control must also take into account how security can be integrated. 
+</p><p>The <b>scale</b> of provenance information is a major concern, as the size of the provenance records may by far exceed the scale of the artifacts themselves.  Despite the presence of large amounts of provenance, efficient access to provenance records must be possible.  Tradeoffs must be made with respect to the granularity of the provenance records kept and the actual amount of detail needed by users of provenance.
+
+</p>
+<a name="Use_Requirements" id="Use_Requirements"></a><h3> <span class="mw-headline">4.4 Use Requirements</span></h3>
+<p>We need to take into account requirements for provenance based on the use of any provenance information that we have recorded.  The same provenance records may need to accommodate a variety of uses as well as diverse users/consumers.  
+</p><p>Important considerations are how to make provenance information <b>understandable</b> to its users/consumers and usable.  Just because the information they need is recorded in the provenance representation does not mean that they would be able to use it for their purposes.  An important challenge that we face is how to allow for multiple levels of abstraction in the provenance records of an artifact as well as multiple perspectives or views concerning such provenance.  In addition, appropriate presentation and visualization of provenance information is an important consideration, as users will likely prefer something other than a set of provenance statements.  To achieve understandability and usability, it is important to be able to combine general provenance information with domain-specific information.  
+</p><p>Because provenance information may be obtained from heterogeneous systems and different representations and used across multiple applications, <b>interoperability</b> is an important requirement.  A query may be issued to retrieve information from provenance records created by different systems that then need to be integrated.  At a finer grain, the provenance of a given artifact may be specified by multiple systems and need to be combined.  Users may want to also know what sources contributed specific provenance statements, so they can make decisions in case of conflicts.
+</p><p>Another important use of provenance is for <b>comparison</b> of artifacts based on their origins.  Two artifacts may seem very different while their provenance may indicate significant commonalities.  Conversely, two artifacts may seem alike, and their provenance may reveal important differences. Technically, this would require that the underlying provenance representation be amenable to comparison, for example, through graph comparison.  
+
+</p><p>Provenance data can be used for <b>accountability</b>. Specifically, accountability may mean allowing users to verify that work performed meets a contract decided upon earlier, determining the license that a composite object has due to the licenses of its components, or comparing that an account of the past suggested by a provenance record is compliant with regulations.  Accountability requires that the users can rely on the provenance record and authenticate its sources.  
+</p><p>A very important use of provenance is <b>trust</b>.  Provenance information is used to make trust judgments on a given entity. Trust is often based on attribution information, by checking the reputation of the entities involved in the provenance, perhaps based on past reliability ratings, known authorities, or third-party recommendations.  Similarly, measures of the relative information quality can be used to choose among competing evidence from diverse sources based on provenance.  Finally, users should be able to access and understand how trust assessments are derived from provenance.
+</p><p>Using provenance information may imply handling <b>imperfections</b>.  Provenance information may be incomplete in that some information may be missing, or incorrect if there are errors.  Provenance information may also be provided with some uncertainty or be of a probabilistic nature.  These imperfections may be caused by problems with the recording of the provenance information but they may also arise because the user does not have access to the complete and accurate provenance records even if they exist.  This would be the case when provenance is summarized or compressed, in which case many details may be abstracted away or missing, or when the user does not have the right permissions to access some aspects of the provenance records, potentially because of privacy concerns.  Finally, provenance may also be subject to deception and be fraudulent, partially or in its entirety.  
+</p><p>Another use of provenance is <b>debugging</b>.  Users may want to detect failure symptoms in the provenance records and diagnose problems in the process that generated an artifact, whether conducted in a software system or by people. For example, detecting when a error was produced because of the use of a common source of information. Debugging may also involve comparison of records from multiple witnesses, e.g. a workflow engine and a computer operating system, to catch instances where fine-grained records are inconsistent with the coarser-grained view.
+</p>
+<a name="Requirements_on_RDF_for_supporting_Provenance" id="Requirements_on_RDF_for_supporting_Provenance"></a><h3> <span class="mw-headline">4.5 Requirements on RDF for supporting Provenance</span></h3>
+<p>The group found that the following requirements should be considered in the context of future extensions of RDF:
+
+</p>
+<ul><li> Identity -- A key challenge is to be able to refer to the artifact that we are describing the provenance for. Within the RDF context, the artifact could be a single RDF statement, a set of statements or an arbitrary set of Web resources.
+</li><li> Evolution -- An important requirement is the ability to describe the provenance of a dynamic, evolving resource. Over time, there may be updates and even new versions that change some aspect of the resource. A challenge is to describe how the new incarnations of the resource relate to one another, and to determine whether provenance records should be self-contained and attached to each incarnation, or instead refer to prior ones for details. As resources may be republished, perhaps repackaged, summarized, or mixed, their provenance records need to reflect such processes and their implications on the contents.
+</li><li> Entailment -- Another important requirement is the ability to distinguish what is directly asserted by the entities and processes that produce the resource from other information that may be inferred from those assertions or perhaps derived or hypothesized by a third party.
+</li><li> Publication -- A publisher of provenance information needs to use some provenance representation language and link the provenance assertions to the actual resource information. Publishers may choose to publish only a subset of the provenance records, and should be able to identify themselves possibly with a signature that is verifiable by others.
+</li><li> Querying -- Provenance information may be made accessible in some manner, and there must be mechanisms to find the provenance for a given resource. Query formulation and execution must be provided for provenance information. Ideally, there should be a convenient way to formulate queries that span primary and provenance information.
+</li></ul>
+<p>Based on these requirements, the group argued for additional desirable capabilities that the current standard RDF model does not offer, including proper identification of RDF statements and an annotation framework permitting a standard approach for linking meta-information like provenance with sets of RDF triples. The group also argued for the development of a common approach to exchange provenance information between systems and publish it on the Web. This requirement would begin to address the remaining three provenance requirements. Later in this report, we discuss the basis for the development and specification of such an approach.
+</p>
+<a name="Summary" id="Summary"></a><h3> <span class="mw-headline">4.6 Summary</span></h3>
+
+<p>The provenance dimensions described here summarize the requirements that users have with respect to provenance. Users need to be able to point to and ask for the provenance of an object. They want to know who is responsible for information and if there is adequate justification for that information. They may want to understand how information was processed to produce a particular query result or artifact and how information evolves over time. They want to use provenance information to ascertain trust, compare artifacts, debug programs and to hold other parties to account. They need easy access to large of amounts of provenance information across many different systems and those systems should take into account their privacy when making provenance information available.
+</p>
+<a name="State_of_the_art_and_technology_gaps" id="State_of_the_art_and_technology_gaps"></a><h1> <span class="mw-headline">5. State of the art and technology gaps </span></h1>
+
+<p>Prior and ongoing work on provenance is spread out in many areas. The published literature on provenance is vast and rapidly growing, with a reported half of the articles published in the last two years <a href="http://eprints.ecs.soton.ac.uk/21691/" class="external text" title="http://eprints.ecs.soton.ac.uk/21691/">(Moreau 2010)</a>.  
+</p><p>To obtain a comprehensive understanding of existing work on provenance the group carried out several activities, including:
+</p>
+<ul><li> <a href="/2005/Incubator/prov/wiki/Presentations_on_State_of_the_Art" title="Presentations on State of the Art"> A series of presentations on current work on provenance</a>.  The topics covered included applications of provenance (in eGoverment, eScience, multimedia), technical areas (security, database provenance), and published provenance vocabularies. 
+
+</li><li> <a href="/2005/Incubator/prov/wiki/Provenance_Survey" title="Provenance Survey"> A compilation of surveys of existing research on provenance already available in the literature</a> that cover provenance work from a variety of perspectives
+</li><li> <a href="/2005/Incubator/prov/wiki/Mendeley_%26_BibBase_Collection" title="Mendeley &amp; BibBase Collection"> An organized collection of references on prior work on provenance</a> annotated with tags that referred to the flagship scenarios and provenance dimensions described earlier
+</li><li> <a href="/2005/Incubator/prov/wiki/Relevant_Technologies" title="Relevant Technologies"> An compilation of relevant technologies and standards</a> in relevant areas
+</li><li> <a href="/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings" title="Provenance Vocabulary Mappings"> An analysis of existing vocabularies</a> for provenance, including mappings across terms in the different vocabularies with extensive documentation
+
+</li><li> <a href="/2005/Incubator/prov/wiki/State_of_the_Art_Report" title="State of the Art Report"> A State of the Art Report</a> centered on the three flagship scenarios described above including an analysis of existing technology gaps
+</li></ul>
+<p>These materials provide a checkpoint on the state of the art of provenance during the Incubator Group&acute;s activities in 2009-2010, and provide a basis for the recommendations and future roadmap of this report.  
+</p><p>This section summarizes the most salient results from these activities.
+</p>
+<a name="Provenance_Bibliography" id="Provenance_Bibliography"></a><h3> <span class="mw-headline">5.1 Provenance Bibliography </span></h3>
+<p>The group did not think necessary to do a comprehensive literature review of provenance, since there are several surveys published about provenance and trust.  Instead, the group agreed to do a limited effort in creating an annotated bibliography collection that would give concrete entry points to the literature in this area.  
+</p><p>Driven by the three flagship scenarios and their requirements, the group constructed a shared bibliography of relevant publications and technologies.  We then used tagging to organize the entries according to the three scenarios as well as the provenance dimensions above.  
+</p><p>The <a href="http://www.w3.org/2005/Incubator/prov/wiki/Mendeley_%26_BibBase_Collection" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki/Mendeley_%26_BibBase_Collection">bibliography collection can be browsed here</a>.  The collection can be browsed and viewed by authors, keywords, type (journal versus conference), and year.
+
+</p><p>The entire set of references in <a href="http://www.w3.org/2005/Incubator/prov/wiki/Curated_Bibliography_as_bib_source_file" class="external text" title="http://www.w3.org/2005/Incubator/prov/wiki/Curated_Bibliography_as_bib_source_file">bib format can be downloaded here</a>.
+</p>
+<a name="Provenance_Vocabularies" id="Provenance_Vocabularies"></a><h3> <span class="mw-headline">5.2 Provenance Vocabularies </span></h3>
+<p>Among the relevant technologies, a few stood out as covering approximately similar applications and provenance needs using roughly comparable ontologies or data models.  These Provenance Vocabularies include:
+</p>
+<ul><li><a href="http://openprovenance.org/" class="external text" title="http://openprovenance.org/">Open Provenance Model</a>: Outcome of the <a href="http://twiki.ipaw.info/bin/view/Challenge/" class="external text" title="http://twiki.ipaw.info/bin/view/Challenge/">Provenance Challenge series</a> (initiated in 2005), after discussion and consensus of part of the community. For this reason, and for being general and broad enough, it was selected as the model to which the rest of the provenance vocabularies have been mapped. (The mappings will be further explained in the next section). OPM is used to describe histories in terms of processes (things happening), artifacts (what things happen to), and agents (what controls things happening). These three are kinds of nodes within a graph, where each edge denotes a causal relationship. Edges have named types depending on the kinds of node they relate: a process used an artifact; an artifact was generated by a process; one artifact was derived from another artifact; one process was triggered by another process; a process was controlled by an agent. 
+</li></ul>
+<ul><li><a href="http://wiki.knoesis.org/index.php/Provenir_Ontology" class="external text" title="http://wiki.knoesis.org/index.php/Provenir_Ontology">Provenir Ontology</a>. Common provenance model, which forms the core component of a modular approach to provenance management framework in eScience. Three base classes in the Provenir Ontology are used for representing the primary components of provenance, that is, &quot;data&quot; (continuant entities that represent the starting material, intermediate material, end products of a scientific experiment), &quot;agent&quot; (which models the continuant entities that causally affect the individuals of process) and &quot;process&quot;(models the concurrent entities that affect individuals of data).
+
+</li></ul>
+<ul><li><a href="http://purl.org/net/provenance/" class="external text" title="http://purl.org/net/provenance/">Provenance Vocabulary</a>. Developed to describe provenance of Linked Data on the Web. The Provenance Vocabulary is defined as an OWL ontology and it is partitioned into a core ontology and supplementary modules. To avoid making the core ontology too complex, the modules provide less frequently used concepts and a broad range of specializations of the core concepts. At present the Provenance Vocabulary provides three supplementary modules: <a href="http://purl.org/net/provenance/types" class="external text" title="http://purl.org/net/provenance/types">Types</a>, <a href="http://purl.org/net/provenance/files" class="external text" title="http://purl.org/net/provenance/files">Files</a> and <a href="http://purl.org/net/provenance/integrity" class="external text" title="http://purl.org/net/provenance/integrity">Integrity Verification</a>.
+</li></ul>
+<ul><li><a href="http://inference-web.org/2007/primer/" class="external text" title="http://inference-web.org/2007/primer/">Proof Markup Language</a>. PML is an interlingua for representing and sharing explanations generated by various intelligent systems such as hybrid web-based question answering systems, text analytic components, theorem provers, task processors, web services, rule engines, and machine learning components. The interlingua is split into three modules (provenance, justification, and trust relations) to reduce maintenance and reuse costs. While the provenance of PML in the Semantic Web is clear in the choice of names (e.g. InferenceEngines), there are numerous examples where PML has been applied to non-text data and non-logic-based processing and thus the term definitions do not appear restrictive.
+</li></ul>
+<ul><li><a href="http://dublincore.org/" class="external text" title="http://dublincore.org/">Dublin Core</a>. Dublin Core Metadata Terms provide a means to describe resources such that others will be able to interpret those descriptions.  In particular, it provides a common vocabulary of core terms which can act as metadata keys, qualifications of those terms for specific applications, definitions of data types for the values of resource metadata, and so on. Amongst the terms available are many which relate to the provenance of the resource: who created it, when it was changed, etc.	
+</li></ul>
+
+<ul><li><a href="http://www.loc.gov/standards/premis/" class="external text" title="http://www.loc.gov/standards/premis/">PREMIS</a>. Stands for "PREservation Metadata: Implementation Strategies". It is a data dictionary for supporting long-term preservation: defines a core set of semantic units that repositories should know in order to perform their preservation functions. It focuses on the provenance of the archived, digital objects (files, bitstreams, aggregations), not on the provenance of the descriptive metadata. 
+</li></ul>
+<ul><li><a href="http://xmlns.com/wot/0.1/" class="external text" title="http://xmlns.com/wot/0.1/">WEB OF Trust Schema (WOT)</a>. Schema designed to facilitate the use of Public Key Cryptography tools such as PGP or GPG to sign RDF documents and document these signatures.
+</li></ul>
+<ul><li><a href="http://www.w3.org/TR/hcls-swan/" class="external text" title="http://www.w3.org/TR/hcls-swan/">Semantic Web Applications in Neuromedicine (SWAN) Ontology</a>. Ontology for modeling scientific discourse, developed in the context of building a series of applications for biomedical researchers, as well as extensive discussions and collaborations with the larger bio-ontologies community.
+</li></ul>
+<ul><li><a href="http://www4.wiwiss.fu-berlin.de/bizer/WIQA/swp/SWP-UserManual.pdf" class="external text" title="http://www4.wiwiss.fu-berlin.de/bizer/WIQA/swp/SWP-UserManual.pdf">Semantic Web Publishing Vocabulary</a>. An RDF-Schema vocabulary for expressing information provision related meta-information and for assuring the origin of information with digital signatures.
+</li></ul>
+<ul><li><a href="http://vocab.org/changeset/schema.html" class="external text" title="http://vocab.org/changeset/schema.html">Changeset Vocabulary</a>. Describes changes to RDF-based resource descriptions. A resource description is a set of RDF triples that "in some way comprise a description of a resource." [<a href="http://vocab.org/changeset/schema.html" class="external text" title="http://vocab.org/changeset/schema.html">Tunnicliffe and Davis, 2009</a>] The change of a resource description is represented by a <a href="http://purl.org/vocab/changeset/schema#ChangeSet" class="external text" title="http://purl.org/vocab/changeset/schema#ChangeSet">cs:ChangeSet</a> entity which encapsulates the differences between two versions of the description. Such differences are represented by additions and removals of RDF triples.
+
+</li></ul>
+<p>The group <a href="/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings" title="Provenance Vocabulary Mappings"> developed concrete mappings between the terms in these different provenance vocabularies</a>.  These mappings can help users better understand the similarities and differences between the provenance terminologies, facilitate the development of applications that can utilize the mappings for provenance interoperability, and enable the provenance research community to move towards the adoption of a common provenance terminology.
+</p><p>The mappings use the Open Provenance Model (OPM) as a reference vocabulary.  The mappings between the provenance terms are formally encoded using the W3C recommended Simple Knowledge Organization System (SKOS) vocabulary. The rationale for the mappings was documented in detail.
+</p>
+<a name="Analysis_of_The_State_of_the_Art" id="Analysis_of_The_State_of_the_Art"></a><h3> <span class="mw-headline">5.3 Analysis of The State of the Art </span></h3>
+<p>We carried out detailed analyses of the requirements and provenance dimensions exhibited by the flagship scenarios, and the extent to which current practice and ongoing research addresses these needs.  The <a href="/2005/Incubator/prov/wiki/State_of_the_Art_Report" title="State of the Art Report">State of the Art Report</a> presents these detailed analyses along with references to the bibliography.  Here, we summarize the discussion of how current technology is used to address these kinds of problems.
+</p>
+<a name="State_of_the_Art_Analysis_of_the_News_Aggregator_Scenario" id="State_of_the_Art_Analysis_of_the_News_Aggregator_Scenario"></a><h4> <span class="mw-headline">5.3.1 State of the Art Analysis of the News Aggregator Scenario </span></h4>
+
+<p>The News Aggregator Scenario envisions a system that can automatically tell where a piece of content (i.e. object) on the Web comes from and who is responsible for that content after it has been aggregated. 
+</p><p><i>Aggregation Today</i>
+</p><p>Content aggregation is widely used on the Web. Examples of content aggregation for news include sites such The Huffington Post, Digg, and Google News. Personal aggregation is facilitated by feed technologies (RSS, Atom) and their associated readers (e.g. Google Reader). Newer aggregators can provide a merged view of content, thus, hiding some of the provenance of the information to increase visual appeal. This is similar to what is envisioned in the News Aggregator scenario. 
+</p><p><i>Tracking Content</i>
+</p><p>A number of systems have looked at tracking content, in particular, quotes across the Web. Some sites provide ways for tracking distinctive phrases through the blogosphere. Other work has expanded on this to track how information is propagated through the network and thus which blogs and media have the greater influence. Similarly, there has also been work on influence in the microblogging Internet, Twitter, including the difference between the influence of content and the influence of users.  Researchers have also studied how the social networks of both Twitter and Digg impact the propagation of information through these networks. 
+</p><p>Most of these systems rely on crawls of the Web that are produced uniquely for each application. However, there are tools and services for producing these crawls uniquely, for example by periodically crawling and then analyzing blogs. 
+</p><p><i>Need for Explicit Provenance</i>
+</p><p>It is important to note that these systems deduce the provenance of an object (e.g. a piece of text) after the fact from crawled data. However, determining provenance after the fact is often difficult. For example, during the Iranian Green Revolution protests it was extremely difficult to determine the actual origins of tweets about what was happening on the ground. Later 2009, Twitter launched its own service to explicitly capture the notion of retweeting. There is documented evidence of the difficulty in determining provenance for accountability and trust from crawled documents. There are mechanisms for explicit tracking of the origin of blogs and microblogs. These are used to notify a blog when another blog has linked to it. We note that these systems are isolated to specific technology platforms and do not encompass the whole of the Web. 
+</p><p><i>Licensing</i>
+</p><p>A crucial reason for tracking provenance in the News Aggregator Scenario is the ability to determine if an image (or other content) can be reused. There are sites to track and maintain licensing rights to music or books.  Fundamental technology related to this is the digital representation of licenses.
+</p>
+<a name="State_of_the_Art_Analysis_of_the_Disease_Outbreak_Scenario" id="State_of_the_Art_Analysis_of_the_Disease_Outbreak_Scenario"></a><h4> <span class="mw-headline">5.3.2 State of the Art Analysis of the Disease Outbreak Scenario </span></h4>
+
+<p><i>Data provenance</i>
+</p><p>Provenance is central to the requirement that scientific research be reproducible. Paper laboratory notebooks have been in use for hundreds of years as a primary means of recording provenance. In the last few decades, automated mechanisms including laboratory information management systems (LIMS), databases, and electronic notebooks have seen growing use. However, such systems have had significant adoption barriers and continue to have significant limitations, particularly as community-scale infrastructure. Tracking provenance across laboratories, sharing data with provenance, and integrating data from multiple sources remains very labor intensive today. Provenance records for reference information and community data sets are either produced by hand (i.e. by scientists filling in data entry forms on submission to a data archive or repository), produced by ad hoc applications developed specifically for a given kind of data, or not produced at all.
+</p><p>Within curated biological databases, provenance is often recorded manually in the form of human-readable change logs.  Some scientists are starting to use wikis to build community databases.
+</p><p>There has been a stream of research on provenance in databases but so far little of it has been transferred into practice, in part because most such proposals are difficult to implement, and often involve making changes to the core database system and query language behavior.  Such techniques have not yet matured to the point where they are supported by existing database systems or vendors, which limits their accessibility to non-researchers.
+</p><p><i>Workflow provenance and e-Science</i>
+</p><p>On the other hand, a number of workflow management systems and Semantic Web systems have been developed and are in active use by communities of scientists.  Many of these systems implement some form of provenance tracking internally, and have begun to standardize on a few common representations for the provenance data to enable interchange and integration. Some systems also track the provenance of the workflow templates themselves.  Moreover, research on storing and querying such data effectively can more easily be transferred to practice since it relies on an explicit model of data and control flow between computational steps.
+</p><p>Development of electronic notebooks, e-Science systems, and underlying content and provenance middleware have begun to address end-to-end provenance management of physical, computational, and coordination processes. Over the last two decades, numerous open source and commercial electronic notebook systems have been developed. Electronic notebook capabilities range from wiki-style free-text annotation to LIMS/database-style automated documentation of repetitive work using standardized experimental protocols. State-of-the-art systems provide integrated management of provenance across many types of activities. Some systems track provenance from experiment planning through laboratory work to eventual deposition in a reference data repository. Standardization would be a significant benefit to researchers trying to implement such end-to-end capabilities using tools from multiple commercial and open source providers. 
+</p><p><i>Provenance as justification for public policy</i>
+</p><p>Justification information, describing how the data has been processed from raw observations to processed results that support scientific conclusions, is legally required in some scientific settings. Regulatory agencies, e.g. in areas such as food safety and medical research, specifically require research and testing documentation and also define acceptable practice for managing such records electronically. Some researchers in social sciences are developing community-scale techniques directly addressing these problems through computer systems, but most such justification information is created and maintained by user effort.
+</p>
+<a name="State_of_the_Art_Analysis_of_the_Business_Contract_Scenario" id="State_of_the_Art_Analysis_of_the_Business_Contract_Scenario"></a><h4> <span class="mw-headline">5.3.3 State of the Art Analysis of the Business Contract Scenario </span></h4>
+
+<p>The Business Contract scenario envisages mechanisms to explain the details of procedures, in this case instances of design and production, such that it can be compared with the normative statements made in contracts, specifications or other legal documents. It further assumes the ability to filter this evidence on the basis of confidentiality. While we are not aware of any system providing exactly the functionality described (standards-based, machine interpretable records that respect privacy and other concerns), there are many &acute;business/contract fulfillment&acute; and related services which address particular aspects.
+</p><p><i>Tracking Design</i>
+</p><p>It is critical to track which products a design decision or production action ultimately affect, so that it is possible to show that what was done in producing an individual product fulfilled obligations and to determine which set of products a decision affected. Product recalls occur that are due to particular manufacturing issues. Without knowing the connection between the manufacturing actions and products, many vehicles unaffected by the problem may be recalled, thereby costing a company a great deal more than necessary.
+</p><p><i>Computer-Aided Design and Requirements Management</i>
+</p><p>Computer-aided design (CAD) systems can include features to capture what is occurring as a design is created. Aside from storing a history of changes to a design, requirements management systems allow the rationale behind design choices to be captured, which can be an essential part of the record in explaining how contractual obligations were aimed to be met (particularly where a contract states that some factor must be &acute;taken into account&acute;) and in assessing whether additional design changes will impact a product&acute;s ability to meet stated requirements.
+</p><p>The provenance of a design goes beyond just the changes made through a single CAD system, both because one design may be based on another previously developed design for another customer and because the design is just a part of a larger manufacturing and retail process. Ways in which the interconnection between parts of a process include the use of common formats for describing designs and standardised archiving mechanisms used by all stages of a process.
+</p>
+<a name="Gap_Analysis" id="Gap_Analysis"></a><h3> <span class="mw-headline">5.4 Gap Analysis </span></h3>
+<p>Given the state of the art in the area of provenance, the group wanted to identify major gaps in technology that stand in the way to making shared provenance on the Web a reality.  Since the major issues are illustrated by the three flagship scenarios, this gap analysis was done with the scenarios as a point of reference.
+</p>
+<a name="Gap_Analysis_for_the_News_Aggregator_Scenario" id="Gap_Analysis_for_the_News_Aggregator_Scenario"></a><h4> <span class="mw-headline">5.4.1 Gap Analysis for the News Aggregator Scenario</span></h4>
+
+<p>Existing provenance solutions only address a small portion of the scenario and are not interlinked or accessible among one another.  For each step within the News Aggregator scenario, there are existing technologies or relevant research that could solve that step. For example, one can properly insert licensing information into a photo using a creative commons license and the Extensible Metadata Platform. One can track the origin of tweets either through retweets or using some extraction technologies within twitter. However, the problem is that across multiple sites there is no common format and api to access and understand provenance information whether it is explicitly indicated or implicitly determined. To inquire about retweets or inquire about trackbacks one needs to use different apis and understand different formats. Furthermore, there is no (widely deployed) mechanism to point to provenance information on another site. For example, once a tweet is traced to the end of twitter there is no way to follow where that tweet came from.
+</p><p>System developers rarely include provenance management or publish provenance records. Systems largely do not document the software by which changes were made to data and what those pieces of software did to data. However, there are existing technologies that allow this to be done, for example to document the transformations of images. There are also general provenance models would allow this to be expressed, but they are not currently widely deployed. There are no widely accepted architectural solutions to managing the scale of the provenance records, as they may be significantly larger than the base information itself in addition to also evolving over time.
+</p><p>While many sites provide for identity and there are several widely deployed standards for identity, there are no existing mechanisms for tying identity to objects or provenance traces. This is a fundamental open problem in the web, and affects provenance solutions in that provenance records must be attached to the object(s) they describe.  
+</p><p>Finally, although there have been proposals for how to use provenance to make trust judgments on open information sources, there are no broadly accepted methodologies to automatically derive trust from provenance records. Another issue that has been largely unaddressed is the incompleteness of provenance records and the potential for errors and inconsistencies in a widely distributed and open setting such as the web.
+</p>
+<a name="Gap_Analysis_for_the_Disease_Outbreak_Scenario" id="Gap_Analysis_for_the_Disease_Outbreak_Scenario"></a><h4> <span class="mw-headline">5.4.2 Gap Analysis for the Disease Outbreak Scenario </span></h4>
+<p>This scenario is data-centric, and there is currently a large gap between ideas that have been explored in research and techniques that have been adopted in practice, particularly for provenance in databases.  This is an important problem that already imposes a high cost on curators and users, because provenance needs to be added by hand and then interpreted by human effort, rather than being created, maintained, and queried automatically.  However, there are several major obstacles to automation, including the heterogeneity of systems that need to communicate with each other to maintain provenance, and the difficulty of implementing provenance-tracking efficiently within classical relational databases.  Thus, further research is needed to validate practical techniques before this gap can be addressed.
+</p><p>In the workflow provenance and Semantic Web systems area, provenance techniques are closer to maturity, in part because the technical problems are less daunting because the information is coarser-grained, typically describing larger computation steps rather than individual data items, and focusing on computations from immutable raw data rather than versioning and data evolution.  There is already some consensus on graph-based data models for exchanging provenance information, and this technology gap can probably be addressed by a focused standardization effort.
+</p><p>Guidance to users about how to publish provenance at different granularity is also very important, for example whether publishing the provenance of an individual object or a collection of objects. Users need to know how to use different existing provenance vocabularies to express such different types of provenance and what the consequence will be, for example, how people will use this information and what information is needed to make it useful.
+</p>
+<a name="Gap_Analysis_for_the_Business_Contract_Scenario" id="Gap_Analysis_for_the_Business_Contract_Scenario"></a><h4> <span class="mw-headline">5.4.3 Gap Analysis for the Business Contract Scenario </span></h4>
+
+<p>Overall, there is a gap in practice: provenance technologies are simply not being used for the described purpose.  Even with encouragement, the existing state of the art does not make it a simple task to achieve the scenario, because of a lack of standards, guidelines and tools.  Specifically, we can consider the gaps with regards to content, management and use, as modelled above.
+</p><p>There is no established way to express what needs to be expressed regarding the provenance of an engineered product, in such a way that this can be used by both the developer and the customer (and any independent third party).  Each needs to first identify and retrieve the provenance of some product, then determine from the provenance where one item is a later version of another, where implementation activity was triggered by a successful quality check etc.  Moreover, even if a commonly interpretable form for the latter provenance information was agreed, there is not an established way to then augment the data so that we can verify the quality of the process it describes, e.g. how to make it comparable against contractual obligations, or to ensure it cannot be tampered with prior to providing such proof.  While provenance models, digital signatures, deontic formalisms, versioning schemes and so on provide an adequate basis for solutions, there is a substantial gap in establishing how these should be applied in practice.  Without common expectations on how provenance is represented, a producer cannot realistically document its activities in a way which all of its customers can use.
+</p><p>Assuming that common representations are established, there is a gap in what the technology provides for storing and accessing that information.  This goes beyond simply using existing databases due to the form of information conveyed in provenance.  For example, if an independent expert documents, in some store local to themselves, that they checked a website design, this must be connected to rest of the website&acute;s manufacturing process to provide a full account.  While web technologies could be harnessed for the purpose, there is no established approach to interlinking across parts of provenance data.  Moreover, the particular characteristics of provenance data may affect how other data storage requirements must be completed: how to scale up to the quantities of interlinked information we can expect with automatic provenance recording, how to limit access to only non-confidential information etc.  Finally, the provenance, once recorded, has to be accessible and there are no existing standards for exposing provenance data on the web.  
+</p><p>With regards to use of provenance, the scenario requires various sophisticated functions, and it is non-obvious how existing technologies would realise them.  For example, the various parties need to be able to understand the engineering processes at different levels of granularity, to resolve apparent conflicts in what appears to be expressed in the provenance data, to acquire indications and evidence of which parts of the record can be relied on, determine whether the provenance shows that the engineering process conformed to a contract, check whether two supposedly independent assessments rely on the same, possibly faulty, source, and so on.  To encourage mass adoption of provenance technologies, it must be apparent how to achieve these kinds of function, through guidelines and standardised approaches.
+</p>
+<a name="Summary_of_Major_Technology_Gaps_in_the_State_of_the_Art" id="Summary_of_Major_Technology_Gaps_in_the_State_of_the_Art"></a><h3> <span class="mw-headline">5.5 Summary of Major Technology Gaps in the State of the Art </span></h3>
+<p>There are many proposed approaches and technology solutions that are relevant to provenance.  Despite this large body of growing work, there are several major technology gaps to realizing the requirements exemplified by the flagship scenarios.  Organized by the three major provenance dimensions described above, key technology gaps are:
+</p>
+<ul><li> With respect to provenance content:
+<ul><li> No mechanism to refer to the identity/derivation of an information object.  
+</li><li> No guidance on what level of granularity should be used in describing provenance of complex objects.  
+
+</li><li> No common standard for exposing and expressing provenance information that captures processes as well as the other content dimensions
+</li><li> No guidance on publishing provenance updates
+</li><li> No standard techniques for versioning and expressing provenance relationships linking versions of data 
+</li><li> No standard formats to characterise whether provenance is of adequate quality for proof (e.g. through signatures)
+</li><li> No pre-specified way to ensure provenance content can be compared against norms and expectations (eg contracts, required processes)
+</li></ul>
+</li><li> With respect to provenance management:
+<ul><li> No well-defined standard for linking provenance between sites.
+</li><li> No guidance as to how existing standards can be put together to provide provenance (e.g. linking to identity, licenses).
+
+</li><li> No guidance as to how application developers should go about exposing provenance in their web systems.
+</li><li> No proven approaches to manage the scale of the provenance records to be recorded and processed,  
+</li><li> No standard mechanisms to find and access provenance information for each item that needs to be checked, 
+</li><li> No well-defined means of ensuring only essential non-confidential provenance is released when querying.  
+</li></ul>
+</li><li> With respect to provenance use:
+<ul><li> No clear understanding as to how to relate provenance at different levels of abstraction, or automatically extract high-level summaries of provenance from detailed records.
+</li><li> No general solutions to understand provenance published on the Web by another party
+</li><li> No standard representations to support integration of provenance across different sources
+
+</li><li> No standard representations to support comparison of provenance.  
+</li><li> No broadly applicable approaches for dealing with imperfections in provenance,
+</li><li> No broadly applicable methodology for making trust judgments based on provenance when there is varying information quality.
+</li><li> No standard methods for validating whether provenance is of adequate quality for proof
+</li><li> No mechanism to query whether provenance data shows that laws, regulations or contracts have been complied with
+</li><li> No standard mechanism to assess whether two supposedly independent assessments rely on the same, possibly faulty, source
+</li><li> No means to resolve conflicts in (possibly inferred) provenance data
+</li></ul>
+</li></ul>
+<a name="Provenance_in_Web_Architecture" id="Provenance_in_Web_Architecture"></a><h1> <span class="mw-headline">6. Provenance in Web Architecture </span></h1>
+
+<p>There are no standard mechanisms to publish and access provenance on the Web.  It is not sufficient to have an agreement on a language to represent provenance, there must also be an agreement on how the provenance can be found for any given resource.  
+</p><p>This section discusses possibilities to integrate provenance into the Web architecture. It focuses on how provenance information about Web resources could be exposed as part of the HTTP based message exchange with which these resources can be accessed.  More detailed discussion can be found at the <a href="/2005/Incubator/prov/wiki/Provenance_and_Web_Architecture" title="Provenance and Web Architecture">Provenance and Web Architecture</a> report.
+</p>
+<a name="Overview" id="Overview"></a><h3> <span class="mw-headline">6.1 Overview </span></h3>
+<p>According to the Web architecture, an HTTP server serves representations of Web resources. These resources might be static documents (i.e. files on the server), but, they can also be dynamically generated documents. Each resources has a URL. When an HTTP client does an HTTP GET request on that URL, the server responds with a representation of the resource referred to by the URL. This representation can be understood as a specific (negotiable) serialization that represents a specific state of the resource. Negotiation can be done on three dimensions: media type, encoding (i.e. charset), and language.
+</p><p>We aim to extend this access pattern in a way that enables clients to access provenance information about the retrieved representation and the represented Web resource.
+</p>
+<a name="Subject_of_Provenance_Information" id="Subject_of_Provenance_Information"></a><h3> <span class="mw-headline">6.2 Subject of Provenance Information </span></h3>
+
+<p>The provenance information could be about the Web resource. This option might be problematic because Web resources may change over time. Nonetheless, some provenance statements always hold, irrespective of the state of a Web resource. Note, OPM in its current form cannot be used to represent this kind of provenance because OPM focuses on "immutable pieces of state."
+</p><p>The provenance information could be about the representation of the Web resource. Each representation served by an HTTP server may have a unique provenance; this holds in particular for representations that are created on the fly. However, representations of the same state of a Web resource have at least some provenance information in common.
+</p><p>The provenance information could be about the state of the Web resource. While this option ignores the creation of the representation that the HTTP server actually serves, it might be more feasible for passing provenance by reference (see below) because it may avoid establishing a provenance record for each representation served.
+</p>
+<a name="Provenance_Passing" id="Provenance_Passing"></a><h3> <span class="mw-headline">6.3 Provenance Passing</span></h3>
+<p>We distinguish three patterns to pass provenance via the HTTP based message exchange: by value, by reference, mixed.
+</p>
+<a name="Passing_by_Value" id="Passing_by_Value"></a><h4> <span class="mw-headline">6.3.1 Passing by Value</span></h4>
+<p>The idea of this provenance passing pattern is to add all (known) provenance information about the served representation directly to the HTTP response. This information could be embedded in the HTTP response header or in the representation itself as discussed later.
+</p><p>Pros:
+</p>
+<ul><li> The provenance information is always in sync with the retrieved representation.
+
+</li><li> Once the provenance information has been added to the response it can be forgotten by the server (i.e. no need to store it).
+</li></ul>
+<p>Cons:
+</p>
+<ul><li> Provenance may be much bigger than the representation itself, causing a lot of overhead.
+</li></ul>
+<p>The integration of a mechanism for provenance negotiation (see below) may address the disadvantages of this pattern.
+</p>
+<a name="Passing_by_Reference" id="Passing_by_Reference"></a><h4> <span class="mw-headline">6.3.2 Passing by Reference</span></h4>
+<p>The idea of this provenance passing pattern is to understand the provenance record as another Web resource and to add the URI of the corresponding record to the HTTP response. This reference could also be embedded in the HTTP response header or in the representation itself.
+</p><p>Supporting this provenance passing pattern requires a server to mint a new URI for each provenance record. Furthermore, the look-up of these provenance records has to be enabled. In response to such a look-up the server could either reconstruct the provenance information on the fly or it could access a provenance store to which it added provenance records, generated at the time when the original response has been sent. Reconstructing the provenance records might be problematic because the reconstructed record may provide a different account than what actually happened, and may vary depending on the reconstruction methods used.
+</p><p>Pros:
+</p>
+
+<ul><li> Very small overhead in the original response.
+</li></ul>
+<p>Cons:
+</p>
+<ul><li> Puts a burden on the server to maintain and keep provenance for all delivered representations (or for all states of the Web resources). This might be a big issue for resources that change frequently.
+</li></ul>
+<a name="Passing_Partially_by_Value_and_by_Reference" id="Passing_Partially_by_Value_and_by_Reference"></a><h4> <span class="mw-headline">6.3.3 Passing Partially by Value and by Reference </span></h4>
+<p>The idea of this provenance passing pattern is to pass some provenance information by value while providing additional references. The references could be separate from the embedded provenance information and refer i) to the complete or ii) to a more detailed provenance record. Alternatively, it could be included in the embedded provenance information via URIs that identify common pieces of provenance (e.g. an agent, a common source artifact, etc), assuming that a look-up of these URIs yields additional information.
+</p>
+<a name="Embedding_Provenance" id="Embedding_Provenance"></a><h3> <span class="mw-headline">6.4 Embedding Provenance </span></h3>
+
+<p>As mentioned before, the provenance information or references could be embedded at the HTTP level or in the representation itself. Both of these provenance embedding patterns can be used for each of the provenance passing patterns discussed above.
+</p>
+<a name="Embedded_at_the_HTTP_Level" id="Embedded_at_the_HTTP_Level"></a><h4> <span class="mw-headline">6.4.1 Embedded at the HTTP Level </span></h4>
+<p>It might be possible to pass provenance (by value or by reference) in the header of an HTTP response. This would require the use of an appropriate header field. For large provenance records passed by value, this option might not be feasible due to the limit on header size. Furthermore, it is not clear how provenance, passed by value, can be provided via a header field.
+</p><p>Alternatively, provenance could be embedded at the HTTP level via a multipart MIME message.
+</p>
+<a name="Embedded_in_the_Representations" id="Embedded_in_the_Representations"></a><h4> <span class="mw-headline">6.4.2 Embedded in the Representations </span></h4>
+<p>Instead of embedding provenance at the HTTP level, it can be embedded (by value or by reference) in the representations itself. This provenance embedding pattern is only possible for representations serialized using a media type with metadata capabilities. The actual approach as to how provenance is embedded in the representation would depend on the media type.
+</p><p>For representations of RDF graphs, serialized in RDF/XML, Turtle, N3, etc., it is not clear yet how the embedded provenance description can be associated with the embedding representation (i.e. what should be the subject of provenance statements). Once this problem is solved, provenance passed by value can be represented by additional RDF triples using a suitable provenance vocabulary. To pass provenance by reference an appropriate RDF property has to be established (dct:provenance might be an option).
+</p><p>For representations of web pages, serialized in (X)HTML, provenance passed by reference could be embedded using the <tt>link</tt> element. This option requires the registration of a suitable link type (e.g. "provenance") that has to be used for the <tt>rel</tt> attribute. Passing provenance by value could be done using RDFa; however, as with the RDF graphs, it is also not clear yet how the embedded provenance description can be associated with the embedding representation (i.e. with the actual HTML serialization that embeds the provenance description).
+
+</p>
+<a name="Provenance_Negotiation" id="Provenance_Negotiation"></a><h3> <span class="mw-headline">6.5 Provenance Negotiation </span></h3>
+<p>Different clients / users may have different needs (e.g. provenance described at different levels of detail or no provenance at all). Hence, the aforementioned options do not have to be considered as exclusive, "one size has to fit all" approaches. Instead, it should be possible for clients to negotiate the kind of response they want to receive. This would require the introduction of another dimension of content negotiation. Such an extension of HTTP might be particulary relevant for provenance passed by value.
+</p>
+<a name="A_Roadmap_for_Provenance_on_the_Web" id="A_Roadmap_for_Provenance_on_the_Web"></a><h1> <span class="mw-headline">7. A Roadmap for Provenance on the Web </span></h1>
+<p>The group analyzed the major gaps in light of the immediate needs for provenance in the use cases that it considered.  This section outlines a roadmap towards addressing those gaps, more details can be found in the report on <a href="/2005/Incubator/prov/wiki/Recommendations_for_scenarios" title="Recommendations for scenarios"> broad recommendations and priorities</a>.  
+
+</p>
+<a name="Broad_Recommendations" id="Broad_Recommendations"></a><h3> <span class="mw-headline">7.1 Broad Recommendations </span></h3>
+<p>The group synthesized eight general recommendations:
+</p>
+<ul><li> <b>Recommendation # 1</b>: There should be a standard way to represent at a minimum three basic provenance entities:
+</li></ul>
+<ol><li> a <i>handle</i> (URI) to refer to an object (resource)
+</li><li> a <i>person/entity</i> that the object is attributed to
+
+</li><li> a <i>processing step</i> done by a person/entity to an object to create a new object
+</li></ol>
+<ul><li> <b>Recommendation # 2</b>: A provenance framework should include a mechanism to access provenance-related information addressed by other standards, such as:
+<ul><li> licensing information of the object
+</li><li> digital signature for the object
+</li><li> digital signature for provenance records
+</li></ul>
+</li></ul>
+
+<ul><li> <b>Recommendation # 3</b>: A provenance framework should include a standard way for sites to make provenance information about their content available to other parties in a <i>selective</i> manner, and for others to access that provenance information
+</li></ul>
+<ul><li> <b>Recommendation # 4</b>: A provenance framework should include a standard way to express the provenance of provenance assertions, as there can be several accounts of provenance and with different granularity and that may possibly conflict
+</li></ul>
+<ul><li> <b>Recommendation #5</b>: A provenance framework should include a representation of provenance that is detailed enough to enable reapplying the process to reproduce it
+</li></ul>
+<ul><li> <b>Recommendation #6</b>: A provenance framework should allow referring to versions of objects as they evolve over time, or to temporal information statements of when the object was created, modified, or accessed.  In particular it should provide for a representation of how one version (or parts thereof) was derived from another version (or parts thereof).
+
+</li></ul>
+<ul><li> <b>Recommendation #7</b>: A provenance framework should include a standard way to represent a procedure which has been enacted <i>(in the scenario, this is to compare that procedure with what was required to be done)</i>
+</li></ul>
+<ul><li> <b>Recommendation #8</b>: A provenance framework should include a way to determine commonality of derivation in two resources <i>(in the scenario, this is needed to judge the independence or otherwise of two reports)</i>
+</li></ul>
+<p>Recommendations #1, #2, and #3 are present in all three flagship scenarios.  Recommendations #4, #5, and #6 are more central to the second scenario, while #7 and #8 are more central to the third scenario.
+</p>
+<a name="Short-Term_and_Long-Term_Priorities" id="Short-Term_and_Long-Term_Priorities"></a><h3> <span class="mw-headline">7.2 Short-Term and Long-Term Priorities </span></h3>
+
+<p>The group agreed that recommendations #1, #2, and #3 from the group&acute;s effort were the highest priorities and that they should be addressed within a provenance standardization effort.  While acknowledging that the priorities of the recommendations depend on the context, those three recommendations are considered to be the most common and to represent the core set of issues to be addressed.  Moreover, there already exist a number of systems that provide some form of provenance capability in these areas demonstrating convergent practices.  At the same time, there are a number of developments, such as the growth in popularity of open data initiatives and Linked Data, that create a pressing need for standard representation of provenance and interoperability across systems.  Failure to address effective standardization in the recommended areas now could impede effective reuse of open data, and potentially dissipate the existing community momentum and enthusiasm.  
+</p><p>Thus, there is both a clear need and a clear starting point for a standardization effort to address these recommendations within the next two years.
+</p><p>The remaining recommendations #4, #5, #6, #7, and #8 represent issues for which there is less understanding or community agreement of the best approaches.  While a number of research projects have considered these problems, proposed mechanisms, and deployed solutions in specific projects, there is not yet consensus on how, for example, to represent fine-grained provenance for RDF, XML, or relational data, how to integrate provenance with versioning information, or even how to version and archive past versions of data on the web (an important problem in its own right). Some aspects of these problems involve issues related to description and categorization of processes and how to describe mutable resources that have been debated for thousands of years.  However, it is likely that as basic technology and standards are developed, the need for practical techniques to address these (and other) provenance issues  will lead to progress.  However, there is a case to be made to provide an upgrade path to cater for these elements. Thus, standardization should consider these elements when catering for extensibility.
+</p><p>Therefore, while there may not yet be a clear case for standardization in some areas, it is important that: a core standard be developed with future extension in mind; these problems continue to receive attention in the research community and more broadly; and the question of standardization in these areas be revisited in 3-5 years once the problems and possible solutions are better understood.
+</p>
+<a name="Bootstrapping_Provenance_Standards" id="Bootstrapping_Provenance_Standards"></a><h3> <span class="mw-headline">7.3 Bootstrapping Provenance Standards </span></h3>
+<p>The first recommendation implies that the community would be able to reach agreement on a representation of basic provenance entities.  This task would have required major effort, but the group found solid grounds for immediate progress in work that has already been done. 
+</p><p>The group found that there is a core set of provenance terms that are common across the different provenance terminologies. Despite the diverse motivations and perspectives that led to these terminologies, the group was able to establish mappings among them and successfully demonstrate that there are many common concepts in provenance.  
+</p><p>In addition, the group also identified that the core OPM terms along with a set of provenance terms from the nine other provenance terminology can be a bootstrapping basis for a future common provenance model.
+</p>
+<a name="Potential_for_Immediate_Impact" id="Potential_for_Immediate_Impact"></a><h3> <span class="mw-headline">7.4 Potential for Immediate Impact </span></h3>
+
+<p>If the consensus on provenance technologies and progress on technical challenges described above is fruitful, then we can anticipate the provenance of resources to be readily available to users in all domains involving production or exchange of data.  This could in turn change common practice in many domains, as knowing the origins of data may allow users to more accurately interpret it and feel more able to rely on it.
+</p><p>The group found evidence of the widespread demand for knowing the provenance of data in a broad range of use cases.  These domains spanned scientific research (in biology, physics, geology etc.), medicine, emergency services, museum collections, legal disputes, government policy, industrial engineering, environmental data collection, as well as in everyday usage of public web resources and personal data.  Each domain will have specific issues regarding provenance, but we found questions and technical requirements to be fairly generalisable, e.g. who said this and when, why did I end up with results which look like this, can I rely on this data, etc.
+</p><p>If both common standards for provenance are adopted and data regarding provenance is routinely automatically recorded, then a side-effect of provenance could be to connect data across application domains.  For example, consider the following scenario.  Environmental sensor data is gathered and made public, a social science study is conducted investigating social effects of environmental changes, and conclusions from this finally make their way into an online newspaper article.  While each process is conducted independently with domain-specific tools, due to the automatic recording of provenance data, a connection is apparent between the newspaper article and the environmental sensors on which its analysis ultimately depends.
+</p>
+<a name="Recommendations" id="Recommendations"></a><h1> <span class="mw-headline">8. Recommendations </span></h1>
+<p>The group articulated the requirements for provenance in a variety of contexts on the Web. It has identified technology gaps in terms of standard mechanisms to represent and access provenance to address those needs.  The group formulated a roadmap for provenance on the Web that includes short term and long term priorities.  The group also agreed to concrete starting points to ensure rapid progress towards a standardization effort, as the potential impact of provenance standards on the Web is very broad and immediate.
+</p><p>The group recommends the formation of a Working Group to address core concepts of provenance with the charter below. 
+</p><p>While the proposed charter leaves out aspects of provenance where there is not yet a clear case for standardization, it is important that the core standard be developed with future extension in mind as those aspects continue to receive attention in the research community and can be revisited in 3-5 years when the issues and possible solutions are better understood. 
+</p>
+<a name="Proposed_Charter_for_a_Provenance_Interchange_Working_Group" id="Proposed_Charter_for_a_Provenance_Interchange_Working_Group"></a><h3> <span class="mw-headline">8.1 Proposed Charter for a Provenance Interchange Working Group </span></h3>
+
+<p><b>Introduction/Mission</b>
+</p><p>The mission of the proposed Provenance Interchange Working Group is to support the widespread publication and use of the provenance of Web documents, data, and resources. It will define a language for exchanging provenance, and publish concrete specifications of the language using existing W3C standards. 
+</p><p><b>1. Background</b>
+</p>
+<p>The W3C Incubator Group on Provenance identified rapidly growing needs for provenance in social, scientific, industry, and government contexts, involving data and information integration across the Web. Provenance is unique in that it inherently draws on distributed information. Therefore, collecting provenance and making sense of it requires consulting different heterogeneous systems. </p>
+<p>
+Over time, multiple techniques to capture and represent various forms provenance have been devised, and are sometimes known under the names of lineage, pedigree, proof, or traceability. As noted in the group&acute;s state-of-the-art report, the lack of a standard model is a significant impediment to realizing such applications. This matters as provenance is key to establishing trust in documents, data, and resources. However, the group&acute;s work also indicates that many provenance models exist with significantly different expressivity, fundamentally different assumptions about the system they are embedded in,  and radically different performance impact.   The idea that a single way of representing and collecting provenance could be adopted internally by all systems does not seem to be realistic today.
+</p>
+<p> A pragmatic approach is to consider a core provenance language and extension mechanisms that allow any provenance model to be <em>translated</em> into such a lingua franca and <em>exchanged</em> between systems. Heterogeneous systems can then export their provenance into such a core language, and applications that need to make sense of provenance in  heterogeneous systems can then import it and reason over it.</p>  
+
+<p><br />
+<b>2. Scope</b>
+</p><p>The Provenance Interchange Working Group has the following objectives:
+</p>
+<ul>
+<li> define a provenance interchange language and methods to publish and access provenance;</li>
+<li> the scope of this language will be applicable to any resource, not just for Semantic Web objects;</li>
+<li> the provenance interchange language should have a low entry point to facilitate widespread adoption, and makes it easy to do simple things;</li>
+<li> it should have a small core model and allow for extensions (ie, profiles, integration of other more expressive/complementary vocabularies/frameworks);</li>
+
+<li> the Working Group should release some deliverables early and end in 18 months. </li>
+</ul>
+<p><b>3. Deliverables and Schedule</b>
+</p><p><br />
+<b>3.1 Deliverables</b>
+</p><p>By "language", we refer to the provenance interchange language to be defined, and the inferences allowed over it. The Working Group will select an appropriate name for the language.
+</p><p><br />
+</p>
+<ul>
+<li> <b>D1. Conceptual Model</b> <em>(W3C Recommendation)</em>.  This document consists of a natural language description and a graphical illustration of concepts involved in the language. Such a document will help broaden the appeal and uptake of provenance beyond the community of technical experts. </li>
+
+<li> <b>D2. Formal Model</b> <em>(W3C Recommendation)</em>.  The purpose of this document is to provide a normative formalization of the conceptual model, making use of Semantic Web languages beginning with RDFS and OWL.</li>
+<li> <b>D3. Formal Semantics</b> <em>(W3C Note, optional)</em>.  This optional note consists of a mathematical definition of the language. It will focus on facets of formalization that have not been captured in the formal model.</li>
+<li> <b>D4. Accessing and Querying Provenance</b> <em>(W3C Note)</em>.
+ This document specifies how provenance can be accessed or queried in embedded documents and from remote services. Specifically, it defines how to access provenance embedded in an html document using RDFa,  how to access provenance from a service by means of HTTP, and how to query provenance through a SPARQL endpoint. </li>
+
+<li> <b>D5. Guidelines for producing XML of the model</b> <em>(W3C Note)</em>. This document specifies an XML serialization for the language.</li>
+<li> <b>D6. Best Practice Cookbook</b> <em>(W3C Note)</em>. This document includes a limited set of best practice profiles that link with other relevant models, such as  Dublin Core provenance related concepts, licensing in Creative Commons, and  the OpenId identity mechanism for people. </li>
+<li> <b>D7. Primer</b> <em>(W3C Note)</em>.  This educational document provides users with an easy to understand description of the model. </li>
+
+</ul>
+<p><br />
+</p><p>Comments about the deliverables:
+</p>
+<ul>
+<li>
+The conceptual model (D1) and the formal model (D2) will be developed in
+parallel, ensuring that concepts can be formalized adequately, and
+vice-versa, that the formalization is explained intuitively.</li>
+<li>The proposed Working Group is committed to formalizing the provenance interchange language using RDFS and OWL, in a first instance (D2). Depending on the kinds of inferences to be supported, other Semantic Web languages may also be considered, where appropriate. A by-product of this formalization is the mapping of the provenance interchange language to RDF graphs. </li>
+<li>
+The proposed Working Group will consider defining formal semantics for the language(D3). Its intent is to disambiguate concepts to ensure inter-operability; the Working Group will specify  its exact scope.</li>
+<li>
+A serialization to XML (D5) will help disseminate the language to communities beyond the Semantic Web community.</li>
+</ul>
+
+<p><br />
+<b>3.2 Milestones</b>
+</p><p>Reports will undergo the W3C development  process: Working Draft (WD), Working Draft in Last Call (LC), Candidate Recommendation (CR), Proposed Recommendation (PR) and Recommendation (Rec).</p>
+<div>
+<table class="roadmap" width="80%">
+    <tr>
+      <td colspan="6" rowspan="1"> </td>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1">Specification </th>
+      <th rowspan="1" colspan="1">FPWD</th>
+      <th rowspan="1" colspan="1">LC </th>
+
+      <th rowspan="1" colspan="1">CR</th>
+      <th rowspan="1" colspan="1">PR</th>
+<th rowspan="1" colspan="1">Rec</th>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1">D1</th>
+      <td class="WD1" rowspan="1" colspan="1">T+6 </td>
+
+      <td class="LC" rowspan="1" colspan="1">T+9 </td>
+      <td class="CR" rowspan="1" colspan="1">T+12</td>
+      <td class="PR" rowspan="1" colspan="1">T+15</td>
+      <td class="REC" rowspan="1" colspan="1">T+18</td>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1">D2</th>
+
+      <td class="WD1" rowspan="1" colspan="1">T+6 </td>
+      <td class="LC" rowspan="1" colspan="1"> T+9</td>
+      <td class="CR" rowspan="1" colspan="1">T+12</td>
+      <td class="PR" rowspan="1" colspan="1">T+15</td>
+      <td class="REC" rowspan="1" colspan="1">T+18</td>
+    </tr>
+
+    <tr>
+      <th rowspan="1" colspan="1">D3 (Optional)</th>
+      <td class="WD1" rowspan="1" colspan="1">T+12</td>
+      <td class="LC" rowspan="1" colspan="1">T+18</td>
+      <td class="CR" rowspan="1" colspan="1">n/a</td>
+      <td class="PR" rowspan="1" colspan="1">n/a</td>
+
+      <td class="REC" rowspan="1" colspan="1">n/a</td>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1">D4</th>
+      <td class="WD1" rowspan="1" colspan="1">T+9</td>
+      <td class="LC" rowspan="1" colspan="1">T+15</td>
+      <td class="CR" rowspan="1" colspan="1">n/a</td>
+
+      <td class="PR" rowspan="1" colspan="1">n/a</td>
+      <td class="REC" rowspan="1" colspan="1">n/a</td>
+    </tr>
+
+    <tr>
+      <th rowspan="1" colspan="1">D5</th>
+      <td class="WD1" rowspan="1" colspan="1">T+9 </td>
+
+      <td class="LC" rowspan="1" colspan="1">T+12 </td>
+      <td class="CR" rowspan="1" colspan="1">n/a</td>
+      <td class="PR" rowspan="1" colspan="1">n/a</td>
+      <td class="REC" rowspan="1" colspan="1">n/a </td>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1">D6</th>
+
+      <td class="WD1" rowspan="1" colspan="1">T+15</td>
+      <td class="LC" rowspan="1" colspan="1">T+18</td>
+      <td class="CR" rowspan="1" colspan="1">n/a</td>
+      <td class="PR" rowspan="1" colspan="1">n/a</td>
+      <td class="REC" rowspan="1" colspan="1">n/a</td>
+    </tr>
+
+    <tr>
+      <th rowspan="1" colspan="1">D7</th>
+      <td class="WD1" rowspan="1" colspan="1">T+12</td>
+      <td class="LC" rowspan="1" colspan="1">T+18</td>
+      <td class="CR" rowspan="1" colspan="1">n/a</td>
+      <td class="PR" rowspan="1" colspan="1">n/a</td>
+
+      <td class="REC" rowspan="1" colspan="1">n/a</td>
+    </tr>
+</table>
+</div>
+<p><b>4. Provenance Concepts</b>
+</p>
+<p>
+The proposed Working Group will leverage the activities of the W3C Provenance Incubator Group, its understanding of the state-of-the-art, extensive requirements capture, use cases and flagship scenarios, and mapping of provenance vocabularies.
+</p>
+<p>
+
+Drawing on existing vocabularies/ontologies (namely:
+Changeset Vocabulary,
+Dublin Core,
+Open Provenance Model (OPM),
+PREMIS,
+Proof Markup Language (PML),
+Provenance Vocabulary,
+Provenir ontology,
+SWAN Provenance Ontology,
+Semantic Web Publishing Vocabulary,
+WOT Schema), a set of concepts have been identified to constitute the core of a standard provenance interchange language.  The number of concepts is intentionally limited, so as to ensure a cohesive and tractable core. Other concepts can be relevant to provenance, but it is anticipated that they would be defined by means of the envisaged extension mechanism of the provenance interchange language.
+</p>
+<p>
+In the following list, the names appearing as titles are used for intuition. Concepts with similar intuition in existing vocabularies are provided.  Examples from one of the three flagship scenarios from the W3C Provenance Incubator Group are also shown.
+</p>
+<ol><li><b>Resource</b>: Note that it includes static or dynamic (mutable or immutable), the proposed Working Group can decide whether to subclass this and make a distinction. 
+<ul><li>opm:Artifact, pmlp:IdentifiedThing, provenir:data, "continuant" (obo:BFO_0000002), pmlp:Document, pmlp:DocumentFragment
+<ul><li> Example: BlogAgg would like to know the state of an image before and after modification to see if it was modified appropriately
+</li></ul>
+</li><li> may include a user query (eg pmlp:Query)
+</li></ul>
+</li><li><b>Process execution</b>: refers to execution of a computation, workflow, program, service, etc.  Does not refer to a query.
+<ul><li> opm:Process, provenir:process, "process" (obo:BFO_0000007)
+
+<ul><li> Example:  Alice collects data from public sources and "natural experiment" data. Alice then processes and interprets the results and writes a report summarizing the conclusions. All these steps should be captured.  
+</li></ul>
+</li></ul>
+</li><li><b>Recipe link</b>: we will not define what the recipe is, what we mean here is just a standard way to refer to a recipe (a pointer).  The development of standard ways to describe these recipes is out of scope.
+<ul><li> pmlp:InferenceRule, pmlp:DeclarativeRule, pmlp:MethodRule, "function" (obo:BFO_0000034)
+
+<ul><li>Example: Alice is processing data and executes a linear regression implementation as one of the steps, the recipe could refer to a linear regression algorithm 
+</li></ul>
+</li></ul>
+</li><li><b>Agent</b>: entity (human or otherwise) involved in the process execution.  An agent can be the creator or contributor
+<ul><li> opm:Agent, provenir:agent, prv:Actor, pmlp:Agent
+<ul><li> Example: Alice starts and facilities the tool SPSS when doing data analysis.
+
+</li></ul>
+</li></ul>
+</li><li><b>Role</b>
+<ul><li> opm:Role, "role" (obo:BFO_0000023)
+<ul><li> Example: Whether a data file was used as a training or test data set when running machine learning algorithms.
+</li></ul>
+</li></ul>
+</li><li><b>Location</b>: a link to a description of location.  Defining how the spatial information will be represented is out of scope, will point to an existing ontology.
+<ul><li> provenir:spatial_parameter, provenir:located_in, provenir:adjacent_to
+<ul><li> Example: The location where the disease was declared.
+</li></ul>
+
+</li></ul>
+</li><li><b>Derivation</b>
+<ul><li> opm:WasDerivedFrom, opm:WasDerivedFromStar, provenir:derives_from 
+<ul><li> Example: The thumbnail image was derived from the panda image.
+</li></ul>
+</li></ul>
+</li><li><b>Generation</b>
+<ul><li> opm:WasGeneratedBy, opm:WasGeneratedByStar, 
+
+<ul><li> Example: A thumbnail image was generated by Blog Agg using the panda image.
+</li></ul>
+</li></ul>
+
+</li><li><b>Use</b>
+<ul><li> opm:Used, opm:UsedStar, prv:usedBy
+<ul><li> Example: The panda image was used by BlogAgg to generate a thumbnail image. 
+</li><li> Example:  John Markoff used SPSS
+</li></ul>
+</li></ul>
+</li><li><b>Ordering of Processes</b>
+<ul><li> opm:WasTriggeredBy, provenir:preceded_by, provenir: preceded_by*
+<ul><li> Example: Report writing was triggered by the interpretation of results. 
+
+</li><li> Example: Bob is a researcher of the flu epidemic starts a process to send email about the status of an (long-running) experiment process. The notification process is preceded by the experiment process.
+
+</li></ul>
+</li></ul>
+</li><li><b>Version</b>
+<ul><li> dc:replaces, provenir:transformation_of, pmlp:SourceUsage
+<ul><li> Example: When Alice releases a new report this would express that this version should be used rather than the previous one.
+</li><li>Example: Alice consults a website URI whose content changes over time, a document that has  versions going through edits, etc. 
+</li></ul>
+</li></ul>
+</li><li><b>Participation</b>
+<ul><li> provenir:has_participant, "participates in" (obo:BFO_0000056), "has participant" (obo:BFO_0000057),  prv:involvedActor
+<ul><li> Example: Alice participates in reviewing a paper and approving it for publication, she is not an author but participates in the process.
+
+</li></ul>
+</li></ul>
+</li><li><b>Control</b>, is a subclass of participation.  Related to this is a notion of "responsibility", i.e. an entity that stands behind the artifact that was produced (Alice controls the process but the organization that she worked for is responsible, so that even after she leaves the organization is still responsible). It may be a useful shortcut to add.
+<ul><li> opm:WasControlledBy, prv:operatedBy
+<ul><li> Example: SPSS was operated by Alice.
+</li></ul>
+</li></ul>
+</li><li><b>Provenance Container</b> 
+<ul><li> opm:OPMGraph, dc:provenance, pmlp:NodeSet
+<ul><li> Example: Bob&acute;s Website Factory  provides proof in the form of a set of provenance statements that the contract was executed as agreed.
+</li></ul>
+
+</li></ul>
+</li><li><b>Views or Accounts</b>
+<ul><li> opm:Account
+<ul><li> Example: Bob&acute;s Website Factory and Customers Inc both provide two different and conflicting sets of information (i.e. accounts) describing the provenance of the production of the same website. 
+</li></ul>
+</li></ul>
+</li><li><b>Time</b>
+<ul><li> opm:Time, opm:Used, opm:WasGeneratedBy, opm:WasDerivedFrom, opm:wasControlledBy, prv:wasPerformedAt, dc:modified, provenir:has_temporal_value, provenir:temporal_parameter, "begins to exist during" (obo:BFO_0000068), "ceases to exist during" (obo:BFO_0000069), "temporal region" (obo:BFO_0000008)
+<ul><li> Example: BlogAgg wants to find the correct originator of the microblog who first put the word out.
+</li><li> Example: Alice performs quality checks on the data before analyzing it.
+
+</li><li> Example: The timestamp associated with a published dataset.
+</li><li> Example: The time when Alice modifies a previous report.
+</li></ul>
+</li></ul>
+</li><li><b>Collections</b>: Should be a lightweight notion, mainly focused on "part of".  Might be treated as a resource ultimately.  
+<ul><li>prv:containedBy, provenir:contained_in, provenir:contained_in, dc:hasPart
+<ul><li>Example: A layer is part of an image
+</li><li>Example: An image is contained in a news item
+</li><li>Example: A report contains a data plot
+</li></ul>
+</li></ul>
+</li></ol>
+
+<dl>
+<dt>Acknowledgements:</dt>
+<dd>Chris Bizer, James Cheney, Sam Coppens, Kai Eckert, Andre Freitas, Irini Fundulaki, Daniel Garijo, Yolanda Gil, Jose Manuel Gomez, Paul Groth, Olaf Hartig, Deborah McGuinness, Simon Miles, Paolo Missier, Luc Moreau, James Myers, Michael Panzer, Paulo Pinheiro da Silva, Christine Runnegar, Satya Sahoo, Yogesh Simmhan, Rapha&euml;l Troncy and Jun Zhao. </dd>
+<dt>We thank all the outside participants who consulted with the group over its lifetime</dt>
+</dl>
+
+</body>
+</html>

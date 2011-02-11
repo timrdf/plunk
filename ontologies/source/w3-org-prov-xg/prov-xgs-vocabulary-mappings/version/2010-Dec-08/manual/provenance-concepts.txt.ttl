@@ -1,0 +1,171 @@
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix opm:    <http://openprovenance.org/model/> .
+@prefix pmlp:   <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj:   <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix pmlt:   <http://inference-web.org/2.0/pml-trust.owl#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix prv:      <http://purl.org/net/provenance/ns#> .
+@prefix obo:      <http://purl.org/obo/owl/OBO_REL#> .
+@prefix cs:       <http://purl.org/vocab/changeset/schema#> .
+@prefix ov:       <http://open.vocab.org/terms/> .
+@prefix foo:      <http://prov-xg.org/foo#> .
+
+<> a owl:Ontology;
+rdfs:comment """The proposed Working Group will leverage the activities of the W3C Provenance Incubator Group, its understanding of the state-of-the-art, extensive requirements capture, use cases and flagship scenarios, and mapping of provenance vocabularies.
+Drawing on existing vocabularies/ontologies (namely: Changeset Vocabulary, Dublin Core, Open Provenance Model (OPM), PREMIS, Proof Markup Language (PML), Provenance Vocabulary, Provenir ontology, SWAN Provenance Ontology, Semantic Web Publishing Vocabulary, WOT Schema), a set of concepts have been identified to constitute the core of a standard provenance interchange language. The number of concepts is intentionally limited, so as to ensure a cohesive and tractable core. Other concepts can be relevant to provenance, but it is anticipated that they would be defined by means of the envisaged extension mechanism of the provenance interchange language.
+In the following list, the names appearing as titles are used for intuition. Concepts with similar intuition in existing vocabularies are provided. Examples from one of the three flagship scenarios from the W3C Provenance Incubator Group are also shown.""";
+.
+
+
+foo:Resource
+   a owl:Class; ov:csvRow 1; rdfs:label "Resource";
+   rdfs:comment """Note that it includes static or dynamic (mutable or immutable), the proposed Working Group can decide whether to subclass this and make a distinction.""";
+   skos:relatedMatch opm:Artifact, pmlp:IdentifiedThing, provenir:data, obo:BFO_0000002, pmlp:Document, pmlp:DocumentFragment;
+   skos:example """Example: BlogAgg would like to know the state of an image before and after modification to see if it was modified appropriately
+may include a user query (eg pmlp:Query)""";
+.
+
+obo:BFO_0000002 rdfs:label "continuant" .
+
+
+
+
+foo:Process a owl:Class; ov:csvRow 2; rdfs:label "Process execution"; rdfs:comment "refers to execution of a computation, workflow, program, service, etc. Does not refer to a query.";
+   skos:relatedMatch opm:Process, provenir:process, obo:BFO_0000007;
+   skos:example """Example: Alice collects data from public sources and "natural experiment" data. Alice then processes and interprets the results and writes a report summarizing the conclusions. All these steps should be captured.""";
+.
+
+obo:BFO_0000007 rdfs:label "process" .
+
+
+
+foo:Recipe a owl:Class; ov:csvRow 3; rdfs:label "Recipe link";
+   rdfs:comment "we will not define what the recipe is, what we mean here is just a standard way to refer to a recipe (a pointer). The development of standard ways to describe these recipes is out of scope.";
+   skos:relatedMatch pmlp:InferenceRule, pmlp:DeclarativeRule, pmlp:MethodRule, obo:BFO_0000034;
+   skos:example "Example: Alice is processing data and executes a linear regression implementation as one of the steps, the recipe could refer to a linear regression algorithm";
+.
+
+obo:BFO_0000034 rdfs:label "function" .
+
+
+
+
+
+foo:Agent a owl:Class; ov:csvRow 4; rdfs:label "Agent";
+   rdfs:comment "entity (human or otherwise) involved in the process execution. An agent can be the creator or contributor";
+   skos:relatedMatch opm:Agent, provenir:agent, prv:Actor, pmlp:Agent;
+   skos:example "Example: Alice starts and facilities the tool SPSS when doing 38 of 40 1/12/11 6:52 PM data analysis.";
+.
+
+
+
+foo:Role a owl:Class; ov:csvRow 5; rdfs:label "Role";
+   skos:relatedMatch opm:Role, obo:BFO_0000023;
+   skos:example "Example: Whether a data file was used as a training or test data set when running machine learning algorithms.";
+.
+
+obo:BFO_0000023 rdfs:label "role" .
+
+
+foo:Location a owl:Class; ov:csvRow 6; rdfs:label "Location"; rdfs:comment "a link to a description of location. Defining how the spatial information will be represented is out of scope, will point to an existing ontology.";
+   skos:relatedMatch provenir:spatial_parameter, provenir:located_in, provenir:adjacent_to;
+   skos:example "Example: The location where the disease was declared.";
+.
+
+
+
+foo:Derivation a owl:Class; ov:csvRow 7; rdfs:label "Derivation";
+   skos:relatedMatch opm:WasDerivedFrom, opm:WasDerivedFromStar, provenir:derives_from;
+   skos:example "Example: The thumbnail image was derived from the panda image.";
+.
+
+
+
+
+foo:Generation a owl:Class; ov:csvRow 8; rdfs:label "Generation";
+.
+
+
+
+foo:Use a owl:Class; ov:csvRow 9; rdfs:label "Use";
+   skos:relatedMatch opm:WasGeneratedBy, opm:WasGeneratedByStar;
+   skos:example "Example: A thumbnail image was generated by Blog Agg using the panda image.";
+   skos:relatedMatch opm:Used, opm:UsedStar, prv:usedBy;
+   skos:example "Example: The panda image was used by BlogAgg to generate a thumbnail image. Example: John Markoff used SPSS";
+.
+
+
+
+foo:Ordering_of_Process a owl:Class; ov:csvRow 10; rdfs:label "Ordering of Processes";
+   skos:relatedMatch opm:WasTriggeredBy, provenir:preceded_by, provenir:preceded_by;
+   skos:example "Example: Report writing was triggered by the interpretation of results. Example: Bob is a researcher of the flu epidemic starts a process to send email about the status of an (long-running) experiment process. The notification process is preceded by the experiment process.";
+.
+
+
+
+
+foo:Version a owl:Class; ov:csvRow 11; rdfs:label "Version";
+   skos:relatedMatch  dc:replaces, provenir:transformation_of, pmlp:SourceUsage;
+   skos:example "Example: When Alice releases a new report this would express that this version should be used rather than the previous one. Example: Alice consults a website URI whose content changes over time, a document that has versions going through edits, etc.";
+.
+
+
+
+foo:Participation a owl:Class; ov:csvRow 12; rdfs:label "Participation";
+   skos:relatedMatch provenir:has_participant, obo:BFO_0000056,obo:BFO_0000057, prv:involvedActor;
+   skos:example "Example: Alice participates in reviewing a paper and approving it for publication, she is not an author but participates in the process.";
+.
+obo:BFO_0000056 rdfs:label "participates in" .
+obo:BFO_0000057 rdfs:label "has participant" .
+
+
+foo:Control a owl:Class; ov:csvRow 13; rdfs:label "Control";
+   rdfs:comment """Control is a subclass of participation. Related to this is a notion of "responsibility", i.e. an entity that stands behind the artifact that was produced (Alice controls the process but the organization that she worked for is responsible, so that even after she leaves the organization is still responsible). It may be a useful shortcut to add.""";
+   skos:relatedMatch opm:WasControlledBy, prv:operatedBy;
+   skos:example "Example: SPSS was operated by Alice.";
+.
+
+
+
+
+foo:Container a owl:Class; ov:csvRow 14; rdfs:label "Provenance Container";
+   skos:relatedMatch opm:OPMGraph, dc:provenance, pmlp:NodeSet;
+   skos:example "Example: Bob ́s Website Factory provides proof in the form of a set of provenance statements that the contract was executed as agreed.";
+.
+
+
+
+
+foo:View a owl:Class; ov:csvRow 15; rdfs:label "Views or Accounts";
+   skos:relatedMatch opm:Account;
+.
+
+
+
+
+foo:Time a owl:Class; ov:csvRow 16; rdfs:comment "Time";
+   skos:example "Example: Bob ́s Website Factory and Customers Inc both provide two different and conflicting sets of information (i.e. accounts) describing the provenance of the production of the same website.";
+   skos:relatedMatch opm:Time, opm:Used, opm:WasGeneratedBy, opm:WasDerivedFrom, opm:wasControlledBy, prv:wasPerformedAt, dc:modified, provenir:has_temporal_value, provenir:temporal_parameter, obo:BFO_0000068, obo:BFO_0000069, obo:BFO_0000008;
+   skos:example "Example: BlogAgg wants to find the correct originator of the microblog who first put the word out. Example: Alice performs quality checks on the data before analyzing it.";
+   skos:example "Example: The timestamp associated with a published dataset.";
+   skos:example "Example: The time when Alice modifies a previous report.";
+.
+obo:BFO_0000069 rdfs:label "ceases to exist during" .
+obo:BFO_0000008 rdfs:label "temporal region" .
+obo:BFO_0000068 rdfs:label "begins to exist during" .
+
+
+foo:Collection a owl:Class; ov:csvRow 17; rdfs:label "Collections";
+   rdfs:comment """Should be a lightweight notion, mainly focused on "part of". Might be treated as a resource ultimately.""";
+   skos:relatedMatch prv:containedBy, provenir:contained_in, provenir:contained_in, dc:hasPart;
+   skos:example "Example: A layer is part of an image Example: An image is contained in a news item Example: A report contains a data plot";
+.  

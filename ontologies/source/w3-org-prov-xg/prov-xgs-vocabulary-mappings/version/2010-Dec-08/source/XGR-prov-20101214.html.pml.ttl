@@ -1,0 +1,133 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix irw:  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/nfo/#> .
+@prefix conv: <http://purl.org/twc/vocab/conversion/> .
+@prefix httphead: <http://inference-web.org/registry/MPR/HTTP_1_1_HEAD.owl#> .
+@prefix httpget:  <http://inference-web.org/registry/MPR/HTTP_1_1_GET.owl#> .
+
+<http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214>
+   a pmlp:Source;
+   irw:redirectsTo <http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/>;
+.
+
+<http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/>
+   a pmlp:Source;
+   pmlp:hasModificationDateTime "2010-12-16T16:15:13"^^xsd:dateTime;
+.
+
+<XGR-prov-20101214.html>
+   a pmlp:Information;
+   pmlp:hasReferenceSourceUsage <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_content>;
+   nfo:hasHash <md5_0d30cf5159ceaac22b8c0380fc7ec9c6>;
+.
+
+<md5_0d30cf5159ceaac22b8c0380fc7ec9c6>
+   a nfo:FileHash; 
+   nfo:hashAlgorithm "md5";
+   nfo:hasHash "0d30cf5159ceaac22b8c0380fc7ec9c6";
+.
+
+<nodeSet_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_content>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <XGR-prov-20101214.html>;
+   pmlj:isConsequentOf [
+      a pmlj:InferenceStep;
+      pmlj:hasIndex 0;
+      pmlj:hasAntecedentList ();
+      pmlj:hasSourceUsage     <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_content>;
+      pmlj:hasInferenceEngine conv:curl_md5_5670dffdc5533a4c57243fc97b19a654;
+      pmlj:hasInferenceRule   httpget:HTTP_1_1_GET;
+   ];
+.
+
+<sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_content>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/>;
+   pmlp:hasUsageDateTime "2011-02-11T13:28:00-05:00"^^xsd:dateTime;
+.
+ 
+<info_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """HTTP/1.1 301 Moved Permanently
+Date: Fri, 11 Feb 2011 18:27:58 GMT
+Server: Apache/2
+Location: http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/
+Cache-Control: max-age=21600
+Expires: Sat, 12 Feb 2011 00:27:58 GMT
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+""";
+   pmlp:hasReferenceSourceUsage <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>;
+.
+ 
+<nodeSet_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <info_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>;
+   pmlj:isConsequentOf [
+      a pmlj:InferenceStep;
+      pmlj:hasIndex 0;
+      pmlj:hasAntecedentList ();
+      pmlj:hasSourceUsage     <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>;
+      pmlj:hasInferenceEngine conv:curl_md5_5670dffdc5533a4c57243fc97b19a654;
+      pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   ];
+.
+
+<sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214>;
+   pmlp:hasUsageDateTime "2011-02-11T13:28:00-05:00"^^xsd:dateTime;
+.
+
+<info_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """HTTP/1.1 200 OK
+Date: Fri, 11 Feb 2011 18:27:59 GMT
+Server: Apache/2
+Last-Modified: Thu, 16 Dec 2010 16:15:13 GMT
+ETag: "22134-497895bc82640"
+Accept-Ranges: bytes
+Content-Length: 139572
+Cache-Control: max-age=21600
+Expires: Sat, 12 Feb 2011 00:27:59 GMT
+Vary: Accept-Encoding
+P3P: policyref="http://www.w3.org/2001/05/P3P/p3p.xml"
+Connection: close
+Content-Type: text/html; charset=utf-8
+""";
+   pmlp:hasReferenceSourceUsage <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>;
+.
+
+<nodeSet_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <info_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>;
+   pmlj:isConsequentOf [
+      a pmlj:InferenceStep;
+      pmlj:hasIndex 0;
+      pmlj:hasAntecedentList ();
+      pmlj:hasSourceUsage     <sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>;
+      pmlj:hasInferenceEngine conv:curl_md5_5670dffdc5533a4c57243fc97b19a654;
+      pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   ];
+.
+
+<sourceUsage_1989e8aa-4f7f-4cda-ab98-7d707cb0bbe6_redirected_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://www.w3.org/2005/Incubator/prov/XGR-prov-20101214/>;
+   pmlp:hasUsageDateTime "2011-02-11T13:28:00-05:00"^^xsd:dateTime;
+.
+
+conv:curl_md5_5670dffdc5533a4c57243fc97b19a654
+   a pmlp:InferenceEngine, conv:Curl;
+   dcterms:identifier "md5_5670dffdc5533a4c57243fc97b19a654";
+   dcterms:description """curl 7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8l zlib/1.2.3
+Protocols: tftp ftp telnet dict ldap http file https ftps 
+Features: GSS-Negotiate IPv6 Largefile NTLM SSL libz """;
+.
+
+conv:Curl rdfs:subClassOf pmlp:InferenceEngine .
