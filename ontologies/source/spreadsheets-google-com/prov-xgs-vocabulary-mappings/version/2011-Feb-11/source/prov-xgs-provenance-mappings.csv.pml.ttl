@@ -19,68 +19,68 @@
 
 <prov-xgs-provenance-mappings.csv>
    a pmlp:Information;
-   pmlp:hasReferenceSourceUsage <sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_content>;
-   nfo:hasHash <md5_680d7bd7c436d4b3a838ead583ff3311>;
+   pmlp:hasReferenceSourceUsage <sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_content>;
+   nfo:hasHash <md5_0b90afe397e3760c251443548a06063a>;
 .
 
-<md5_680d7bd7c436d4b3a838ead583ff3311>
+<md5_0b90afe397e3760c251443548a06063a>
    a nfo:FileHash; 
    nfo:hashAlgorithm "md5";
-   nfo:hasHash "680d7bd7c436d4b3a838ead583ff3311";
+   nfo:hasHash "0b90afe397e3760c251443548a06063a";
 .
 
-<nodeSet_a720bae9-ad11-458b-afe8-8a3110064df9_content>
+<nodeSet_e708b1d2-0868-413b-85ea-cf6f5568d419_content>
    a pmlj:NodeSet;
    pmlj:hasConclusion <prov-xgs-provenance-mappings.csv>;
    pmlj:isConsequentOf [
       a pmlj:InferenceStep;
       pmlj:hasIndex 0;
       pmlj:hasAntecedentList ();
-      pmlj:hasSourceUsage     <sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_content>;
+      pmlj:hasSourceUsage     <sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_content>;
       pmlj:hasInferenceEngine conv:curl_md5_5670dffdc5533a4c57243fc97b19a654;
       pmlj:hasInferenceRule   httpget:HTTP_1_1_GET;
    ];
 .
 
-<sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_content>
+<sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_content>
    a pmlp:SourceUsage;
    pmlp:hasSource        <http://spreadsheets.google.com/tq?tqx=out:csv&tq=select%20*&key=0ArTeDpS4-nUDdFBrQ3ZJMXROUHh4SmxRUVE5V0QwbVE>;
-   pmlp:hasUsageDateTime "2011-02-11T12:29:23-05:00"^^xsd:dateTime;
+   pmlp:hasUsageDateTime "2011-02-11T15:08:24-05:00"^^xsd:dateTime;
 .
  
-<info_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>
+<info_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>
    a pmlp:Information, conv:HTTPHeader;
    pmlp:hasRawString """HTTP/1.1 200 OK
 Content-Type: text/csv; charset=UTF-8
 content-disposition: attachment; filename=data.csv
-Date: Fri, 11 Feb 2011 17:29:21 GMT
-Expires: Fri, 11 Feb 2011 17:29:21 GMT
+Date: Fri, 11 Feb 2011 20:08:22 GMT
+Expires: Fri, 11 Feb 2011 20:08:22 GMT
 Cache-Control: private, max-age=0
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: GSE
 Transfer-Encoding: chunked
 """;
-   pmlp:hasReferenceSourceUsage <sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>;
+   pmlp:hasReferenceSourceUsage <sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>;
 .
  
-<nodeSet_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>
+<nodeSet_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>
    a pmlj:NodeSet;
-   pmlj:hasConclusion <info_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>;
+   pmlj:hasConclusion <info_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>;
    pmlj:isConsequentOf [
       a pmlj:InferenceStep;
       pmlj:hasIndex 0;
       pmlj:hasAntecedentList ();
-      pmlj:hasSourceUsage     <sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>;
+      pmlj:hasSourceUsage     <sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>;
       pmlj:hasInferenceEngine conv:curl_md5_5670dffdc5533a4c57243fc97b19a654;
       pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
    ];
 .
 
-<sourceUsage_a720bae9-ad11-458b-afe8-8a3110064df9_url_header>
+<sourceUsage_e708b1d2-0868-413b-85ea-cf6f5568d419_url_header>
    a pmlp:SourceUsage;
    pmlp:hasSource        <http://spreadsheets.google.com/tq?tqx=out:csv&tq=select%20*&key=0ArTeDpS4-nUDdFBrQ3ZJMXROUHh4SmxRUVE5V0QwbVE>;
-   pmlp:hasUsageDateTime "2011-02-11T12:29:23-05:00"^^xsd:dateTime;
+   pmlp:hasUsageDateTime "2011-02-11T15:08:24-05:00"^^xsd:dateTime;
 .
 
 

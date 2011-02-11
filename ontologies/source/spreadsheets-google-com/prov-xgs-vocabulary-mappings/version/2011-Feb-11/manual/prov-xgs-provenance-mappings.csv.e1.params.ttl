@@ -66,10 +66,9 @@
       conversion:enhance [
          ov:csvCol         2;
          ov:csvHeader     "Reference Term Curie";
-         conversion:bundled_by [ ov:csvCol 18 ];
+         conversion:bundled_by [ ov:csvCol 19 ];
          conversion:label "Reference Term Curie";
          conversion:comment "";
-         conversion:subproperty_of owl:annotatedSource;
          conversion:range  rdfs:Literal;
       ];
       conversion:enhance [
@@ -181,8 +180,10 @@
       conversion:enhance [
          ov:csvCol         14;
          ov:csvHeader     "Mapped Vocabulary";
-         conversion:label "Mapped Vocabulary";
+         conversion:bundled_by [ ov:csvCol 15 ];
+         conversion:label "Is Defined By";
          conversion:comment "";
+         conversion:subproperty_of rdfs:isDefinedBy;
          conversion:range  rdfs:Resource;
          conversion:range_name "Vocabulary";
       ];
@@ -196,6 +197,15 @@
       ];
       conversion:enhance [
          ov:csvCol         16;
+         ov:csvHeader     "Mapped Term Depiction";
+         conversion:bundled_by [ ov:csvCol 15 ];
+         conversion:label "Mapped Term Depiction";
+         conversion:comment "";
+         conversion:subproperty_of foaf:depiction;
+         conversion:range  rdfs:Resource;
+      ];
+      conversion:enhance [
+         ov:csvCol         17;
          ov:csvHeader     "Mapped Vocabulary Ordinal";
          conversion:bundled_by [ ov:csvCol 14 ];
          conversion:label "Mapped Vocabulary Ordinal";
@@ -203,7 +213,7 @@
          conversion:range  xsd:integer;
       ];
       conversion:enhance [
-         ov:csvCol         17;
+         ov:csvCol         18;
          ov:csvHeader     "rdfs:seeAlso";
          a conversion:Repeat_previous_if_empty_column;
          conversion:label "See Also";
@@ -212,10 +222,11 @@
          conversion:range  rdfs:Resource;
       ];
       conversion:enhance [
-         ov:csvCol         18;
+         ov:csvCol         19;
          ov:csvHeader     "Reference Term";
          conversion:label "Reference Term";
          conversion:comment "";
+         conversion:subproperty_of owl:annotatedSource;
          conversion:range  rdfs:Resource;
       ];
    ];
