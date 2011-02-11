@@ -1,0 +1,2653 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-06/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix spreadsheets-google-com_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/> .
+@prefix e1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/> .
+@prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
+@prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
+@prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
+@prefix value_of_mapped_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_vocabulary/> .
+@prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
+@prefix value_of_see_also: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/> .
+@prefix value_of_reference_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/> .
+
+local_vocab:Term_Mapping a rdfs:Class , owl:Class ;
+	rdfs:label "Term Mapping" .
+
+e1:visr ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VisR" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "VisR" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:visr .
+
+local_vocab:Vocabulary a rdfs:Class , owl:Class ;
+	rdfs:label "Vocabulary" .
+
+e1:reference_term_curie ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Reference Term Curie" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Reference Term Curie" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:reference_term_curie ;
+	rdfs:subPropertyOf owl:annotatedSource .
+
+owl:annotatedSource a rdf:Property , owl:DatatypeProperty .
+
+e1:mapping_relation ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "skos:narrower" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapping Relation" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:skos_narrower , raw:mapping_relation ;
+	rdfs:subPropertyOf owl:annotatedProperty .
+
+owl:annotatedProperty a rdf:Property , owl:ObjectProperty .
+
+e1:mapping_relation ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "skos:narrowMatch" ;
+	conversion:enhances raw:skos_narrowmatch ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "skos:related" ;
+	conversion:enhances raw:skos_related ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "skos:relatedMatch" ;
+	conversion:enhances raw:skos_relatedmatch ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "skos:closeMatch" ;
+	conversion:enhances raw:skos_closematch ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "skos:exactMatch" ;
+	conversion:enhances raw:skos_exactmatch ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "equivalent" ;
+	conversion:enhances raw:equivalent ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "skos:broadMatch" ;
+	conversion:enhances raw:skos_broadmatch ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "skos:broader" ;
+	conversion:enhances raw:skos_broader .
+
+e1:mapped_term_curie ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Curie" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Term Curie" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mapped_term_curie ;
+	rdfs:subPropertyOf dcterms:identifier .
+
+dcterms:identifier a rdf:Property , owl:DatatypeProperty .
+
+e1:vism ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "VisM" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "VisM" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:vism .
+
+e1:mapped_vocabulary ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Vocabulary" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:mapped_vocabulary .
+
+e1:mapped_term ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mapped Term" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Term" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:mapped_term ;
+	rdfs:subPropertyOf owl:annotatedTarget .
+
+owl:annotatedTarget a rdf:Property , owl:ObjectProperty .
+
+e1:mapped_vocabulary_ordinal ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary Ordinal" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Vocabulary Ordinal" ;
+	rdfs:range xsd:integer ;
+	conversion:enhances raw:mapped_vocabulary_ordinal .
+
+e1:see_also ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "rdfs:seeAlso" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "See Also" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:rdfs_seealso , raw:see_also ;
+	rdfs:subPropertyOf rdfs:seeAlso .
+
+rdfs:seeAlso a rdf:Property , owl:ObjectProperty .
+
+e1:reference_term ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Reference Term" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Reference Term" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:reference_term .
+
+:term_Mapping_2 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:process ;
+	owl:annotatedTarget provenir:process ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "2"^^xsd:integer .
+
+:term_Mapping_3 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:Execution ;
+	owl:annotatedTarget hprv:Execution ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "3"^^xsd:integer .
+
+:term_Mapping_4 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:DataAccess ;
+	owl:annotatedTarget hprv:DataAccess ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "4"^^xsd:integer .
+
+:term_Mapping_5 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:DataCreation ;
+	owl:annotatedTarget hprv:DataCreation ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "5"^^xsd:integer .
+
+:term_Mapping_6 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlj:InferenceStep ;
+	owl:annotatedTarget pmlj:InferenceStep ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "6"^^xsd:integer .
+
+:term_Mapping_7 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core ;
+	e1:mapped_term dcmi-terms:dcmitype-Event ;
+	owl:annotatedTarget dcmi-terms:dcmitype-Event ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "7"^^xsd:integer .
+
+:term_Mapping_8 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:Event ;
+	owl:annotatedTarget premis:Event ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "8"^^xsd:integer .
+
+:term_Mapping_9 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Web_Of_Trust_Schema ;
+	e1:mapped_term wot:SigEvent ;
+	owl:annotatedTarget wot:SigEvent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "9"^^xsd:integer .
+
+:term_Mapping_10 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:signatureMethod ;
+	owl:annotatedTarget swp:signatureMethod ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "10"^^xsd:integer .
+
+:term_Mapping_11 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:digestMethod ;
+	owl:annotatedTarget swp:digestMethod ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "11"^^xsd:integer .
+
+:term_Mapping_12 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term cs:ChangeSet ;
+	owl:annotatedTarget cs:ChangeSet ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Process ;
+	ov:csvRow "12"^^xsd:integer .
+
+:term_Mapping_13 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:data ;
+	owl:annotatedTarget provenir:data ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "13"^^xsd:integer .
+
+:term_Mapping_14 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:Artifact ;
+	owl:annotatedTarget hprv:Artifact ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "14"^^xsd:integer .
+
+:term_Mapping_15 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:DataItem ;
+	owl:annotatedTarget hprv:DataItem ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "15"^^xsd:integer .
+
+:term_Mapping_16 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:CreationGuideline ;
+	owl:annotatedTarget hprv:CreationGuideline ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "16"^^xsd:integer .
+
+:term_Mapping_17 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:File ;
+	owl:annotatedTarget hprv:File ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "17"^^xsd:integer .
+
+:term_Mapping_18 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:closeMatch ;
+	owl:annotatedProperty skos:closeMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:Information ;
+	owl:annotatedTarget pmlp:Information ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "18"^^xsd:integer .
+
+:term_Mapping_19 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:Source ;
+	owl:annotatedTarget pmlp:Source ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "19"^^xsd:integer .
+
+:term_Mapping_20 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core ;
+	e1:mapped_term dcmi-terms:dcmitype-Collection ;
+	owl:annotatedTarget dcmi-terms:dcmitype-Collection ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "20"^^xsd:integer .
+
+:term_Mapping_21 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core ;
+	e1:mapped_term dcmi-terms:classes-BibliographicResource ;
+	owl:annotatedTarget dcmi-terms:classes-BibliographicResource ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "21"^^xsd:integer .
+
+:term_Mapping_22 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core ;
+	e1:mapped_term dcmi-terms:classes-PhysicalResource ;
+	owl:annotatedTarget dcmi-terms:classes-PhysicalResource ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "22"^^xsd:integer .
+
+:term_Mapping_23 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core ;
+	e1:mapped_term dcterms:MethodOfAccrual ;
+	owl:annotatedTarget dcterms:MethodOfAccrual ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "23"^^xsd:integer .
+
+:term_Mapping_24 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:Object ;
+	owl:annotatedTarget premis:Object ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "24"^^xsd:integer .
+
+:term_Mapping_25 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Web_Of_Trust_Schema ;
+	e1:mapped_term wot:PubKey ;
+	owl:annotatedTarget wot:PubKey ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "25"^^xsd:integer .
+
+:term_Mapping_26 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broader ;
+	owl:annotatedProperty skos:broader ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term rdfg:Graph ;
+	owl:annotatedTarget rdfg:Graph ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "26"^^xsd:integer .
+
+:term_Mapping_27 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term rdf:Statement ;
+	owl:annotatedTarget rdf:Statement ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Artifact ;
+	ov:csvRow "27"^^xsd:integer .
+
+:term_Mapping_28 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:agent ;
+	owl:annotatedTarget provenir:agent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "28"^^xsd:integer .
+
+:term_Mapping_29 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broader ;
+	owl:annotatedProperty skos:broader ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:Actor ;
+	owl:annotatedTarget hprv:Actor ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "29"^^xsd:integer .
+
+:term_Mapping_30 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:Agent ;
+	owl:annotatedTarget pmlp:Agent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "30"^^xsd:integer .
+
+:term_Mapping_31 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:Source ;
+	owl:annotatedTarget pmlp:Source ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "31"^^xsd:integer .
+
+:term_Mapping_32 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:exactMatch ;
+	owl:annotatedProperty skos:exactMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcmi-terms:classes-Agent ;
+	owl:annotatedTarget dcmi-terms:classes-Agent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "32"^^xsd:integer .
+
+:term_Mapping_33 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:Agent ;
+	owl:annotatedTarget premis:Agent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "33"^^xsd:integer .
+
+:term_Mapping_34 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:Authority ;
+	owl:annotatedTarget swp:Authority ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Agent ;
+	ov:csvRow "34"^^xsd:integer .
+
+:term_Mapping_35 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:data ;
+	owl:annotatedTarget provenir:data ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Account ;
+	ov:csvRow "35"^^xsd:integer .
+
+:term_Mapping_36 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlj:NodeSet ;
+	owl:annotatedTarget pmlj:NodeSet ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Account ;
+	ov:csvRow "36"^^xsd:integer .
+
+:term_Mapping_37 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcmi-terms:classes-ProvenanceStatement ;
+	owl:annotatedTarget dcmi-terms:classes-ProvenanceStatement ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Account ;
+	ov:csvRow "37"^^xsd:integer .
+
+:term_Mapping_38 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:versionNumber ;
+	owl:annotatedTarget pav:versionNumber ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Account ;
+	ov:csvRow "38"^^xsd:integer .
+
+:term_Mapping_39 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:Warrant ;
+	owl:annotatedTarget swp:Warrant ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:Account ;
+	ov:csvRow "39"^^xsd:integer .
+
+:term_Mapping_40 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:derives_from ;
+	owl:annotatedTarget provenir:derives_from ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "40"^^xsd:integer .
+
+:term_Mapping_41 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:precededBy ;
+	owl:annotatedTarget hprv:precededBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "41"^^xsd:integer .
+
+:term_Mapping_42 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:hasSourceUsage ;
+	owl:annotatedTarget pmlp:hasSourceUsage ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "42"^^xsd:integer .
+
+:term_Mapping_43 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:replaces ;
+	owl:annotatedTarget dcterms:replaces ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "43"^^xsd:integer .
+
+:term_Mapping_44 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:source ;
+	owl:annotatedTarget dcterms:source ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "44"^^xsd:integer .
+
+:term_Mapping_45 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:hasPart ;
+	owl:annotatedTarget dcterms:hasPart ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "45"^^xsd:integer .
+
+:term_Mapping_46 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:references ;
+	owl:annotatedTarget dcterms:references ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "46"^^xsd:integer .
+
+:term_Mapping_47 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:relatedObjectIdentification ;
+	owl:annotatedTarget premis:relatedObjectIdentification ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "47"^^xsd:integer .
+
+:term_Mapping_48 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:importedFromSource ;
+	owl:annotatedTarget pav:importedFromSource ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "48"^^xsd:integer .
+
+:term_Mapping_49 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:previousVersion ;
+	owl:annotatedTarget pav:previousVersion ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasDerivedFrom ;
+	ov:csvRow "49"^^xsd:integer .
+
+:term_Mapping_50 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:has_participant ;
+	owl:annotatedTarget provenir:has_participant ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "50"^^xsd:integer .
+
+:term_Mapping_51 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:employedArtifact ;
+	owl:annotatedTarget hprv:employedArtifact ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "51"^^xsd:integer .
+
+:term_Mapping_52 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:usedData ;
+	owl:annotatedTarget hprv:usedData ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "52"^^xsd:integer .
+
+:term_Mapping_53 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:usedGuideline ;
+	owl:annotatedTarget hprv:usedGuideline ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "53"^^xsd:integer .
+
+:term_Mapping_54 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlj:hasAntecedentList ;
+	owl:annotatedTarget pmlj:hasAntecedentList ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "54"^^xsd:integer .
+
+:term_Mapping_55 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:requires ;
+	owl:annotatedTarget dcterms:requires ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "55"^^xsd:integer .
+
+:term_Mapping_56 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:isRequiredBy ;
+	owl:annotatedTarget dcterms:isRequiredBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "56"^^xsd:integer .
+
+:term_Mapping_57 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:linkingObjectIdentifier ;
+	owl:annotatedTarget premis:linkingObjectIdentifier ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "57"^^xsd:integer .
+
+:term_Mapping_58 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Web_Of_Trust_Schema ;
+	e1:mapped_term wot:signer ;
+	owl:annotatedTarget wot:signer ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "58"^^xsd:integer .
+
+:term_Mapping_59 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:quotedBy ;
+	owl:annotatedTarget swp:quotedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "59"^^xsd:integer .
+
+:term_Mapping_60 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term cs:statement ;
+	owl:annotatedTarget cs:statement ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "60"^^xsd:integer .
+
+:term_Mapping_61 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term cs:removal ;
+	owl:annotatedTarget cs:removal ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "61"^^xsd:integer .
+
+:term_Mapping_62 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term cs:addition ;
+	owl:annotatedTarget cs:addition ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:used ;
+	ov:csvRow "62"^^xsd:integer .
+
+:term_Mapping_63 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:has_participant ;
+	owl:annotatedTarget provenir:has_participant ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "63"^^xsd:integer .
+
+:term_Mapping_64 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:yieldedBy ;
+	owl:annotatedTarget hprv:yieldedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "64"^^xsd:integer .
+
+:term_Mapping_65 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:createdBy ;
+	owl:annotatedTarget hprv:createdBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "65"^^xsd:integer .
+
+:term_Mapping_66 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:retrievedBy ;
+	owl:annotatedTarget hprv:retrievedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "66"^^xsd:integer .
+
+:term_Mapping_67 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlj:isConsequentOf ;
+	owl:annotatedTarget pmlj:isConsequentOf ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "67"^^xsd:integer .
+
+:term_Mapping_68 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:hasConclusion ;
+	owl:annotatedTarget pmlp:hasConclusion ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "68"^^xsd:integer .
+
+:term_Mapping_69 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:source ;
+	owl:annotatedTarget dcterms:source ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "69"^^xsd:integer .
+
+:term_Mapping_70 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:relatedEventIdentification ;
+	owl:annotatedTarget premis:relatedEventIdentification ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "70"^^xsd:integer .
+
+:term_Mapping_71 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broader ;
+	owl:annotatedProperty skos:broader ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:createdBy ;
+	owl:annotatedTarget pav:createdBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "71"^^xsd:integer .
+
+:term_Mapping_72 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:Semantic_Web_Publishing_Vocabulary ;
+	e1:mapped_term swp:assertedBy ;
+	owl:annotatedTarget swp:assertedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasGeneratedBy ;
+	ov:csvRow "72"^^xsd:integer .
+
+:term_Mapping_73 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:has_agent ;
+	owl:annotatedTarget provenir:has_agent ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "73"^^xsd:integer .
+
+:term_Mapping_74 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broader ;
+	owl:annotatedProperty skos:broader ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:involvedActor ;
+	owl:annotatedTarget hprv:involvedActor ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "74"^^xsd:integer .
+
+:term_Mapping_75 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:equivalent ;
+	owl:annotatedProperty skos:equivalent ;
+	e1:mapped_vocabulary typed_vocabulary:Hartig_Provenance_Vocabulary ;
+	e1:mapped_term hprv:performedBy ;
+	owl:annotatedTarget hprv:performedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "75"^^xsd:integer .
+
+:term_Mapping_76 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlp:hasSourceUsage ;
+	owl:annotatedTarget pmlp:hasSourceUsage ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "76"^^xsd:integer .
+
+:term_Mapping_77 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Proof_Markup_Language ;
+	e1:mapped_term pmlj:hasInferenceEngine ;
+	owl:annotatedTarget pmlj:hasInferenceEngine ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "77"^^xsd:integer .
+
+:term_Mapping_78 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:contributor ;
+	owl:annotatedTarget dcterms:contributor ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "78"^^xsd:integer .
+
+:term_Mapping_79 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:relatedMatch ;
+	owl:annotatedProperty skos:relatedMatch ;
+	e1:mapped_vocabulary typed_vocabulary:PREMIS ;
+	e1:mapped_term premis:linkingAgentIdentifier ;
+	owl:annotatedTarget premis:linkingAgentIdentifier ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "79"^^xsd:integer .
+
+:term_Mapping_80 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrower ;
+	owl:annotatedProperty skos:narrower ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:contributors ;
+	owl:annotatedTarget pav:contributors ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "80"^^xsd:integer .
+
+:term_Mapping_81 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:authors ;
+	owl:annotatedTarget pav:authors ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "81"^^xsd:integer .
+
+:term_Mapping_82 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:curators ;
+	owl:annotatedTarget pav:curators ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "82"^^xsd:integer .
+
+:term_Mapping_83 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:importedBy ;
+	owl:annotatedTarget pav:importedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "83"^^xsd:integer .
+
+:term_Mapping_84 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:publishedBy ;
+	owl:annotatedTarget pav:publishedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "84"^^xsd:integer .
+
+:term_Mapping_85 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:related ;
+	owl:annotatedProperty skos:related ;
+	e1:mapped_vocabulary typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary ;
+	e1:mapped_term pav:submittedBy ;
+	owl:annotatedTarget pav:submittedBy ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "85"^^xsd:integer .
+
+:term_Mapping_86 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:narrowMatch ;
+	owl:annotatedProperty skos:narrowMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Changeset_Vocabulary ;
+	e1:mapped_term cs:creatorName ;
+	owl:annotatedTarget cs:creatorName ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasControlledBy ;
+	ov:csvRow "86"^^xsd:integer .
+
+:term_Mapping_87 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Provenir_ontology ;
+	e1:mapped_term provenir:preceded_by ;
+	owl:annotatedTarget provenir:preceded_by ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasTriggeredBy ;
+	ov:csvRow "87"^^xsd:integer .
+
+:term_Mapping_88 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	a local_vocab:Term_Mapping ;
+	e1:mapping_relation skos:broadMatch ;
+	owl:annotatedProperty skos:broadMatch ;
+	e1:mapped_vocabulary typed_vocabulary:Dublin_Core_Terms ;
+	e1:mapped_term dcterms:source ;
+	owl:annotatedTarget dcterms:source ;
+	e1:see_also prov-xg-wiki:Mappings ;
+	rdfs:seeAlso prov-xg-wiki:Mappings ;
+	e1:reference_term opm:wasTriggeredBy ;
+	ov:csvRow "88"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-06/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix spreadsheets-google-com_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/> .
+@prefix e1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/> .
+@prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
+@prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
+@prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
+@prefix value_of_mapped_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_vocabulary/> .
+@prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
+@prefix value_of_see_also: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/> .
+@prefix value_of_reference_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/> .
+
+:term_Mapping_2 owl:sameAs :thing_2 .
+
+opm:Process e1:reference_term_curie "opm:Process" ;
+	owl:annotatedSource "opm:Process" .
+
+skos:broadMatch dcterms:identifier "skos:broadMatch" ;
+	conversion:symbol "skos:broadMatch" ;
+	conversion:interpretation skos:broadMatch ;
+	rdfs:label skos:broadMatch , "http://www.w3.org/2004/02/skos/core#broadMatch" .
+
+provenir:process e1:mapped_term_curie "provenir:process" ;
+	dcterms:identifier "provenir:process" .
+
+typed_vocabulary:Provenir_ontology dcterms:identifier "Provenir ontology" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Provenir ontology" .
+
+provenir:process dcterms:identifier "http://knoesis.wright.edu/provenir/provenir.owl#process" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#process" .
+
+typed_vocabulary:Provenir_ontology e1:mapped_vocabulary_ordinal "1"^^xsd:integer .
+
+prov-xg-wiki:Mappings dcterms:identifier "http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings" ;
+	rdfs:label "http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings" .
+
+opm:Process dcterms:identifier "http://openprovenance.org/ontology#Process" ;
+	rdfs:label "http://openprovenance.org/ontology#Process" .
+
+:term_Mapping_3 owl:sameAs :thing_3 .
+
+skos:narrower dcterms:identifier "skos:narrower" ;
+	conversion:symbol "skos:narrower" ;
+	conversion:interpretation skos:narrower ;
+	rdfs:label skos:narrower , "http://www.w3.org/2004/02/skos/core#narrower" .
+
+hprv:Execution e1:mapped_term_curie "hprv:Execution" ;
+	dcterms:identifier "hprv:Execution" .
+
+typed_vocabulary:Hartig_Provenance_Vocabulary dcterms:identifier "Hartig Provenance Vocabulary" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Hartig Provenance Vocabulary" .
+
+hprv:Execution dcterms:identifier "http://purl.org/net/provenance/ns#Execution" ;
+	rdfs:label "http://purl.org/net/provenance/ns#Execution" .
+
+typed_vocabulary:Hartig_Provenance_Vocabulary e1:mapped_vocabulary_ordinal "2"^^xsd:integer .
+
+:term_Mapping_4 owl:sameAs :thing_4 .
+
+hprv:DataAccess e1:mapped_term_curie "hprv:DataAccess" ;
+	dcterms:identifier "hprv:DataAccess" , "http://purl.org/net/provenance/ns#DataAccess" ;
+	rdfs:label "http://purl.org/net/provenance/ns#DataAccess" .
+
+:term_Mapping_5 owl:sameAs :thing_5 .
+
+hprv:DataCreation e1:mapped_term_curie "hprv:DataCreation" ;
+	dcterms:identifier "hprv:DataCreation" , "http://purl.org/net/provenance/ns#DataCreation" ;
+	rdfs:label "http://purl.org/net/provenance/ns#DataCreation" .
+
+:term_Mapping_6 owl:sameAs :thing_6 .
+
+skos:relatedMatch dcterms:identifier "skos:relatedMatch" ;
+	conversion:symbol "skos:relatedMatch" ;
+	conversion:interpretation skos:relatedMatch ;
+	rdfs:label skos:relatedMatch , "http://www.w3.org/2004/02/skos/core#relatedMatch" .
+
+pmlj:InferenceStep e1:mapped_term_curie "pmlj:InferenceStep" ;
+	dcterms:identifier "pmlj:InferenceStep" .
+
+typed_vocabulary:Proof_Markup_Language dcterms:identifier "Proof Markup Language" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Proof Markup Language" .
+
+pmlj:InferenceStep dcterms:identifier "http://inference-web.org/2.0/pml-justification.owl#InferenceStep" ;
+	rdfs:label "http://inference-web.org/2.0/pml-justification.owl#InferenceStep" .
+
+typed_vocabulary:Proof_Markup_Language e1:mapped_vocabulary_ordinal "3"^^xsd:integer .
+
+:term_Mapping_7 owl:sameAs :thing_7 .
+
+dcmi-terms:dcmitype-Event e1:mapped_term_curie "dcmitype:Event" ;
+	dcterms:identifier "dcmitype:Event" .
+
+typed_vocabulary:Dublin_Core dcterms:identifier "Dublin Core" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Dublin Core" .
+
+dcmi-terms:dcmitype-Event dcterms:identifier "http://dublincore.org/documents/dcmi-terms/#dcmitype-Event" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#dcmitype-Event" .
+
+typed_vocabulary:Dublin_Core e1:mapped_vocabulary_ordinal "4"^^xsd:integer .
+
+:term_Mapping_8 owl:sameAs :thing_8 .
+
+premis:Event e1:mapped_term_curie "premis:Event" ;
+	dcterms:identifier "premis:Event" .
+
+typed_vocabulary:PREMIS dcterms:identifier "PREMIS" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "PREMIS" .
+
+premis:Event dcterms:identifier "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Event" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Event" .
+
+typed_vocabulary:PREMIS e1:mapped_vocabulary_ordinal "5"^^xsd:integer .
+
+:term_Mapping_9 owl:sameAs :thing_9 .
+
+skos:narrowMatch dcterms:identifier "skos:narrowMatch" ;
+	conversion:symbol "skos:narrowMatch" ;
+	conversion:interpretation skos:narrowMatch ;
+	rdfs:label skos:narrowMatch , "http://www.w3.org/2004/02/skos/core#narrowMatch" .
+
+wot:SigEvent e1:mapped_term_curie "wot:SigEvent" ;
+	dcterms:identifier "wot:SigEvent" .
+
+typed_vocabulary:Web_Of_Trust_Schema dcterms:identifier "Web Of Trust Schema" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Web Of Trust Schema" .
+
+wot:SigEvent dcterms:identifier "http://xmlns.com/wot/0.1/SigEvent" ;
+	rdfs:label "http://xmlns.com/wot/0.1/SigEvent" .
+
+typed_vocabulary:Web_Of_Trust_Schema e1:mapped_vocabulary_ordinal "6"^^xsd:integer .
+
+:term_Mapping_10 owl:sameAs :thing_10 .
+
+swp:signatureMethod e1:mapped_term_curie "swp:signatureMethod" ;
+	dcterms:identifier "swp:signatureMethod" .
+
+typed_vocabulary:Semantic_Web_Publishing_Vocabulary dcterms:identifier "Semantic Web Publishing Vocabulary" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Semantic Web Publishing Vocabulary" .
+
+swp:signatureMethod dcterms:identifier "http://www.w3.org/2004/03/trix/swp-2/signatureMethod" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/signatureMethod" .
+
+typed_vocabulary:Semantic_Web_Publishing_Vocabulary e1:mapped_vocabulary_ordinal "8"^^xsd:integer .
+
+:term_Mapping_11 owl:sameAs :thing_11 .
+
+swp:digestMethod e1:mapped_term_curie "swp:digestMethod" ;
+	dcterms:identifier "swp:digestMethod" , "http://www.w3.org/2004/03/trix/swp-2/digestMethod" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/digestMethod" .
+
+:term_Mapping_12 owl:sameAs :thing_12 .
+
+cs:ChangeSet e1:mapped_term_curie "cs:ChangeSet" ;
+	dcterms:identifier "cs:ChangeSet" .
+
+typed_vocabulary:Changeset_Vocabulary dcterms:identifier "Changeset Vocabulary" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Changeset Vocabulary" .
+
+cs:ChangeSet dcterms:identifier "http://purl.org/vocab/changeset/schema#ChangeSet" ;
+	rdfs:label "http://purl.org/vocab/changeset/schema#ChangeSet" .
+
+typed_vocabulary:Changeset_Vocabulary e1:mapped_vocabulary_ordinal "9"^^xsd:integer .
+
+:term_Mapping_13 owl:sameAs :thing_13 .
+
+opm:Artifact e1:reference_term_curie "opm:Artifact" ;
+	owl:annotatedSource "opm:Artifact" .
+
+provenir:data e1:mapped_term_curie "provenir:data" ;
+	dcterms:identifier "provenir:data" , "http://knoesis.wright.edu/provenir/provenir.owl#data" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#data" .
+
+opm:Artifact dcterms:identifier "http://openprovenance.org/ontology#Artifact" ;
+	rdfs:label "http://openprovenance.org/ontology#Artifact" .
+
+:term_Mapping_14 owl:sameAs :thing_14 .
+
+skos:related dcterms:identifier "skos:related" ;
+	conversion:symbol "skos:related" ;
+	conversion:interpretation skos:related ;
+	rdfs:label skos:related , "http://www.w3.org/2004/02/skos/core#related" .
+
+hprv:Artifact e1:mapped_term_curie "hprv:Artifact" ;
+	dcterms:identifier "hprv:Artifact" , "http://purl.org/net/provenance/ns#Artifact" ;
+	rdfs:label "http://purl.org/net/provenance/ns#Artifact" .
+
+:term_Mapping_15 owl:sameAs :thing_15 .
+
+hprv:DataItem e1:mapped_term_curie "hprv:DataItem" ;
+	dcterms:identifier "hprv:DataItem" , "http://purl.org/net/provenance/ns#DataItem" ;
+	rdfs:label "http://purl.org/net/provenance/ns#DataItem" .
+
+:term_Mapping_16 owl:sameAs :thing_16 .
+
+hprv:CreationGuideline e1:mapped_term_curie "hprv:CreationGuideline" ;
+	dcterms:identifier "hprv:CreationGuideline" , "http://purl.org/net/provenance/ns#CreationGuideline" ;
+	rdfs:label "http://purl.org/net/provenance/ns#CreationGuideline" .
+
+:term_Mapping_17 owl:sameAs :thing_17 .
+
+hprv:File e1:mapped_term_curie "hprv:File" ;
+	dcterms:identifier "hprv:File" , "http://purl.org/net/provenance/ns#File" ;
+	rdfs:label "http://purl.org/net/provenance/ns#File" .
+
+:term_Mapping_18 owl:sameAs :thing_18 .
+
+skos:closeMatch dcterms:identifier "skos:closeMatch" ;
+	conversion:symbol "skos:closeMatch" ;
+	conversion:interpretation skos:closeMatch ;
+	rdfs:label skos:closeMatch , "http://www.w3.org/2004/02/skos/core#closeMatch" .
+
+pmlp:Information e1:mapped_term_curie "pmlp:Information" ;
+	dcterms:identifier "pmlp:Information" , "http://inference-web.org/2.0/pml-provenance.owl#Information" ;
+	rdfs:label "http://inference-web.org/2.0/pml-provenance.owl#Information" .
+
+:term_Mapping_19 owl:sameAs :thing_19 .
+
+pmlp:Source e1:mapped_term_curie "pmlp:Source" ;
+	dcterms:identifier "pmlp:Source" , "http://inference-web.org/2.0/pml-provenance.owl#Source" ;
+	rdfs:label "http://inference-web.org/2.0/pml-provenance.owl#Source" .
+
+:term_Mapping_20 owl:sameAs :thing_20 .
+
+dcmi-terms:dcmitype-Collection e1:mapped_term_curie "dcmitype:Collection" ;
+	dcterms:identifier "dcmitype:Collection" , "http://dublincore.org/documents/dcmi-terms/#dcmitype-Collection" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#dcmitype-Collection" .
+
+:term_Mapping_21 owl:sameAs :thing_21 .
+
+dcmi-terms:classes-BibliographicResource e1:mapped_term_curie "dcmitype:BibliographicResource" ;
+	dcterms:identifier "dcmitype:BibliographicResource" , "http://dublincore.org/documents/dcmi-terms/#classes-BibliographicResource" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#classes-BibliographicResource" .
+
+:term_Mapping_22 owl:sameAs :thing_22 .
+
+dcmi-terms:classes-PhysicalResource e1:mapped_term_curie "dcmitype:PhysicalResource" ;
+	dcterms:identifier "dcmitype:PhysicalResource" , "http://dublincore.org/documents/dcmi-terms/#classes-PhysicalResource" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#classes-PhysicalResource" .
+
+:term_Mapping_23 owl:sameAs :thing_23 .
+
+dcterms:MethodOfAccrual e1:mapped_term_curie "dcmitype:MethodOfAccrual" ;
+	dcterms:identifier "dcmitype:MethodOfAccrual" , "http://purl.org/dc/terms/MethodOfAccrual" ;
+	rdfs:label "http://purl.org/dc/terms/MethodOfAccrual" .
+
+:term_Mapping_24 owl:sameAs :thing_24 .
+
+premis:Object e1:mapped_term_curie "premis:Object" ;
+	dcterms:identifier "premis:Object" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Object" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Object" .
+
+:term_Mapping_25 owl:sameAs :thing_25 .
+
+wot:PubKey e1:mapped_term_curie "wot:PubKey" ;
+	dcterms:identifier "wot:PubKey" , "http://xmlns.com/wot/0.1/PubKey" ;
+	rdfs:label "http://xmlns.com/wot/0.1/PubKey" .
+
+:term_Mapping_26 owl:sameAs :thing_26 .
+
+skos:broader dcterms:identifier "skos:broader" ;
+	conversion:symbol "skos:broader" ;
+	conversion:interpretation skos:broader ;
+	rdfs:label skos:broader , "http://www.w3.org/2004/02/skos/core#broader" .
+
+rdfg:Graph e1:mapped_term_curie "rdfg:Graph" ;
+	dcterms:identifier "rdfg:Graph" , "http://www.w3.org/2004/03/trix/rdfg-1/Graph" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/rdfg-1/Graph" .
+
+:term_Mapping_27 owl:sameAs :thing_27 .
+
+rdf:Statement e1:mapped_term_curie "rdf:Statement" ;
+	dcterms:identifier "rdf:Statement" , "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" ;
+	rdfs:label "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" .
+
+:term_Mapping_28 owl:sameAs :thing_28 .
+
+opm:Agent e1:reference_term_curie "opm:Agent" ;
+	owl:annotatedSource "opm:Agent" .
+
+provenir:agent e1:mapped_term_curie "provenir:agent" ;
+	dcterms:identifier "provenir:agent" , "http://knoesis.wright.edu/provenir/provenir.owl#agent" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#agent" .
+
+opm:Agent dcterms:identifier "http://openprovenance.org/ontology#Agent" ;
+	rdfs:label "http://openprovenance.org/ontology#Agent" .
+
+:term_Mapping_29 owl:sameAs :thing_29 .
+
+hprv:Actor e1:mapped_term_curie "hprv:Actor" ;
+	dcterms:identifier "hprv:Actor" , "http://purl.org/net/provenance/ns#Actor" ;
+	rdfs:label "http://purl.org/net/provenance/ns#Actor" .
+
+:term_Mapping_30 owl:sameAs :thing_30 .
+
+pmlp:Agent e1:mapped_term_curie "pmlp:Agent" ;
+	dcterms:identifier "pmlp:Agent" , "http://inference-web.org/2.0/pml-provenance.owl#Agent" ;
+	rdfs:label "http://inference-web.org/2.0/pml-provenance.owl#Agent" .
+
+:term_Mapping_31 owl:sameAs :thing_31 .
+
+:term_Mapping_32 owl:sameAs :thing_32 .
+
+skos:exactMatch dcterms:identifier "skos:exactMatch" ;
+	conversion:symbol "skos:exactMatch" ;
+	conversion:interpretation skos:exactMatch ;
+	rdfs:label skos:exactMatch , "http://www.w3.org/2004/02/skos/core#exactMatch" .
+
+dcmi-terms:classes-Agent e1:mapped_term_curie "dcterms:Agent" ;
+	dcterms:identifier "dcterms:Agent" .
+
+typed_vocabulary:Dublin_Core_Terms dcterms:identifier "Dublin Core Terms" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "Dublin Core Terms" .
+
+dcmi-terms:classes-Agent dcterms:identifier "http://dublincore.org/documents/dcmi-terms/#classes-Agent" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#classes-Agent" .
+
+typed_vocabulary:Dublin_Core_Terms e1:mapped_vocabulary_ordinal "4"^^xsd:integer .
+
+:term_Mapping_33 owl:sameAs :thing_33 .
+
+premis:Agent e1:mapped_term_curie "premis:Agent" ;
+	dcterms:identifier "premis:Agent" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Agent" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Agent" .
+
+:term_Mapping_34 owl:sameAs :thing_34 .
+
+swp:Authority e1:mapped_term_curie "swp:Authority" ;
+	dcterms:identifier "swp:Authority" , "http://www.w3.org/2004/03/trix/swp-2/Authority" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/Authority" .
+
+:term_Mapping_35 owl:sameAs :thing_35 .
+
+opm:Account e1:reference_term_curie "opm:Account" ;
+	owl:annotatedSource "opm:Account" ;
+	dcterms:identifier "http://openprovenance.org/ontology#Account" ;
+	rdfs:label "http://openprovenance.org/ontology#Account" .
+
+:term_Mapping_36 owl:sameAs :thing_36 .
+
+pmlj:NodeSet e1:mapped_term_curie "pmlj:NodeSet" ;
+	dcterms:identifier "pmlj:NodeSet" , "http://inference-web.org/2.0/pml-justification.owl#NodeSet" ;
+	rdfs:label "http://inference-web.org/2.0/pml-justification.owl#NodeSet" .
+
+:term_Mapping_37 owl:sameAs :thing_37 .
+
+dcmi-terms:classes-ProvenanceStatement e1:mapped_term_curie "dcterms:ProvenanceStatement" ;
+	dcterms:identifier "dcterms:ProvenanceStatement" , "http://dublincore.org/documents/dcmi-terms/#classes-ProvenanceStatement" ;
+	rdfs:label "http://dublincore.org/documents/dcmi-terms/#classes-ProvenanceStatement" .
+
+:term_Mapping_38 owl:sameAs :thing_38 .
+
+pav:versionNumber e1:mapped_term_curie "pav:versionNumber" ;
+	dcterms:identifier "pav:versionNumber" .
+
+typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary dcterms:identifier "SWAN Provenance, Authoring and Version Vocabulary" ;
+	a local_vocab:Vocabulary ;
+	rdfs:label "SWAN Provenance, Authoring and Version Vocabulary" .
+
+pav:versionNumber dcterms:identifier "http://swan.mindinformatics.org/ontologies/1.2/pav/versionNumber" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/versionNumber" .
+
+typed_vocabulary:SWAN_Provenance_Authoring_and_Version_Vocabulary e1:mapped_vocabulary_ordinal "7"^^xsd:integer .
+
+:term_Mapping_39 owl:sameAs :thing_39 .
+
+swp:Warrant e1:mapped_term_curie "swp:Warrant" ;
+	dcterms:identifier "swp:Warrant" , "http://www.w3.org/2004/03/trix/swp-2/Warrant" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/Warrant" .
+
+:term_Mapping_40 owl:sameAs :thing_40 .
+
+opm:wasDerivedFrom e1:reference_term_curie "opm:wasDerivedFrom" ;
+	owl:annotatedSource "opm:wasDerivedFrom" .
+
+provenir:derives_from e1:mapped_term_curie "provenir:derives_from" ;
+	dcterms:identifier "provenir:derives_from" , "http://knoesis.wright.edu/provenir/provenir.owl#derives_from" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#derives_from" .
+
+opm:wasDerivedFrom dcterms:identifier "http://openprovenance.org/ontology#wasDerivedFrom" ;
+	rdfs:label "http://openprovenance.org/ontology#wasDerivedFrom" .
+
+:term_Mapping_41 owl:sameAs :thing_41 .
+
+hprv:precededBy e1:mapped_term_curie "hprv:precededBy" ;
+	dcterms:identifier "hprv:precededBy" , "http://purl.org/net/provenance/ns#precededBy" ;
+	rdfs:label "http://purl.org/net/provenance/ns#precededBy" .
+
+:term_Mapping_42 owl:sameAs :thing_42 .
+
+pmlp:hasSourceUsage e1:mapped_term_curie "pmlp:hasSourceUsage" ;
+	dcterms:identifier "pmlp:hasSourceUsage" , "http://inference-web.org/2.0/pml-provenance.owl#hasSourceUsage" ;
+	rdfs:label "http://inference-web.org/2.0/pml-provenance.owl#hasSourceUsage" .
+
+:term_Mapping_43 owl:sameAs :thing_43 .
+
+dcterms:replaces e1:mapped_term_curie "dcterms:replaces" ;
+	dcterms:identifier "dcterms:replaces" , "http://purl.org/dc/terms/replaces" ;
+	rdfs:label "http://purl.org/dc/terms/replaces" .
+
+:term_Mapping_44 owl:sameAs :thing_44 .
+
+dcterms:source e1:mapped_term_curie "dcterms:source" ;
+	dcterms:identifier "dcterms:source" , "http://purl.org/dc/terms/source" ;
+	rdfs:label "http://purl.org/dc/terms/source" .
+
+:term_Mapping_45 owl:sameAs :thing_45 .
+
+dcterms:hasPart e1:mapped_term_curie "dcterms:hasPart" ;
+	dcterms:identifier "dcterms:hasPart" , "http://purl.org/dc/terms/hasPart" ;
+	rdfs:label "http://purl.org/dc/terms/hasPart" .
+
+:term_Mapping_46 owl:sameAs :thing_46 .
+
+dcterms:references e1:mapped_term_curie "dcterms:references" ;
+	dcterms:identifier "dcterms:references" , "http://purl.org/dc/terms/references" ;
+	rdfs:label "http://purl.org/dc/terms/references" .
+
+:term_Mapping_47 owl:sameAs :thing_47 .
+
+premis:relatedObjectIdentification e1:mapped_term_curie "premis:relatedObjectIdentification" ;
+	dcterms:identifier "premis:relatedObjectIdentification" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedObjectIdentification" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedObjectIdentification" .
+
+:term_Mapping_48 owl:sameAs :thing_48 .
+
+pav:importedFromSource e1:mapped_term_curie "pav:importedFromSource" ;
+	dcterms:identifier "pav:importedFromSource" , "http://swan.mindinformatics.org/ontologies/1.2/pav/importedFromSource" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/importedFromSource" .
+
+:term_Mapping_49 owl:sameAs :thing_49 .
+
+pav:previousVersion e1:mapped_term_curie "pav:previousVersion" ;
+	dcterms:identifier "pav:previousVersion" , "http://swan.mindinformatics.org/ontologies/1.2/pav/previousVersion" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/previousVersion" .
+
+:term_Mapping_50 owl:sameAs :thing_50 .
+
+opm:used e1:reference_term_curie "opm:used" ;
+	owl:annotatedSource "opm:used" .
+
+provenir:has_participant e1:mapped_term_curie "provenir:has_participant" ;
+	dcterms:identifier "provenir:has_participant" , "http://knoesis.wright.edu/provenir/provenir.owl#has_participant" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#has_participant" .
+
+opm:used dcterms:identifier "http://openprovenance.org/ontology#used" ;
+	rdfs:label "http://openprovenance.org/ontology#used" .
+
+:term_Mapping_51 owl:sameAs :thing_51 .
+
+hprv:employedArtifact e1:mapped_term_curie "hprv:employedArtifact" ;
+	dcterms:identifier "hprv:employedArtifact" , "http://purl.org/net/provenance/ns#employedArtifact" ;
+	rdfs:label "http://purl.org/net/provenance/ns#employedArtifact" .
+
+:term_Mapping_52 owl:sameAs :thing_52 .
+
+hprv:usedData e1:mapped_term_curie "hprv:usedData" ;
+	dcterms:identifier "hprv:usedData" , "http://purl.org/net/provenance/ns#usedData" ;
+	rdfs:label "http://purl.org/net/provenance/ns#usedData" .
+
+:term_Mapping_53 owl:sameAs :thing_53 .
+
+hprv:usedGuideline e1:mapped_term_curie "hprv:usedGuideline" ;
+	dcterms:identifier "hprv:usedGuideline" , "http://purl.org/net/provenance/ns#usedGuideline" ;
+	rdfs:label "http://purl.org/net/provenance/ns#usedGuideline" .
+
+:term_Mapping_54 owl:sameAs :thing_54 .
+
+pmlj:hasAntecedentList e1:mapped_term_curie "pmlj:hasAntecedentList" ;
+	dcterms:identifier "pmlj:hasAntecedentList" , "http://inference-web.org/2.0/pml-justification.owl#hasAntecedentList" ;
+	rdfs:label "http://inference-web.org/2.0/pml-justification.owl#hasAntecedentList" .
+
+:term_Mapping_55 owl:sameAs :thing_55 .
+
+dcterms:requires e1:mapped_term_curie "dcterms:requires" ;
+	dcterms:identifier "dcterms:requires" , "http://purl.org/dc/terms/requires" ;
+	rdfs:label "http://purl.org/dc/terms/requires" .
+
+:term_Mapping_56 owl:sameAs :thing_56 .
+
+dcterms:isRequiredBy e1:mapped_term_curie "dcterms:isRequiredBy" ;
+	dcterms:identifier "dcterms:isRequiredBy" , "http://purl.org/dc/terms/isRequiredBy" ;
+	rdfs:label "http://purl.org/dc/terms/isRequiredBy" .
+
+:term_Mapping_57 owl:sameAs :thing_57 .
+
+premis:linkingObjectIdentifier e1:mapped_term_curie "premis:linkingObjectIdentifier" ;
+	dcterms:identifier "premis:linkingObjectIdentifier" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingObjectIdentifier" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingObjectIdentifier" .
+
+:term_Mapping_58 owl:sameAs :thing_58 .
+
+wot:signer e1:mapped_term_curie "wot:signer" ;
+	dcterms:identifier "wot:signer" , "http://xmlns.com/wot/0.1/signer" ;
+	rdfs:label "http://xmlns.com/wot/0.1/signer" .
+
+:term_Mapping_59 owl:sameAs :thing_59 .
+
+swp:quotedBy e1:mapped_term_curie "swp:quotedBy" ;
+	dcterms:identifier "swp:quotedBy" , "http://www.w3.org/2004/03/trix/swp-2/quotedBy" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/quotedBy" .
+
+:term_Mapping_60 owl:sameAs :thing_60 .
+
+cs:statement e1:mapped_term_curie "cs:statement" ;
+	dcterms:identifier "cs:statement" , "http://purl.org/vocab/changeset/schema#statement" ;
+	rdfs:label "http://purl.org/vocab/changeset/schema#statement" .
+
+:term_Mapping_61 owl:sameAs :thing_61 .
+
+cs:removal e1:mapped_term_curie "cs:removal" ;
+	dcterms:identifier "cs:removal" , "http://purl.org/vocab/changeset/schema#removal" ;
+	rdfs:label "http://purl.org/vocab/changeset/schema#removal" .
+
+:term_Mapping_62 owl:sameAs :thing_62 .
+
+cs:addition e1:mapped_term_curie "cs:addition" ;
+	dcterms:identifier "cs:addition" , "http://purl.org/vocab/changeset/schema#addition" ;
+	rdfs:label "http://purl.org/vocab/changeset/schema#addition" .
+
+:term_Mapping_63 owl:sameAs :thing_63 .
+
+opm:wasGeneratedBy e1:reference_term_curie "opm:wasGeneratedBy" ;
+	owl:annotatedSource "opm:wasGeneratedBy" ;
+	dcterms:identifier "http://openprovenance.org/ontology#wasGeneratedBy" ;
+	rdfs:label "http://openprovenance.org/ontology#wasGeneratedBy" .
+
+:term_Mapping_64 owl:sameAs :thing_64 .
+
+hprv:yieldedBy e1:mapped_term_curie "hprv:yieldedBy" ;
+	dcterms:identifier "hprv:yieldedBy" , "http://purl.org/net/provenance/ns#yieldedBy" ;
+	rdfs:label "http://purl.org/net/provenance/ns#yieldedBy" .
+
+:term_Mapping_65 owl:sameAs :thing_65 .
+
+hprv:createdBy e1:mapped_term_curie "hprv:createdBy" ;
+	dcterms:identifier "hprv:createdBy" , "http://purl.org/net/provenance/ns#createdBy" ;
+	rdfs:label "http://purl.org/net/provenance/ns#createdBy" .
+
+:term_Mapping_66 owl:sameAs :thing_66 .
+
+hprv:retrievedBy e1:mapped_term_curie "hprv:retrievedBy" ;
+	dcterms:identifier "hprv:retrievedBy" , "http://purl.org/net/provenance/ns#retrievedBy" ;
+	rdfs:label "http://purl.org/net/provenance/ns#retrievedBy" .
+
+:term_Mapping_67 owl:sameAs :thing_67 .
+
+pmlj:isConsequentOf e1:mapped_term_curie "pmlj:isConsequentOf" ;
+	dcterms:identifier "pmlj:isConsequentOf" , "http://inference-web.org/2.0/pml-justification.owl#isConsequentOf" ;
+	rdfs:label "http://inference-web.org/2.0/pml-justification.owl#isConsequentOf" .
+
+:term_Mapping_68 owl:sameAs :thing_68 .
+
+pmlp:hasConclusion e1:mapped_term_curie "pmlp:hasConclusion" ;
+	dcterms:identifier "pmlp:hasConclusion" , "http://inference-web.org/2.0/pml-provenance.owl#hasConclusion" ;
+	rdfs:label "http://inference-web.org/2.0/pml-provenance.owl#hasConclusion" .
+
+:term_Mapping_69 owl:sameAs :thing_69 .
+
+:term_Mapping_70 owl:sameAs :thing_70 .
+
+premis:relatedEventIdentification e1:mapped_term_curie "premis:relatedEventIdentification" ;
+	dcterms:identifier "premis:relatedEventIdentification" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedEventIdentification" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedEventIdentification" .
+
+:term_Mapping_71 owl:sameAs :thing_71 .
+
+pav:createdBy e1:mapped_term_curie "pav:createdBy" ;
+	dcterms:identifier "pav:createdBy" , "http://swan.mindinformatics.org/ontologies/1.2/pav/createdBy" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/createdBy" .
+
+:term_Mapping_72 owl:sameAs :thing_72 .
+
+swp:assertedBy e1:mapped_term_curie "swp:assertedBy" ;
+	dcterms:identifier "swp:assertedBy" , "http://www.w3.org/2004/03/trix/swp-2/assertedBy" ;
+	rdfs:label "http://www.w3.org/2004/03/trix/swp-2/assertedBy" .
+
+:term_Mapping_73 owl:sameAs :thing_73 .
+
+opm:wasControlledBy e1:reference_term_curie "opm:wasControlledBy" ;
+	owl:annotatedSource "opm:wasControlledBy" .
+
+provenir:has_agent e1:mapped_term_curie "provenir:has_agent" ;
+	dcterms:identifier "provenir:has_agent" , "http://knoesis.wright.edu/provenir/provenir.owl#has_agent" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#has_agent" .
+
+opm:wasControlledBy dcterms:identifier "http://openprovenance.org/ontology#wasControlledBy" ;
+	rdfs:label "http://openprovenance.org/ontology#wasControlledBy" .
+
+:term_Mapping_74 owl:sameAs :thing_74 .
+
+hprv:involvedActor e1:mapped_term_curie "hprv:involvedActor" ;
+	dcterms:identifier "hprv:involvedActor" , "http://purl.org/net/provenance/ns#involvedActor" ;
+	rdfs:label "http://purl.org/net/provenance/ns#involvedActor" .
+
+:term_Mapping_75 owl:sameAs :thing_75 .
+
+skos:equivalent dcterms:identifier "equivalent" ;
+	conversion:symbol "equivalent" ;
+	conversion:interpretation skos:equivalent ;
+	rdfs:label skos:equivalent , "http://www.w3.org/2004/02/skos/core#equivalent" .
+
+hprv:performedBy e1:mapped_term_curie "hprv:performedBy" ;
+	dcterms:identifier "hprv:performedBy" , "http://purl.org/net/provenance/ns#performedBy" ;
+	rdfs:label "http://purl.org/net/provenance/ns#performedBy" .
+
+:term_Mapping_76 owl:sameAs :thing_76 .
+
+:term_Mapping_77 owl:sameAs :thing_77 .
+
+pmlj:hasInferenceEngine e1:mapped_term_curie "pmlj:hasInferenceEngine" ;
+	dcterms:identifier "pmlj:hasInferenceEngine" , "http://inference-web.org/2.0/pml-justification.owl#hasInferenceEngine" ;
+	rdfs:label "http://inference-web.org/2.0/pml-justification.owl#hasInferenceEngine" .
+
+:term_Mapping_78 owl:sameAs :thing_78 .
+
+dcterms:contributor e1:mapped_term_curie "dcterms:contributor" ;
+	dcterms:identifier "dcterms:contributor" , "http://purl.org/dc/terms/contributor" ;
+	rdfs:label "http://purl.org/dc/terms/contributor" .
+
+:term_Mapping_79 owl:sameAs :thing_79 .
+
+premis:linkingAgentIdentifier e1:mapped_term_curie "premis:linkingAgentIdentifier" ;
+	dcterms:identifier "premis:linkingAgentIdentifier" , "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingAgentIdentifier" ;
+	rdfs:label "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingAgentIdentifier" .
+
+:term_Mapping_80 owl:sameAs :thing_80 .
+
+pav:contributors e1:mapped_term_curie "pav:contributors" ;
+	dcterms:identifier "pav:contributors" , "http://swan.mindinformatics.org/ontologies/1.2/pav/contributors" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/contributors" .
+
+:term_Mapping_81 owl:sameAs :thing_81 .
+
+pav:authors e1:mapped_term_curie "pav:authors" ;
+	dcterms:identifier "pav:authors" , "http://swan.mindinformatics.org/ontologies/1.2/pav/authors" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/authors" .
+
+:term_Mapping_82 owl:sameAs :thing_82 .
+
+pav:curators e1:mapped_term_curie "pav:curators" ;
+	dcterms:identifier "pav:curators" , "http://swan.mindinformatics.org/ontologies/1.2/pav/curators" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/curators" .
+
+:term_Mapping_83 owl:sameAs :thing_83 .
+
+pav:importedBy e1:mapped_term_curie "pav:importedBy" ;
+	dcterms:identifier "pav:importedBy" , "http://swan.mindinformatics.org/ontologies/1.2/pav/importedBy" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/importedBy" .
+
+:term_Mapping_84 owl:sameAs :thing_84 .
+
+pav:publishedBy e1:mapped_term_curie "pav:publishedBy" ;
+	dcterms:identifier "pav:publishedBy" , "http://swan.mindinformatics.org/ontologies/1.2/pav/publishedBy" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/publishedBy" .
+
+:term_Mapping_85 owl:sameAs :thing_85 .
+
+pav:submittedBy e1:mapped_term_curie "pav:submittedBy" ;
+	dcterms:identifier "pav:submittedBy" , "http://swan.mindinformatics.org/ontologies/1.2/pav/submittedBy" ;
+	rdfs:label "http://swan.mindinformatics.org/ontologies/1.2/pav/submittedBy" .
+
+:term_Mapping_86 owl:sameAs :thing_86 .
+
+cs:creatorName e1:mapped_term_curie "cs:creatorName" ;
+	dcterms:identifier "cs:creatorName" , "http://purl.org/vocab/changeset/schema#creatorName" ;
+	rdfs:label "http://purl.org/vocab/changeset/schema#creatorName" .
+
+:term_Mapping_87 owl:sameAs :thing_87 .
+
+opm:wasTriggeredBy e1:reference_term_curie "opm:wasTriggeredBy" ;
+	owl:annotatedSource "opm:wasTriggeredBy" .
+
+provenir:preceded_by e1:mapped_term_curie "provenir:preceded_by" ;
+	dcterms:identifier "provenir:preceded_by" , "http://knoesis.wright.edu/provenir/provenir.owl#preceded_by" ;
+	rdfs:label "http://knoesis.wright.edu/provenir/provenir.owl#preceded_by" .
+
+opm:wasTriggeredBy dcterms:identifier "http://openprovenance.org/ontology#wasTriggeredBy" ;
+	rdfs:label "http://openprovenance.org/ontology#wasTriggeredBy" .
+
+:term_Mapping_88 owl:sameAs :thing_88 .
+
+_:node15oauena0x2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node15oauena0x3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node15oauena0x4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node15oauena0x5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node15oauena0x6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node15oauena0x7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node15oauena0x8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node15oauena0x9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/" .
+
+_:node15oauena0x10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-06/" .
+
+_:node15oauena0x11 vann:preferredNamespacePrefix "provenance" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/" .
+
+_:node15oauena0x12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node15oauena0x13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node15oauena0x14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node15oauena0x15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node15oauena0x16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node15oauena0x17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node15oauena0x18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node15oauena0x19 vann:preferredNamespacePrefix "sdmx" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node15oauena0x20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node15oauena0x21 vann:preferredNamespacePrefix "spreadsheets-google-com_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/" .
+
+_:node15oauena0x22 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/vocab/" .
+
+_:node15oauena0x23 vann:preferredNamespacePrefix "local_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/" .
+
+_:node15oauena0x24 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/" .
+
+_:node15oauena0x25 vann:preferredNamespacePrefix "e1" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/" .
+
+_:node15oauena0x26 vann:preferredNamespacePrefix "" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/" .
+
+_:node15oauena0x27 vann:preferredNamespacePrefix "_global_value" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/" .
+
+_:node15oauena0x28 vann:preferredNamespacePrefix "typed_vocabulary" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/" .
+
+_:node15oauena0x29 vann:preferredNamespacePrefix "prov-xg-wiki" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#" .
+
+_:node15oauena0x30 vann:preferredNamespacePrefix "todo" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node15oauena0x31 vann:preferredNamespacePrefix "con" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
+
+_:node15oauena0x32 vann:preferredNamespacePrefix "hprv" ;
+	vann:preferredNamespaceUri "http://purl.org/net/provenance/ns#" .
+
+_:node15oauena0x33 vann:preferredNamespacePrefix "time" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
+
+_:node15oauena0x34 vann:preferredNamespacePrefix "dbpedia" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
+
+_:node15oauena0x35 vann:preferredNamespacePrefix "skos" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
+
+_:node15oauena0x36 vann:preferredNamespacePrefix "dcmi-class" ;
+	vann:preferredNamespaceUri "http://dublincore.org/documents/dcmi-terms/#classes-" .
+
+_:node15oauena0x37 vann:preferredNamespacePrefix "opm" ;
+	vann:preferredNamespaceUri "http://openprovenance.org/ontology#" .
+
+_:node15oauena0x38 vann:preferredNamespacePrefix "rdfg" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/03/trix/rdfg-1/" .
+
+_:node15oauena0x39 vann:preferredNamespacePrefix "wot" ;
+	vann:preferredNamespaceUri "http://xmlns.com/wot/0.1/" .
+
+_:node15oauena0x40 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node15oauena0x41 vann:preferredNamespacePrefix "premis" ;
+	vann:preferredNamespaceUri "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#" .
+
+_:node15oauena0x42 vann:preferredNamespacePrefix "swp" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/03/trix/swp-2/" .
+
+_:node15oauena0x43 vann:preferredNamespacePrefix "pav" ;
+	vann:preferredNamespaceUri "http://swan.mindinformatics.org/ontologies/1.2/pav/" .
+
+_:node15oauena0x44 vann:preferredNamespacePrefix "dcmi-terms" ;
+	vann:preferredNamespaceUri "http://dublincore.org/documents/dcmi-terms/#" .
+
+_:node15oauena0x45 vann:preferredNamespacePrefix "geonames" ;
+	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
+
+_:node15oauena0x46 vann:preferredNamespacePrefix "cs" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/changeset/schema#" .
+
+_:node15oauena0x47 vann:preferredNamespacePrefix "provenir" ;
+	vann:preferredNamespaceUri "http://knoesis.wright.edu/provenir/provenir.owl#" .
+
+_:node15oauena0x48 vann:preferredNamespacePrefix "wgs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+
+_:node15oauena0x49 vann:preferredNamespacePrefix "muo" ;
+	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
+
+_:node15oauena0x50 vann:preferredNamespacePrefix "value_of_mapping_relation" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/" .
+
+_:node15oauena0x51 vann:preferredNamespacePrefix "value_of_mapped_vocabulary" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_vocabulary/" .
+
+_:node15oauena0x52 vann:preferredNamespacePrefix "value_of_mapped_term" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/" .
+
+_:node15oauena0x53 vann:preferredNamespacePrefix "value_of_see_also" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/" .
+
+_:node15oauena0x54 vann:preferredNamespacePrefix "value_of_reference_term" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/" .
+
+_:node15oauena0x1 rdfs:seeAlso _:node15oauena0x2 , _:node15oauena0x3 , _:node15oauena0x4 , _:node15oauena0x5 , _:node15oauena0x6 , _:node15oauena0x7 , _:node15oauena0x8 , _:node15oauena0x9 , _:node15oauena0x10 , _:node15oauena0x11 , _:node15oauena0x12 , _:node15oauena0x13 , _:node15oauena0x14 , _:node15oauena0x15 , _:node15oauena0x16 , _:node15oauena0x17 , _:node15oauena0x18 , _:node15oauena0x19 , _:node15oauena0x20 , _:node15oauena0x21 , _:node15oauena0x22 , _:node15oauena0x23 , _:node15oauena0x24 , _:node15oauena0x25 , _:node15oauena0x26 , _:node15oauena0x27 , _:node15oauena0x28 , _:node15oauena0x29 , _:node15oauena0x30 , _:node15oauena0x31 , _:node15oauena0x32 , _:node15oauena0x33 , _:node15oauena0x34 , _:node15oauena0x35 , _:node15oauena0x36 , _:node15oauena0x37 , _:node15oauena0x38 , _:node15oauena0x39 , _:node15oauena0x40 , _:node15oauena0x41 , _:node15oauena0x42 , _:node15oauena0x43 , _:node15oauena0x44 , _:node15oauena0x45 , _:node15oauena0x46 , _:node15oauena0x47 , _:node15oauena0x48 , _:node15oauena0x49 , _:node15oauena0x50 , _:node15oauena0x51 , _:node15oauena0x52 , _:node15oauena0x53 , _:node15oauena0x54 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11" ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
+	dcterms:created "2011-02-11T13:06:48.368-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11 e1" ;
+	conversion:uses_predicate e1:reference_term , e1:see_also , e1:mapped_vocabulary_ordinal , e1:mapped_term , e1:mapped_vocabulary , e1:vism , e1:mapped_term_curie , e1:mapping_relation , e1:reference_term_curie , e1:visr ;
+	conversion:uses_class local_vocab:Term_Mapping , local_vocab:Vocabulary ;
+	void:exampleResource :term_Mapping_2 , :term_Mapping_88 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.nt> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.nt> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com> a foaf:Agent ;
+	dcterms:identifier "spreadsheets-google-com" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/spreadsheets-google-com> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_7 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_8 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db ;
+	pmlj:hasAntecedentList _:node15oauena0x55 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15oauena0x57 , _:node15oauena0x56 .
+
+tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_fd9561749f0400119f4a8176020257db" ;
+	dcterms:version "2011-Feb-06" ;
+	doap:revision "2011-Feb-06" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15oauena0x58 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15oauena0x55 a rdf:List ;
+	rdf:first provenance:nodeset_9 .
+
+provenance:nodeset_9 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> .
+
+_:node15oauena0x55 rdf:rest _:node15oauena0x59 .
+
+_:node15oauena0x59 a rdf:List ;
+	rdf:first provenance:nodeset_10 .
+
+provenance:nodeset_10 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> .
+
+_:node15oauena0x59 rdf:rest rdf:nil .
+
+_:node15oauena0x57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node15oauena0x56 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15oauena0x61 .
+
+_:node15oauena0x61 scovo:dimension void:numberOfTriples ;
+	rdf:value "1934"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1934"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-06/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix spreadsheets-google-com_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/> .
+@prefix e1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/> .
+@prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
+@prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
+@prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
+@prefix value_of_mapped_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_vocabulary/> .
+@prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
+@prefix value_of_see_also: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/> .
+@prefix value_of_reference_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/> .
+
+local_vocab:Term_Mapping a rdfs:Class , owl:Class ;
+	rdfs:label "Term Mapping" .
+
+e1:visr ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VisR" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "VisR" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:visr .
+
+local_vocab:Vocabulary a rdfs:Class , owl:Class ;
+	rdfs:label "Vocabulary" .
+
+e1:reference_term_curie ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Reference Term Curie" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Reference Term Curie" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:reference_term_curie ;
+	rdfs:subPropertyOf owl:annotatedSource .
+
+owl:annotatedSource a rdf:Property , owl:DatatypeProperty .
+
+e1:mapping_relation ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "skos:narrower" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapping Relation" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:skos_narrower , raw:mapping_relation ;
+	rdfs:subPropertyOf owl:annotatedProperty .
+
+owl:annotatedProperty a rdf:Property , owl:ObjectProperty .
+
+e1:mapping_relation ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "skos:narrowMatch" ;
+	conversion:enhances raw:skos_narrowmatch ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "skos:related" ;
+	conversion:enhances raw:skos_related ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "skos:relatedMatch" ;
+	conversion:enhances raw:skos_relatedmatch ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "skos:closeMatch" ;
+	conversion:enhances raw:skos_closematch ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "skos:exactMatch" ;
+	conversion:enhances raw:skos_exactmatch ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "equivalent" ;
+	conversion:enhances raw:equivalent ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "skos:broadMatch" ;
+	conversion:enhances raw:skos_broadmatch ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "skos:broader" ;
+	conversion:enhances raw:skos_broader .
+
+e1:mapped_term_curie ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Curie" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Term Curie" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mapped_term_curie ;
+	rdfs:subPropertyOf dcterms:identifier .
+
+dcterms:identifier a rdf:Property , owl:DatatypeProperty .
+
+e1:vism ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "VisM" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "VisM" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:vism .
+
+e1:mapped_vocabulary ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Vocabulary" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:mapped_vocabulary .
+
+e1:mapped_term ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mapped Term" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Term" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:mapped_term ;
+	rdfs:subPropertyOf owl:annotatedTarget .
+
+owl:annotatedTarget a rdf:Property , owl:ObjectProperty .
+
+e1:mapped_vocabulary_ordinal ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary Ordinal" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Mapped Vocabulary Ordinal" ;
+	rdfs:range xsd:integer ;
+	conversion:enhances raw:mapped_vocabulary_ordinal .
+
+e1:see_also ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "rdfs:seeAlso" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "See Also" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:rdfs_seealso , raw:see_also ;
+	rdfs:subPropertyOf rdfs:seeAlso .
+
+rdfs:seeAlso a rdf:Property , owl:ObjectProperty .
+
+e1:reference_term ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Reference Term" ;
+	conversion:enhancement_layer "1" ;
+	rdfs:label "Reference Term" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:reference_term .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-06/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix spreadsheets-google-com_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/> .
+@prefix e1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/> .
+@prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
+@prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
+@prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
+@prefix value_of_mapped_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_vocabulary/> .
+@prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
+@prefix value_of_see_also: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/> .
+@prefix value_of_reference_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11" ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-02-11T13:06:50.137-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
+	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
+	dcterms:created "2011-02-11T13:06:48.368-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
+	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11 e1" ;
+	conversion:uses_predicate e1:reference_term , e1:see_also , e1:mapped_vocabulary_ordinal , e1:mapped_term , e1:mapped_vocabulary , e1:vism , e1:mapped_term_curie , e1:mapping_relation , e1:reference_term_curie , e1:visr ;
+	conversion:uses_class local_vocab:Term_Mapping , local_vocab:Vocabulary ;
+	void:exampleResource :term_Mapping_2 , :term_Mapping_88 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.nt> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" ;
+	conversion:dataset_version "2011-Feb-11" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.nt> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com> a foaf:Agent ;
+	dcterms:identifier "spreadsheets-google-com" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/spreadsheets-google-com> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.nt> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_7 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_8 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl.tgz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db ;
+	pmlj:hasAntecedentList _:node15oauena0x55 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15oauena0x57 , _:node15oauena0x56 .
+
+tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_fd9561749f0400119f4a8176020257db" ;
+	dcterms:version "2011-Feb-06" ;
+	doap:revision "2011-Feb-06" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_fd9561749f0400119f4a8176020257db ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15oauena0x58 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15oauena0x55 a rdf:List ;
+	rdf:first provenance:nodeset_9 .
+
+provenance:nodeset_9 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> .
+
+_:node15oauena0x55 rdf:rest _:node15oauena0x59 .
+
+_:node15oauena0x59 a rdf:List ;
+	rdf:first provenance:nodeset_10 .
+
+provenance:nodeset_10 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> .
+
+_:node15oauena0x59 rdf:rest rdf:nil .
+
+_:node15oauena0x57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node15oauena0x56 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15oauena0x62 .
+
+_:node15oauena0x62 scovo:dimension void:numberOfTriples ;
+	rdf:value "1934"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1934"^^xsd:integer .

@@ -1,0 +1,106 @@
+2011-02-11T12:09:37-05:00
+convert-prov-xgs-vocabulary-mappings.sh converting newlines of source/prov-xgs-provenance-mappings.csv
+E1 enhancement parameters missing; creating default template. Edit manual/prov-xgs-provenance-mappings.csv.e1.params.ttl and rerun to produce E1 enhancement.
+88 rows in source/prov-xgs-provenance-mappings.csv
+RAW CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-06 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+sampleLimit: 
+  2
+enhancementParametersURL:     
+  automatic/prov-xgs-provenance-mappings.csv.raw.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.raw.sample.ttl
+converterIdentifier:          
+  csv2rdf4lod_0b5738294299d9145fa8b600454c4c12
+==========
+BaseURIQuerylet(*) .http://logd.tw.rpi.edu.
+DatasetSourceIdentifierQuerylet(*) .spreadsheets-google-com.
+DatasetIdentifierQuerylet(*) .prov-xgs-vocabulary-mappings.
+DatasetVersionQuerylet(*) .2011-Feb-11.
+
+subjectNS:   :  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/
+predicateNS: raw:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/
+objectNS:    _global_value:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/
+
+headers present at row 1: "VisR","Reference Term","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Vocabulary Ordinal","rdfs:seeAlso"
+
+1: "VisR" -> "VisR" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/visr (rdfs:Literal)
+2: "Reference Term" -> "Reference Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/reference_term (rdfs:Literal)
+3: "skos:narrower" -> "skos:narrower" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_narrower (rdfs:Literal)
+4: "skos:narrowMatch" -> "skos:narrowMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_narrowmatch (rdfs:Literal)
+5: "skos:related" -> "skos:related" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_related (rdfs:Literal)
+6: "skos:relatedMatch" -> "skos:relatedMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_relatedmatch (rdfs:Literal)
+7: "skos:closeMatch" -> "skos:closeMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_closematch (rdfs:Literal)
+8: "skos:exactMatch" -> "skos:exactMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_exactmatch (rdfs:Literal)
+9: "equivalent" -> "equivalent" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/equivalent (rdfs:Literal)
+10: "skos:broadMatch" -> "skos:broadMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_broadmatch (rdfs:Literal)
+11: "skos:broader" -> "skos:broader" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_broader (rdfs:Literal)
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_term_curie (rdfs:Literal)
+13: "VisM" -> "VisM" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/vism (rdfs:Literal)
+14: "Mapped Vocabulary" -> "Mapped Vocabulary" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_vocabulary (rdfs:Literal)
+15: "Mapped Term" -> "Mapped Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_term (rdfs:Literal)
+16: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_vocabulary_ordinal (rdfs:Literal)
+17: "rdfs:seeAlso" -> "rdfs:seeAlso" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/rdfs_seealso (rdfs:Literal)
+Resulting size: 366 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 2 examples rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-06 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+enhancementParametersURL:     
+  automatic/prov-xgs-provenance-mappings.csv.raw.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.raw.ttl
+converterIdentifier:          
+  csv2rdf4lod_0b5738294299d9145fa8b600454c4c12
+==========
+BaseURIQuerylet(*) .http://logd.tw.rpi.edu.
+DatasetSourceIdentifierQuerylet(*) .spreadsheets-google-com.
+DatasetIdentifierQuerylet(*) .prov-xgs-vocabulary-mappings.
+DatasetVersionQuerylet(*) .2011-Feb-11.
+
+subjectNS:   :  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/
+predicateNS: raw:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/
+objectNS:    _global_value:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/
+
+headers present at row 1: "VisR","Reference Term","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Vocabulary Ordinal","rdfs:seeAlso"
+
+1: "VisR" -> "VisR" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/visr (rdfs:Literal)
+2: "Reference Term" -> "Reference Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/reference_term (rdfs:Literal)
+3: "skos:narrower" -> "skos:narrower" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_narrower (rdfs:Literal)
+4: "skos:narrowMatch" -> "skos:narrowMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_narrowmatch (rdfs:Literal)
+5: "skos:related" -> "skos:related" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_related (rdfs:Literal)
+6: "skos:relatedMatch" -> "skos:relatedMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_relatedmatch (rdfs:Literal)
+7: "skos:closeMatch" -> "skos:closeMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_closematch (rdfs:Literal)
+8: "skos:exactMatch" -> "skos:exactMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_exactmatch (rdfs:Literal)
+9: "equivalent" -> "equivalent" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/equivalent (rdfs:Literal)
+10: "skos:broadMatch" -> "skos:broadMatch" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_broadmatch (rdfs:Literal)
+11: "skos:broader" -> "skos:broader" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/skos_broader (rdfs:Literal)
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_term_curie (rdfs:Literal)
+13: "VisM" -> "VisM" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/vism (rdfs:Literal)
+14: "Mapped Vocabulary" -> "Mapped Vocabulary" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_vocabulary (rdfs:Literal)
+15: "Mapped Term" -> "Mapped Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_term (rdfs:Literal)
+16: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/mapped_vocabulary_ordinal (rdfs:Literal)
+17: "rdfs:seeAlso" -> "rdfs:seeAlso" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/rdfs_seealso (rdfs:Literal)
+Resulting size: 1981 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+convert-aggregate.sh delaying publishing until an enhancement is available.
+  To publish with only raw, set CSV2RDF4LOD_PUBLISH_DELAY_UNTIL_ENHANCED="false" in $CSV2RDF4LOD_HOME/source-me.sh.
+  To publish raw with enhanced, add enhancement to manual/prov-xgs-provenance-mappings.csv.e1.params.ttl and rerun convert-prov-xgs-vocabulary-mappings.sh
+  To force publishing now, run publish/bin/publish.sh
+===========================================================================================

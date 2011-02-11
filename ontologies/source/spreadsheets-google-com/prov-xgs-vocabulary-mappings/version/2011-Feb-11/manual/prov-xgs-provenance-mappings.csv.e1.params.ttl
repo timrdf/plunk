@@ -1,0 +1,222 @@
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix vann:       <http://purl.org/vocab/vann/> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:       <http://www.w3.org/2006/time#> .
+@prefix wgs:        <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:   <http://www.geonames.org/ontology#> .
+@prefix dbpedia:    <http://dbpedia.org/resource/> .
+@prefix con:        <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:        <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix void:       <http://rdfs.org/ns/void#> .
+@prefix scovo:      <http://purl.org/NET/scovo#> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix ov:         <http://open.vocab.org/terms/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix :           <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix provenir:   <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix hprv:       <http://purl.org/net/provenance/ns#> .
+@prefix opm:        <http://openprovenance.org/ontology#> .
+@prefix swp:        <http://www.w3.org/2004/03/trix/swp-2/> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix premis:     <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix cs:         <http://purl.org/vocab/changeset/schema#> .
+@prefix rdfg:       <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix pav:        <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix wot:        <http://xmlns.com/wot/0.1/> .
+
+<http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> .
+<http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot>
+   a foaf:OnlineAccount;
+   foaf:accountName "lebot";
+   sioc:account_of <http://tw.rpi.edu/instances/TimLebo>;
+.
+
+:dataset a void:Dataset;
+   conversion:base_uri           "http://logd.tw.rpi.edu"^^xsd:anyURI;
+   conversion:source_identifier  "spreadsheets-google-com";
+   conversion:dataset_identifier "prov-xgs-vocabulary-mappings";
+   conversion:version_identifier "2011-Feb-11";
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+
+      dcterms:creator <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot>;
+
+      conversion:interpret [
+         conversion:symbol "-";
+         conversion:interpretation conversion:null;
+      ];
+
+      conversion:enhance [
+         ov:csvCol         1;
+         ov:csvHeader     "VisR";
+         a conversion:Omitted;
+         conversion:label "VisR";
+         conversion:comment "";
+         conversion:range  todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol         2;
+         ov:csvHeader     "Reference Term Curie";
+         conversion:bundled_by [ ov:csvCol 18 ];
+         conversion:label "Reference Term Curie";
+         conversion:comment "";
+         conversion:subproperty_of owl:annotatedSource;
+         conversion:range  rdfs:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol         3,4,5,6,7,8,9,10,11;
+         #conversion:domain_template "term_Mapping_[#2]_to_[#12]";
+         conversion:domain_name "Term Mapping";
+         conversion:interpret [
+            conversion:symbol         "equivalent";
+            conversion:interpretation skos:equivalent;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:broadMatch";
+            conversion:interpretation skos:broadMatch;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:broader";
+            conversion:interpretation skos:broader;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:closeMatch";
+            conversion:interpretation skos:closeMatch;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:exactMatch";
+            conversion:interpretation skos:exactMatch;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:narrowMatch";
+            conversion:interpretation skos:narrowMatch;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:narrower";
+            conversion:interpretation skos:narrower;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:related";
+            conversion:interpretation skos:related;
+         ];
+         conversion:interpret [
+            conversion:symbol         "skos:relatedMatch";
+            conversion:interpretation skos:relatedMatch;
+         ];
+         conversion:label "Mapping Relation";
+         conversion:subproperty_of owl:annotatedProperty;
+         conversion:range  rdfs:Resource;
+      ];
+      conversion:enhance [
+         ov:csvCol         3;
+         ov:csvHeader     "skos:narrower";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         4;
+         ov:csvHeader     "skos:narrowMatch";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         5;
+         ov:csvHeader     "skos:related";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         6;
+         ov:csvHeader     "skos:relatedMatch";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         7;
+         ov:csvHeader     "skos:closeMatch";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         8;
+         ov:csvHeader     "skos:exactMatch";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         9;
+         ov:csvHeader     "equivalent";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         10;
+         ov:csvHeader     "skos:broadMatch";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         11;
+         ov:csvHeader     "skos:broader";
+         conversion:comment "";
+      ];
+      conversion:enhance [
+         ov:csvCol         12;
+         ov:csvHeader     "Mapped Term Curie";
+         conversion:bundled_by [ ov:csvCol 15 ];
+         conversion:label "Mapped Term Curie";
+         conversion:comment "";
+         conversion:range  rdfs:Literal;
+         conversion:subproperty_of dcterms:identifier;
+      ];
+      conversion:enhance [
+         ov:csvCol         13;
+         ov:csvHeader     "VisM";
+         a conversion:Omitted;
+         conversion:label "VisM";
+         conversion:comment "";
+         conversion:range  todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol         14;
+         ov:csvHeader     "Mapped Vocabulary";
+         conversion:label "Mapped Vocabulary";
+         conversion:comment "";
+         conversion:range  rdfs:Resource;
+         conversion:range_name "Vocabulary";
+      ];
+      conversion:enhance [
+         ov:csvCol         15;
+         ov:csvHeader     "Mapped Term";
+         conversion:label "Mapped Term";
+         conversion:comment "";
+         conversion:subproperty_of owl:annotatedTarget;
+         conversion:range  rdfs:Resource;
+      ];
+      conversion:enhance [
+         ov:csvCol         16;
+         ov:csvHeader     "Mapped Vocabulary Ordinal";
+         conversion:bundled_by [ ov:csvCol 14 ];
+         conversion:label "Mapped Vocabulary Ordinal";
+         conversion:comment "";
+         conversion:range  xsd:integer;
+      ];
+      conversion:enhance [
+         ov:csvCol         17;
+         ov:csvHeader     "rdfs:seeAlso";
+         a conversion:Repeat_previous_if_empty_column;
+         conversion:label "See Also";
+         conversion:comment "";
+         conversion:subproperty_of rdfs:seeAlso;
+         conversion:range  rdfs:Resource;
+      ];
+      conversion:enhance [
+         ov:csvCol         18;
+         ov:csvHeader     "Reference Term";
+         conversion:label "Reference Term";
+         conversion:comment "";
+         conversion:range  rdfs:Resource;
+      ];
+   ];
+.

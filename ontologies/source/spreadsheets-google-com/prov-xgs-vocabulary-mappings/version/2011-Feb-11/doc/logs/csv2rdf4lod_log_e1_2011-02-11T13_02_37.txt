@@ -1,0 +1,3618 @@
+2011-02-11T13:02:37-05:00
+88 rows in source/prov-xgs-provenance-mappings.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-06 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+sampleLimit: 
+  2
+enhancementParametersURL:     
+  manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.e1.sample.ttl
+converterIdentifier:          
+  csv2rdf4lod_fd9561749f0400119f4a8176020257db
+==========
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: load(location,repository): manual/prov-xgs-provenance-mappings.csv.e1.params.ttl --> org.openrdf.sail.memory.MemoryStore@52b2a2d8
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: attempting to parse File as Turtle (mimeTypes=application/x-turtle; ext=ttl)... 
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: before: 0
+manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+org.openrdf.rio.RDFParseException: Expected ':', found '<' [line 22]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parsePrefixID(TurtleParser.java:268)
+	at org.openrdf.rio.turtle.TurtleParser.parseDirective(TurtleParser.java:228)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:201)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:174)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:120)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:382)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: load attempts: 1
+
+subjectNS:   DDD:  http://example.org/source/SSS/dataset/DDD/version/VVV/
+predicateNS: raw:  http://example.org/source/SSS/dataset/DDD/vocab/raw/
+objectNS:    DDD_global_value:  http://example.org/source/SSS/dataset/DDD/
+
+headers present at row 1: "VisR","Reference Term Curie","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Vocabulary Ordinal","rdfs:seeAlso","Reference Term"
+
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+1: "VisR" -> "VisR" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/visr (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+2: "Reference Term Curie" -> "Reference Term Curie" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/reference_term_curie (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+3: "skos:narrower" -> "skos:narrower" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_narrower (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+4: "skos:narrowMatch" -> "skos:narrowMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_narrowmatch (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+5: "skos:related" -> "skos:related" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_related (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+6: "skos:relatedMatch" -> "skos:relatedMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_relatedmatch (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+7: "skos:closeMatch" -> "skos:closeMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_closematch (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+8: "skos:exactMatch" -> "skos:exactMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_exactmatch (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+9: "equivalent" -> "equivalent" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/equivalent (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+10: "skos:broadMatch" -> "skos:broadMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_broadmatch (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+11: "skos:broader" -> "skos:broader" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_broader (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_term_curie (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+13: "VisM" -> "VisM" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/vism (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+14: "Mapped Vocabulary" -> "Mapped Vocabulary" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_vocabulary (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+15: "Mapped Term" -> "Mapped Term" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_term (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+16: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_vocabulary_ordinal (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+17: "rdfs:seeAlso" -> "rdfs:seeAlso" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/rdfs_seealso (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+18: "Reference Term" -> "Reference Term" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/reference_term (rdfs:Literal)
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 2
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 3
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Execution
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Execution
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#Execution
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:38 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Resulting size: 370 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 2 examples rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-06 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+enhancementParametersURL:     
+  manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.e1.ttl
+converterIdentifier:          
+  csv2rdf4lod_fd9561749f0400119f4a8176020257db
+==========
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: load(location,repository): manual/prov-xgs-provenance-mappings.csv.e1.params.ttl --> org.openrdf.sail.memory.MemoryStore@4de13d52
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: attempting to parse File as Turtle (mimeTypes=application/x-turtle; ext=ttl)... 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: before: 0
+manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+org.openrdf.rio.RDFParseException: Expected ':', found '<' [line 22]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parsePrefixID(TurtleParser.java:268)
+	at org.openrdf.rio.turtle.TurtleParser.parseDirective(TurtleParser.java:228)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:201)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:174)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:120)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:382)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.rdf.utils.pipes.starts.Cat load
+FINER: load attempts: 1
+
+subjectNS:   DDD:  http://example.org/source/SSS/dataset/DDD/version/VVV/
+predicateNS: raw:  http://example.org/source/SSS/dataset/DDD/vocab/raw/
+objectNS:    DDD_global_value:  http://example.org/source/SSS/dataset/DDD/
+
+headers present at row 1: "VisR","Reference Term Curie","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Vocabulary Ordinal","rdfs:seeAlso","Reference Term"
+
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+1: "VisR" -> "VisR" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/visr (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+2: "Reference Term Curie" -> "Reference Term Curie" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/reference_term_curie (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+3: "skos:narrower" -> "skos:narrower" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_narrower (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+4: "skos:narrowMatch" -> "skos:narrowMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_narrowmatch (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+5: "skos:related" -> "skos:related" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_related (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+6: "skos:relatedMatch" -> "skos:relatedMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_relatedmatch (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+7: "skos:closeMatch" -> "skos:closeMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_closematch (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+8: "skos:exactMatch" -> "skos:exactMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_exactmatch (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+9: "equivalent" -> "equivalent" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/equivalent (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+10: "skos:broadMatch" -> "skos:broadMatch" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_broadmatch (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+11: "skos:broader" -> "skos:broader" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/skos_broader (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_term_curie (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+13: "VisM" -> "VisM" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/vism (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+14: "Mapped Vocabulary" -> "Mapped Vocabulary" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_vocabulary (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+15: "Mapped Term" -> "Mapped Term" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_term (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+16: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/mapped_vocabulary_ordinal (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+17: "rdfs:seeAlso" -> "rdfs:seeAlso" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/rdfs_seealso (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.impl.ValueHandlerFactory getValueHandler
+FINE: #getValueHandler: false false false
+18: "Reference Term" -> "Reference Term" -> http://example.org/source/SSS/dataset/DDD/vocab/raw/reference_term (rdfs:Literal)
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 2
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 3
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Execution
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Execution
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#Execution
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 4
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataAccess
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataAccess
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#DataAccess
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 5
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataCreation
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataCreation
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#DataCreation
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 6
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:InferenceStep
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:InferenceStep
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-justification.owl#InferenceStep
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 7
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#dcmitype-Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 8
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Event
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 9
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:SigEvent
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:SigEvent
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Web Of Trust Schema
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://xmlns.com/wot/0.1/SigEvent
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 6
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 10
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:signatureMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:signatureMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/signatureMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 11
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:digestMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:digestMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/digestMethod
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:39 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 12
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Process
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:ChangeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:ChangeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/vocab/changeset/schema#ChangeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Process
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 13
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 14
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 15
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataItem
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:DataItem
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#DataItem
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 16
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:CreationGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:CreationGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#CreationGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 17
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:File
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:File
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#File
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 18
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:closeMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Information
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Information
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#Information
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 19
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 20
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:Collection
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:Collection
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#dcmitype-Collection
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 21
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:BibliographicResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:BibliographicResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#classes-BibliographicResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 22
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:PhysicalResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:PhysicalResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#classes-PhysicalResource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 23
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:MethodOfAccrual
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcmitype:MethodOfAccrual
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/MethodOfAccrual
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 24
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Object
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Object
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Object
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 25
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:PubKey
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:PubKey
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Web Of Trust Schema
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://xmlns.com/wot/0.1/PubKey
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 6
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 26
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broader
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: rdfg:Graph
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: rdfg:Graph
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/rdfg-1/Graph
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 27
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: rdf:Statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: rdf:Statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Artifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 28
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 29
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broader
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Actor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:Actor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#Actor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 30
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 31
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#Source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 32
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:exactMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#classes-Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 33
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 34
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:Authority
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:Authority
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/Authority
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 35
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#data
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 36
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:NodeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:NodeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-justification.owl#NodeSet
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 37
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:ProvenanceStatement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:ProvenanceStatement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://dublincore.org/documents/dcmi-terms/#classes-ProvenanceStatement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 38
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:versionNumber
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:versionNumber
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/versionNumber
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 39
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:Warrant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:Warrant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/Warrant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#Account
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 40
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:derives_from
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:derives_from
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#derives_from
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 41
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:precededBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:precededBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#precededBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 42
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 43
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:replaces
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:replaces
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/replaces
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 44
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 45
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:hasPart
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:hasPart
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/hasPart
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 46
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:references
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:references
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/references
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 47
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:relatedObjectIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:relatedObjectIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedObjectIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 48
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:importedFromSource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:importedFromSource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/importedFromSource
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 49
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:previousVersion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:previousVersion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/previousVersion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasDerivedFrom
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 50
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 51
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:employedArtifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:employedArtifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#employedArtifact
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 52
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:usedData
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:usedData
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#usedData
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 53
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:usedGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:usedGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#usedGuideline
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 54
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:hasAntecedentList
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:hasAntecedentList
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-justification.owl#hasAntecedentList
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 55
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:requires
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:requires
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/requires
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 56
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:isRequiredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:isRequiredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/isRequiredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 57
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:linkingObjectIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:linkingObjectIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingObjectIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 58
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:signer
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: wot:signer
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Web Of Trust Schema
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://xmlns.com/wot/0.1/signer
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 6
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 59
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:quotedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:quotedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/quotedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 60
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/vocab/changeset/schema#statement
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 61
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:removal
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:removal
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/vocab/changeset/schema#removal
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 62
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:addition
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:addition
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/vocab/changeset/schema#addition
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#used
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 63
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#has_participant
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 64
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:yieldedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:yieldedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#yieldedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 65
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 66
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:retrievedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:retrievedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#retrievedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 67
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:isConsequentOf
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:isConsequentOf
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-justification.owl#isConsequentOf
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 68
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasConclusion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasConclusion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#hasConclusion
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 69
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 70
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:relatedEventIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:relatedEventIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#relatedEventIdentification
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 71
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broader
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/createdBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 72
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:assertedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: swp:assertedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Semantic Web Publishing Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://www.w3.org/2004/03/trix/swp-2/assertedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 8
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasGeneratedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 73
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:has_agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#has_agent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 74
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broader
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:involvedActor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:involvedActor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#involvedActor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 75
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: equivalent
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:performedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: hprv:performedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Hartig Provenance Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/net/provenance/ns#performedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 2
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 76
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlp:hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-provenance.owl#hasSourceUsage
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 77
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:hasInferenceEngine
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pmlj:hasInferenceEngine
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Proof Markup Language
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://inference-web.org/2.0/pml-justification.owl#hasInferenceEngine
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 3
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 78
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:contributor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:contributor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/contributor
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 79
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:relatedMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:linkingAgentIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: premis:linkingAgentIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: PREMIS
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#linkingAgentIdentifier
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 5
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 80
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrower
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:contributors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:contributors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/contributors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 81
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:authors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:authors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/authors
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 82
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:curators
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:curators
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/curators
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 83
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:importedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:importedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/importedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 84
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:publishedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:publishedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/publishedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 85
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:related
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:submittedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: pav:submittedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: SWAN Provenance, Authoring and Version Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://swan.mindinformatics.org/ontologies/1.2/pav/submittedBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 7
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 86
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:narrowMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:creatorName
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: cs:creatorName
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Changeset Vocabulary
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/vocab/changeset/schema#creatorName
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 9
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasControlledBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 87
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasTriggeredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:preceded_by
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: provenir:preceded_by
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Provenir ontology
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://knoesis.wright.edu/provenir/provenir.owl#preceded_by
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 1
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasTriggeredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: visiting 88
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: opm:wasTriggeredBy
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: skos:broadMatch
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: -
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: dcterms:source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: Dublin Core Terms
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://purl.org/dc/terms/source
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 4
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: 
+Feb 11, 2011 1:02:40 PM edu.rpi.tw.data.csv.CSVtoRDF visit
+FINE: VALUES: [] CELL: http://openprovenance.org/ontology#wasTriggeredBy
+Resulting size: 2070 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+convert-aggregate.sh publishing raw and enhancements.
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.sample.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl)
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.pml.ttl
+  (including source/prov-xgs-provenance-mappings.csv.pml.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl
+  (including automatic/prov-xgs-provenance-mappings.csv.e1.void.ttl)
+  (including automatic/prov-xgs-provenance-mappings.csv.raw.void.ttl)
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.pml.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sameas.nt (8 triples)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/bin/ln-to-www-root-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh.
