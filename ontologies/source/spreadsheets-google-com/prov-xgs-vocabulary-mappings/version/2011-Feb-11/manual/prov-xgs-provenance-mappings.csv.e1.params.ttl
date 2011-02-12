@@ -112,7 +112,7 @@
             conversion:interpretation skos:relatedMatch;
          ];
          conversion:label "Mapping Relation";
-         conversion:subproperty_of owl:annotatedProperty;
+         conversion:equivalent_property owl:annotatedProperty;
          conversion:range  rdfs:Resource;
       ];
       conversion:enhance [
@@ -167,7 +167,7 @@
          conversion:label "Mapped Term Curie";
          conversion:comment "";
          conversion:range  rdfs:Literal;
-         conversion:subproperty_of dcterms:identifier;
+         conversion:equivalent_property dcterms:identifier;
       ];
       conversion:enhance [
          ov:csvCol         13;
@@ -183,7 +183,7 @@
          conversion:bundled_by [ ov:csvCol 15 ];
          conversion:label "Is Defined By";
          conversion:comment "";
-         conversion:subproperty_of rdfs:isDefinedBy;
+         conversion:equivalent_property rdfs:isDefinedBy;
          conversion:range  rdfs:Resource;
          conversion:range_name "Vocabulary";
       ];
@@ -192,7 +192,7 @@
          ov:csvHeader     "Mapped Term";
          conversion:label "Mapped Term";
          conversion:comment "";
-         conversion:subproperty_of owl:annotatedTarget;
+         conversion:equivalent_property owl:annotatedTarget;
          conversion:range  rdfs:Resource;
       ];
       conversion:enhance [
@@ -201,7 +201,7 @@
          conversion:bundled_by [ ov:csvCol 15 ];
          conversion:label "Mapped Term Depiction";
          conversion:comment "";
-         conversion:subproperty_of foaf:depiction;
+         conversion:equivalent_property foaf:depiction;
          conversion:range  rdfs:Resource;
       ];
       conversion:enhance [
@@ -218,7 +218,7 @@
          a conversion:Repeat_previous_if_empty_column;
          conversion:label "See Also";
          conversion:comment "";
-         conversion:subproperty_of rdfs:seeAlso;
+         conversion:equivalent_property rdfs:seeAlso;
          conversion:range  rdfs:Resource;
       ];
       conversion:enhance [
@@ -226,7 +226,7 @@
          ov:csvHeader     "Reference Term";
          conversion:label "Reference Term";
          conversion:comment "";
-         conversion:subproperty_of owl:annotatedSource;
+         conversion:equivalent_property owl:annotatedSource;
          conversion:range  rdfs:Resource;
       ];
    ];
