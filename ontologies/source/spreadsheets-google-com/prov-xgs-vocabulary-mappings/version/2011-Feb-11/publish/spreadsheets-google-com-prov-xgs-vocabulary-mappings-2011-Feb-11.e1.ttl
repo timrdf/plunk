@@ -6,7 +6,7 @@
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 @prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
 @prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
-@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-12/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-13/> .
 @prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
 @prefix conversion: <http://purl.org/twc/vocab/conversion/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -25,26 +25,26 @@
 @prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
 @prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
 @prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix cs: <http://purl.org/vocab/changeset/schema#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
-@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
-@prefix opm: <http://openprovenance.org/ontology#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
 @prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
 @prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
 @prefix value_of_is_defined_by: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/is_defined_by/> .
 @prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
@@ -862,7 +862,7 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 @prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
 @prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
-@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-12/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-13/> .
 @prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
 @prefix conversion: <http://purl.org/twc/vocab/conversion/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -881,26 +881,26 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 @prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
 @prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
 @prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix cs: <http://purl.org/vocab/changeset/schema#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
-@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
-@prefix opm: <http://openprovenance.org/ontology#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
 @prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
 @prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
 @prefix value_of_is_defined_by: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/is_defined_by/> .
 @prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
@@ -1732,169 +1732,169 @@ opm:wasTriggeredBy dcterms:identifier "http://openprovenance.org/ontology#wasTri
 
 :term_Mapping_88 owl:sameAs :thing_88 .
 
-_:node15oda20akx2 vann:preferredNamespacePrefix "rdf" ;
+_:node15onkrb9ox2 vann:preferredNamespacePrefix "rdf" ;
 	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
 
-_:node15oda20akx3 vann:preferredNamespacePrefix "rdfs" ;
+_:node15onkrb9ox3 vann:preferredNamespacePrefix "rdfs" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
 
-_:node15oda20akx4 vann:preferredNamespacePrefix "xsd" ;
+_:node15onkrb9ox4 vann:preferredNamespacePrefix "xsd" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
 
-_:node15oda20akx5 vann:preferredNamespacePrefix "xsd2" ;
+_:node15onkrb9ox5 vann:preferredNamespacePrefix "xsd2" ;
 	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
 
-_:node15oda20akx6 vann:preferredNamespacePrefix "owl" ;
+_:node15onkrb9ox6 vann:preferredNamespacePrefix "owl" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
 
-_:node15oda20akx7 vann:preferredNamespacePrefix "pmlp" ;
+_:node15onkrb9ox7 vann:preferredNamespacePrefix "pmlp" ;
 	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
 
-_:node15oda20akx8 vann:preferredNamespacePrefix "pmlj" ;
+_:node15onkrb9ox8 vann:preferredNamespacePrefix "pmlj" ;
 	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
 
-_:node15oda20akx9 vann:preferredNamespacePrefix "tw_service" ;
+_:node15onkrb9ox9 vann:preferredNamespacePrefix "tw_service" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/" .
 
-_:node15oda20akx10 vann:preferredNamespacePrefix "tw_converter" ;
-	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-12/" .
+_:node15onkrb9ox10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-13/" .
 
-_:node15oda20akx11 vann:preferredNamespacePrefix "provenance" ;
+_:node15onkrb9ox11 vann:preferredNamespacePrefix "provenance" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/" .
 
-_:node15oda20akx12 vann:preferredNamespacePrefix "conversion" ;
+_:node15onkrb9ox12 vann:preferredNamespacePrefix "conversion" ;
 	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
 
-_:node15oda20akx13 vann:preferredNamespacePrefix "ov" ;
+_:node15onkrb9ox13 vann:preferredNamespacePrefix "ov" ;
 	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
 
-_:node15oda20akx14 vann:preferredNamespacePrefix "dcterms" ;
+_:node15onkrb9ox14 vann:preferredNamespacePrefix "dcterms" ;
 	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
 
-_:node15oda20akx15 vann:preferredNamespacePrefix "foaf" ;
+_:node15onkrb9ox15 vann:preferredNamespacePrefix "foaf" ;
 	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
 
-_:node15oda20akx16 vann:preferredNamespacePrefix "void" ;
+_:node15onkrb9ox16 vann:preferredNamespacePrefix "void" ;
 	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
 
-_:node15oda20akx17 vann:preferredNamespacePrefix "doap" ;
+_:node15onkrb9ox17 vann:preferredNamespacePrefix "doap" ;
 	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
 
-_:node15oda20akx18 vann:preferredNamespacePrefix "scovo" ;
+_:node15onkrb9ox18 vann:preferredNamespacePrefix "scovo" ;
 	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
 
-_:node15oda20akx19 vann:preferredNamespacePrefix "sdmx" ;
+_:node15onkrb9ox19 vann:preferredNamespacePrefix "sdmx" ;
 	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
 
-_:node15oda20akx20 vann:preferredNamespacePrefix "vann" ;
+_:node15onkrb9ox20 vann:preferredNamespacePrefix "vann" ;
 	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
 
-_:node15oda20akx21 vann:preferredNamespacePrefix "spreadsheets-google-com_vocab" ;
+_:node15onkrb9ox21 vann:preferredNamespacePrefix "spreadsheets-google-com_vocab" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/vocab/" .
 
-_:node15oda20akx22 vann:preferredNamespacePrefix "base_vocab" ;
+_:node15onkrb9ox22 vann:preferredNamespacePrefix "base_vocab" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/vocab/" .
 
-_:node15oda20akx23 vann:preferredNamespacePrefix "local_vocab" ;
+_:node15onkrb9ox23 vann:preferredNamespacePrefix "local_vocab" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/" .
 
-_:node15oda20akx24 vann:preferredNamespacePrefix "raw" ;
+_:node15onkrb9ox24 vann:preferredNamespacePrefix "raw" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/raw/" .
 
-_:node15oda20akx25 vann:preferredNamespacePrefix "e1" ;
+_:node15onkrb9ox25 vann:preferredNamespacePrefix "e1" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/" .
 
-_:node15oda20akx26 vann:preferredNamespacePrefix "" ;
+_:node15onkrb9ox26 vann:preferredNamespacePrefix "" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/" .
 
-_:node15oda20akx27 vann:preferredNamespacePrefix "_global_value" ;
+_:node15onkrb9ox27 vann:preferredNamespacePrefix "_global_value" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/" .
 
-_:node15oda20akx28 vann:preferredNamespacePrefix "typed_vocabulary" ;
+_:node15onkrb9ox28 vann:preferredNamespacePrefix "typed_vocabulary" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/" .
 
-_:node15oda20akx29 vann:preferredNamespacePrefix "skos" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
-
-_:node15oda20akx30 vann:preferredNamespacePrefix "dcmi-terms" ;
-	vann:preferredNamespaceUri "http://dublincore.org/documents/dcmi-terms/#" .
-
-_:node15oda20akx31 vann:preferredNamespacePrefix "cs" ;
-	vann:preferredNamespaceUri "http://purl.org/vocab/changeset/schema#" .
-
-_:node15oda20akx32 vann:preferredNamespacePrefix "geonames" ;
-	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
-
-_:node15oda20akx33 vann:preferredNamespacePrefix "con" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
-
-_:node15oda20akx34 vann:preferredNamespacePrefix "rdfg" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2004/03/trix/rdfg-1/" .
-
-_:node15oda20akx35 vann:preferredNamespacePrefix "sioc" ;
-	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
-
-_:node15oda20akx36 vann:preferredNamespacePrefix "provenir" ;
-	vann:preferredNamespaceUri "http://knoesis.wright.edu/provenir/provenir.owl#" .
-
-_:node15oda20akx37 vann:preferredNamespacePrefix "wgs" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
-
-_:node15oda20akx38 vann:preferredNamespacePrefix "pav" ;
-	vann:preferredNamespaceUri "http://swan.mindinformatics.org/ontologies/1.2/pav/" .
-
-_:node15oda20akx39 vann:preferredNamespacePrefix "todo" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
-
-_:node15oda20akx40 vann:preferredNamespacePrefix "premis" ;
-	vann:preferredNamespaceUri "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#" .
-
-_:node15oda20akx41 vann:preferredNamespacePrefix "opm" ;
-	vann:preferredNamespaceUri "http://openprovenance.org/ontology#" .
-
-_:node15oda20akx42 vann:preferredNamespacePrefix "dbpedia" ;
+_:node15onkrb9ox29 vann:preferredNamespacePrefix "dbpedia" ;
 	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
 
-_:node15oda20akx43 vann:preferredNamespacePrefix "swp" ;
+_:node15onkrb9ox30 vann:preferredNamespacePrefix "cs" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/changeset/schema#" .
+
+_:node15onkrb9ox31 vann:preferredNamespacePrefix "dcmi-terms" ;
+	vann:preferredNamespaceUri "http://dublincore.org/documents/dcmi-terms/#" .
+
+_:node15onkrb9ox32 vann:preferredNamespacePrefix "swp" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2004/03/trix/swp-2/" .
 
-_:node15oda20akx44 vann:preferredNamespacePrefix "muo" ;
-	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
-
-_:node15oda20akx45 vann:preferredNamespacePrefix "time" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
-
-_:node15oda20akx46 vann:preferredNamespacePrefix "prov-xg-wiki" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#" .
-
-_:node15oda20akx47 vann:preferredNamespacePrefix "hprv" ;
+_:node15onkrb9ox33 vann:preferredNamespacePrefix "hprv" ;
 	vann:preferredNamespaceUri "http://purl.org/net/provenance/ns#" .
 
-_:node15oda20akx48 vann:preferredNamespacePrefix "wot" ;
+_:node15onkrb9ox34 vann:preferredNamespacePrefix "geonames" ;
+	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
+
+_:node15onkrb9ox35 vann:preferredNamespacePrefix "premis" ;
+	vann:preferredNamespaceUri "http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#" .
+
+_:node15onkrb9ox36 vann:preferredNamespacePrefix "time" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
+
+_:node15onkrb9ox37 vann:preferredNamespacePrefix "opm" ;
+	vann:preferredNamespaceUri "http://openprovenance.org/ontology#" .
+
+_:node15onkrb9ox38 vann:preferredNamespacePrefix "prov-xg-wiki" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#" .
+
+_:node15onkrb9ox39 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node15onkrb9ox40 vann:preferredNamespacePrefix "con" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
+
+_:node15onkrb9ox41 vann:preferredNamespacePrefix "skos" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
+
+_:node15onkrb9ox42 vann:preferredNamespacePrefix "provenir" ;
+	vann:preferredNamespaceUri "http://knoesis.wright.edu/provenir/provenir.owl#" .
+
+_:node15onkrb9ox43 vann:preferredNamespacePrefix "pav" ;
+	vann:preferredNamespaceUri "http://swan.mindinformatics.org/ontologies/1.2/pav/" .
+
+_:node15onkrb9ox44 vann:preferredNamespacePrefix "rdfg" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/03/trix/rdfg-1/" .
+
+_:node15onkrb9ox45 vann:preferredNamespacePrefix "wot" ;
 	vann:preferredNamespaceUri "http://xmlns.com/wot/0.1/" .
 
-_:node15oda20akx49 vann:preferredNamespacePrefix "dcmi-class" ;
+_:node15onkrb9ox46 vann:preferredNamespacePrefix "wgs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+
+_:node15onkrb9ox47 vann:preferredNamespacePrefix "dcmi-class" ;
 	vann:preferredNamespaceUri "http://dublincore.org/documents/dcmi-terms/#classes-" .
 
-_:node15oda20akx50 vann:preferredNamespacePrefix "value_of_mapping_relation" ;
+_:node15onkrb9ox48 vann:preferredNamespacePrefix "todo" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node15onkrb9ox49 vann:preferredNamespacePrefix "muo" ;
+	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
+
+_:node15onkrb9ox50 vann:preferredNamespacePrefix "value_of_mapping_relation" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/" .
 
-_:node15oda20akx51 vann:preferredNamespacePrefix "value_of_is_defined_by" ;
+_:node15onkrb9ox51 vann:preferredNamespacePrefix "value_of_is_defined_by" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/is_defined_by/" .
 
-_:node15oda20akx52 vann:preferredNamespacePrefix "value_of_mapped_term" ;
+_:node15onkrb9ox52 vann:preferredNamespacePrefix "value_of_mapped_term" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/" .
 
-_:node15oda20akx53 vann:preferredNamespacePrefix "value_of_mapped_term_depiction" ;
+_:node15onkrb9ox53 vann:preferredNamespacePrefix "value_of_mapped_term_depiction" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term_depiction/" .
 
-_:node15oda20akx54 vann:preferredNamespacePrefix "value_of_see_also" ;
+_:node15onkrb9ox54 vann:preferredNamespacePrefix "value_of_see_also" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/see_also/" .
 
-_:node15oda20akx55 vann:preferredNamespacePrefix "value_of_reference_term" ;
+_:node15onkrb9ox55 vann:preferredNamespacePrefix "value_of_reference_term" ;
 	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/reference_term/" .
 
-_:node15oda20akx1 rdfs:seeAlso _:node15oda20akx2 , _:node15oda20akx3 , _:node15oda20akx4 , _:node15oda20akx5 , _:node15oda20akx6 , _:node15oda20akx7 , _:node15oda20akx8 , _:node15oda20akx9 , _:node15oda20akx10 , _:node15oda20akx11 , _:node15oda20akx12 , _:node15oda20akx13 , _:node15oda20akx14 , _:node15oda20akx15 , _:node15oda20akx16 , _:node15oda20akx17 , _:node15oda20akx18 , _:node15oda20akx19 , _:node15oda20akx20 , _:node15oda20akx21 , _:node15oda20akx22 , _:node15oda20akx23 , _:node15oda20akx24 , _:node15oda20akx25 , _:node15oda20akx26 , _:node15oda20akx27 , _:node15oda20akx28 , _:node15oda20akx29 , _:node15oda20akx30 , _:node15oda20akx31 , _:node15oda20akx32 , _:node15oda20akx33 , _:node15oda20akx34 , _:node15oda20akx35 , _:node15oda20akx36 , _:node15oda20akx37 , _:node15oda20akx38 , _:node15oda20akx39 , _:node15oda20akx40 , _:node15oda20akx41 , _:node15oda20akx42 , _:node15oda20akx43 , _:node15oda20akx44 , _:node15oda20akx45 , _:node15oda20akx46 , _:node15oda20akx47 , _:node15oda20akx48 , _:node15oda20akx49 , _:node15oda20akx50 , _:node15oda20akx51 , _:node15oda20akx52 , _:node15oda20akx53 , _:node15oda20akx54 , _:node15oda20akx55 .
+_:node15onkrb9ox1 rdfs:seeAlso _:node15onkrb9ox2 , _:node15onkrb9ox3 , _:node15onkrb9ox4 , _:node15onkrb9ox5 , _:node15onkrb9ox6 , _:node15onkrb9ox7 , _:node15onkrb9ox8 , _:node15onkrb9ox9 , _:node15onkrb9ox10 , _:node15onkrb9ox11 , _:node15onkrb9ox12 , _:node15onkrb9ox13 , _:node15onkrb9ox14 , _:node15onkrb9ox15 , _:node15onkrb9ox16 , _:node15onkrb9ox17 , _:node15onkrb9ox18 , _:node15onkrb9ox19 , _:node15onkrb9ox20 , _:node15onkrb9ox21 , _:node15onkrb9ox22 , _:node15onkrb9ox23 , _:node15onkrb9ox24 , _:node15onkrb9ox25 , _:node15onkrb9ox26 , _:node15onkrb9ox27 , _:node15onkrb9ox28 , _:node15onkrb9ox29 , _:node15onkrb9ox30 , _:node15onkrb9ox31 , _:node15onkrb9ox32 , _:node15onkrb9ox33 , _:node15onkrb9ox34 , _:node15onkrb9ox35 , _:node15onkrb9ox36 , _:node15onkrb9ox37 , _:node15onkrb9ox38 , _:node15onkrb9ox39 , _:node15onkrb9ox40 , _:node15onkrb9ox41 , _:node15onkrb9ox42 , _:node15onkrb9ox43 , _:node15onkrb9ox44 , _:node15onkrb9ox45 , _:node15onkrb9ox46 , _:node15onkrb9ox47 , _:node15onkrb9ox48 , _:node15onkrb9ox49 , _:node15onkrb9ox50 , _:node15onkrb9ox51 , _:node15onkrb9ox52 , _:node15onkrb9ox53 , _:node15onkrb9ox54 , _:node15onkrb9ox55 .
 
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
 	conversion:base_uri "http://logd.tw.rpi.edu" ;
@@ -1904,7 +1904,7 @@ _:node15oda20akx1 rdfs:seeAlso _:node15oda20akx2 , _:node15oda20akx3 , _:node15o
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings" ;
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime .
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime .
 
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
 	conversion:base_uri "http://logd.tw.rpi.edu" ;
@@ -1914,13 +1914,13 @@ _:node15oda20akx1 rdfs:seeAlso _:node15oda20akx2 , _:node15oda20akx3 , _:node15o
 	conversion:dataset_version "2011-Feb-11" ;
 	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11" ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime ;
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime ;
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
 	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> .
 
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime ;
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime ;
 	conversion:base_uri "http://logd.tw.rpi.edu" ;
 	conversion:source_identifier "spreadsheets-google-com" ;
 	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
@@ -1930,7 +1930,7 @@ _:node15oda20akx1 rdfs:seeAlso _:node15oda20akx2 , _:node15oda20akx3 , _:node15o
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> ;
 	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
-	dcterms:created "2011-02-12T11:08:03.218-05:00"^^xsd:dateTime ;
+	dcterms:created "2011-02-16T11:29:03.802-05:00"^^xsd:dateTime ;
 	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11 e1" ;
 	conversion:uses_predicate owl:annotatedSource , rdfs:seeAlso , e1:mapped_vocabulary_ordinal , foaf:depiction , owl:annotatedTarget , rdfs:isDefinedBy , e1:vism , dcterms:identifier , owl:annotatedProperty , e1:reference_term_curie , e1:visr ;
@@ -1992,18 +1992,18 @@ provenance:nodeset_8 a pmlj:NodeSet ;
 	pmlj:isConsequentOf provenance:infstep_1 .
 
 provenance:infstep_1 a pmlj:InferenceStep ;
-	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 ;
-	pmlj:hasAntecedentList _:node15oda20akx56 ;
-	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15oda20akx58 , _:node15oda20akx57 .
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd ;
+	pmlj:hasAntecedentList _:node15onkrb9ox56 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15onkrb9ox58 , _:node15onkrb9ox57 .
 
-tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 a pmlp:InferenceEngine , doap:Version ;
-	dcterms:identifier "csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394" ;
-	dcterms:version "2011-Feb-12" ;
-	doap:revision "2011-Feb-12" ;
+tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd" ;
+	dcterms:version "2011-Feb-13" ;
+	doap:revision "2011-Feb-13" ;
 	doap:platform "Java" .
 
 <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
-	doap:revision tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 ;
+	doap:revision tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd ;
 	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
 	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
 	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
@@ -2015,7 +2015,7 @@ tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 a pmlp:InferenceEngine
 	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
 	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
 
-_:node15oda20akx59 a doap:GitRepository ;
+_:node15onkrb9ox59 a doap:GitRepository ;
 	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
 	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
 
@@ -2023,27 +2023,28 @@ _:node15oda20akx59 a doap:GitRepository ;
 
 <http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
 
-_:node15oda20akx56 a rdf:List ;
+_:node15onkrb9ox56 a rdf:List ;
 	rdf:first provenance:nodeset_9 .
 
 provenance:nodeset_9 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> .
 
-_:node15oda20akx56 rdf:rest _:node15oda20akx60 .
+_:node15onkrb9ox56 rdf:rest _:node15onkrb9ox60 .
 
-_:node15oda20akx60 a rdf:List ;
+_:node15onkrb9ox60 a rdf:List ;
 	rdf:first provenance:nodeset_10 .
 
 provenance:nodeset_10 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> .
 
-_:node15oda20akx60 rdf:rest rdf:nil .
+_:node15onkrb9ox58 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> .
 
-_:node15oda20akx58 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
-	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
+_:node15onkrb9ox60 rdf:rest rdf:nil .
+
+_:node15onkrb9ox58 <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
 
-_:node15oda20akx57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+_:node15onkrb9ox57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
 
@@ -2053,12 +2054,296 @@ _:node15oda20akx57 a <http://inference-web.org/2.1exper/pml-provenance.owl#Antec
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> a pmlp:Information ;
 	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
 
-<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15oda20akx62 .
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
 
-_:node15oda20akx62 scovo:dimension void:numberOfTriples ;
-	rdf:value "1649"^^xsd:integer .
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
 
-<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1649"^^xsd:integer .
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> .
+
+<http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> a foaf:OnlineAccount ;
+	foaf:accountName "lebot" ;
+	sioc:account_of <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1dataset> a void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" .
+
+_:node15onkrbcdx1 a conversion:EnhancementConversionProcess ;
+	conversion:enhancement_identifier "1" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> .
+
+_:node15onkrbcdx2 conversion:symbol "-" ;
+	conversion:interpretation conversion:null .
+
+_:node15onkrbcdx1 conversion:interpret _:node15onkrbcdx2 .
+
+_:node15onkrbcdx3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VisR" ;
+	a conversion:Omitted ;
+	conversion:label "VisR" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx3 .
+
+_:node15onkrbcdx4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Reference Term Curie" .
+
+_:node15onkrbcdx5 ov:csvCol "19"^^xsd:integer .
+
+_:node15onkrbcdx4 conversion:bundled_by _:node15onkrbcdx5 ;
+	conversion:label "Reference Term Curie" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx4 .
+
+_:node15onkrbcdx6 ov:csvCol "3"^^xsd:integer , "4"^^xsd:integer , "5"^^xsd:integer , "6"^^xsd:integer , "7"^^xsd:integer , "8"^^xsd:integer , "9"^^xsd:integer , "10"^^xsd:integer , "11"^^xsd:integer ;
+	conversion:domain_name "Term Mapping" .
+
+_:node15onkrbcdx7 conversion:symbol "equivalent" ;
+	conversion:interpretation skos:equivalent .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx7 .
+
+_:node15onkrbcdx8 conversion:symbol "skos:broadMatch" ;
+	conversion:interpretation skos:broadMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx8 .
+
+_:node15onkrbcdx9 conversion:symbol "skos:broader" ;
+	conversion:interpretation skos:broader .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx9 .
+
+_:node15onkrbcdx10 conversion:symbol "skos:closeMatch" ;
+	conversion:interpretation skos:closeMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx10 .
+
+_:node15onkrbcdx11 conversion:symbol "skos:exactMatch" ;
+	conversion:interpretation skos:exactMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx11 .
+
+_:node15onkrbcdx12 conversion:symbol "skos:narrowMatch" ;
+	conversion:interpretation skos:narrowMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx12 .
+
+_:node15onkrbcdx13 conversion:symbol "skos:narrower" ;
+	conversion:interpretation skos:narrower .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx13 .
+
+_:node15onkrbcdx14 conversion:symbol "skos:related" ;
+	conversion:interpretation skos:related .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx14 .
+
+_:node15onkrbcdx15 conversion:symbol "skos:relatedMatch" ;
+	conversion:interpretation skos:relatedMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx15 ;
+	conversion:label "Mapping Relation" ;
+	conversion:equivalent_property owl:annotatedProperty ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx6 .
+
+_:node15onkrbcdx16 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "skos:narrower" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx16 .
+
+_:node15onkrbcdx17 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "skos:narrowMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx17 .
+
+_:node15onkrbcdx18 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "skos:related" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx18 .
+
+_:node15onkrbcdx19 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "skos:relatedMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx19 .
+
+_:node15onkrbcdx20 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "skos:closeMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx20 .
+
+_:node15onkrbcdx21 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "skos:exactMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx21 .
+
+_:node15onkrbcdx22 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "equivalent" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx22 .
+
+_:node15onkrbcdx23 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "skos:broadMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx23 .
+
+_:node15onkrbcdx24 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "skos:broader" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx24 .
+
+_:node15onkrbcdx25 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Curie" .
+
+_:node15onkrbcdx26 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx25 conversion:bundled_by _:node15onkrbcdx26 ;
+	conversion:label "Mapped Term Curie" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal ;
+	conversion:equivalent_property dcterms:identifier .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx25 .
+
+_:node15onkrbcdx27 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "VisM" ;
+	a conversion:Omitted ;
+	conversion:label "VisM" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx27 .
+
+_:node15onkrbcdx28 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary" .
+
+_:node15onkrbcdx29 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx28 conversion:bundled_by _:node15onkrbcdx29 ;
+	conversion:label "Is Defined By" ;
+	conversion:comment "" ;
+	conversion:equivalent_property rdfs:isDefinedBy ;
+	conversion:range rdfs:Resource ;
+	conversion:range_name "Vocabulary" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx28 .
+
+_:node15onkrbcdx30 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mapped Term" ;
+	conversion:label "Mapped Term" ;
+	conversion:comment "" ;
+	conversion:equivalent_property owl:annotatedTarget ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx30 .
+
+_:node15onkrbcdx31 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Depiction" .
+
+_:node15onkrbcdx32 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx31 conversion:bundled_by _:node15onkrbcdx32 ;
+	conversion:label "Mapped Term Depiction" ;
+	conversion:comment "" ;
+	conversion:equivalent_property foaf:depiction ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx31 .
+
+_:node15onkrbcdx33 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary Ordinal" .
+
+_:node15onkrbcdx34 ov:csvCol "14"^^xsd:integer .
+
+_:node15onkrbcdx33 conversion:bundled_by _:node15onkrbcdx34 ;
+	conversion:label "Mapped Vocabulary Ordinal" ;
+	conversion:comment "" ;
+	conversion:range xsd:integer .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx33 .
+
+_:node15onkrbcdx35 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "rdfs:seeAlso" ;
+	a conversion:Repeat_previous_if_empty_column ;
+	conversion:label "See Also" ;
+	conversion:comment "" ;
+	conversion:equivalent_property rdfs:seeAlso ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx35 .
+
+_:node15onkrbcdx36 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Reference Term" ;
+	conversion:label "Reference Term" ;
+	conversion:comment "" ;
+	conversion:equivalent_property owl:annotatedSource ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx36 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1dataset> conversion:conversion_process _:node15onkrbcdx1 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15onkrb9ox62 .
+
+_:node15onkrb9ox62 scovo:dimension void:numberOfTriples ;
+	rdf:value "1844"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1844"^^xsd:integer .
 
 # CSV2RDF4LOD DATASET METADATA (reproduced from above):
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -2069,7 +2354,7 @@ _:node15oda20akx62 scovo:dimension void:numberOfTriples ;
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 @prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
 @prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
-@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-12/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-13/> .
 @prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
 @prefix conversion: <http://purl.org/twc/vocab/conversion/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -2088,26 +2373,26 @@ _:node15oda20akx62 scovo:dimension void:numberOfTriples ;
 @prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
 @prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
 @prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix cs: <http://purl.org/vocab/changeset/schema#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
-@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
-@prefix opm: <http://openprovenance.org/ontology#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
 @prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
 @prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
 @prefix value_of_is_defined_by: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/is_defined_by/> .
 @prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
@@ -2229,7 +2514,7 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 @prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
 @prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
-@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-12/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Feb-13/> .
 @prefix provenance: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/> .
 @prefix conversion: <http://purl.org/twc/vocab/conversion/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -2248,26 +2533,26 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 @prefix : <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/> .
 @prefix ns1: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/> .
 @prefix typed_vocabulary: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/typed/vocabulary/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix cs: <http://purl.org/vocab/changeset/schema#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
-@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
-@prefix opm: <http://openprovenance.org/ontology#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix dcmi-terms: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix swp: <http://www.w3.org/2004/03/trix/swp-2/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
 @prefix hprv: <http://purl.org/net/provenance/ns#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix premis: <http://multimedialab.elis.ugent.be/ontologies/PREMIS2.0/v1.0/premis.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opm: <http://openprovenance.org/ontology#> .
+@prefix prov-xg-wiki: <http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix provenir: <http://knoesis.wright.edu/provenir/provenir.owl#> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
 @prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix dcmi-class: <http://dublincore.org/documents/dcmi-terms/#classes-> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix value_of_mapping_relation: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapping_relation/> .
 @prefix value_of_is_defined_by: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/is_defined_by/> .
 @prefix value_of_mapped_term: <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/value-of/mapped_term/> .
@@ -2283,7 +2568,7 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings" ;
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/subset/meta> ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime .
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime .
 
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
 	conversion:base_uri "http://logd.tw.rpi.edu" ;
@@ -2293,13 +2578,13 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 	conversion:dataset_version "2011-Feb-11" ;
 	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11" ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime ;
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime ;
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11> ;
 	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> .
 
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> a spreadsheets-google-com_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
-	dcterms:modified "2011-02-12T11:08:03.858-05:00"^^xsd:dateTime ;
+	dcterms:modified "2011-02-16T11:29:04.597-05:00"^^xsd:dateTime ;
 	conversion:base_uri "http://logd.tw.rpi.edu" ;
 	conversion:source_identifier "spreadsheets-google-com" ;
 	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
@@ -2309,7 +2594,7 @@ e1:reference_term ov:csvCol "19"^^xsd:integer ;
 	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset_page/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> ;
 	void:dataDump <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl.tgz> , <http://logd.tw.rpi.edu/source/spreadsheets-google-com/file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.nt> ;
 	void:subset <http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1/subset/sample> ;
-	dcterms:created "2011-02-12T11:08:03.218-05:00"^^xsd:dateTime ;
+	dcterms:created "2011-02-16T11:29:03.802-05:00"^^xsd:dateTime ;
 	dcterms:contributor <http://logd.tw.rpi.edu/source/spreadsheets-google-com> ;
 	dcterms:identifier "spreadsheets-google-com prov-xgs-vocabulary-mappings 2011-Feb-11 e1" ;
 	conversion:uses_predicate owl:annotatedSource , rdfs:seeAlso , e1:mapped_vocabulary_ordinal , foaf:depiction , owl:annotatedTarget , rdfs:isDefinedBy , e1:vism , dcterms:identifier , owl:annotatedProperty , e1:reference_term_curie , e1:visr ;
@@ -2371,18 +2656,18 @@ provenance:nodeset_8 a pmlj:NodeSet ;
 	pmlj:isConsequentOf provenance:infstep_1 .
 
 provenance:infstep_1 a pmlj:InferenceStep ;
-	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 ;
-	pmlj:hasAntecedentList _:node15oda20akx56 ;
-	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15oda20akx58 , _:node15oda20akx57 .
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd ;
+	pmlj:hasAntecedentList _:node15onkrb9ox56 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15onkrb9ox58 , _:node15onkrb9ox57 .
 
-tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 a pmlp:InferenceEngine , doap:Version ;
-	dcterms:identifier "csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394" ;
-	dcterms:version "2011-Feb-12" ;
-	doap:revision "2011-Feb-12" ;
+tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd" ;
+	dcterms:version "2011-Feb-13" ;
+	doap:revision "2011-Feb-13" ;
 	doap:platform "Java" .
 
 <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
-	doap:revision tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 ;
+	doap:revision tw_converter:csv2rdf4lod_2dfb4719c92d2a515a3043b4ec3df5bd ;
 	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
 	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
 	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
@@ -2394,7 +2679,7 @@ tw_converter:csv2rdf4lod_bc2bbcf473db117a6e136e788f0e0394 a pmlp:InferenceEngine
 	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
 	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
 
-_:node15oda20akx59 a doap:GitRepository ;
+_:node15onkrb9ox59 a doap:GitRepository ;
 	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
 	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
 
@@ -2402,27 +2687,28 @@ _:node15oda20akx59 a doap:GitRepository ;
 
 <http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
 
-_:node15oda20akx56 a rdf:List ;
+_:node15onkrb9ox56 a rdf:List ;
 	rdf:first provenance:nodeset_9 .
 
 provenance:nodeset_9 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> .
 
-_:node15oda20akx56 rdf:rest _:node15oda20akx60 .
+_:node15onkrb9ox56 rdf:rest _:node15onkrb9ox60 .
 
-_:node15oda20akx60 a rdf:List ;
+_:node15onkrb9ox60 a rdf:List ;
 	rdf:first provenance:nodeset_10 .
 
 provenance:nodeset_10 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> .
 
-_:node15oda20akx60 rdf:rest rdf:nil .
+_:node15onkrb9ox58 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> .
 
-_:node15oda20akx58 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
-	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
+_:node15onkrb9ox60 rdf:rest rdf:nil .
+
+_:node15onkrb9ox58 <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
 
-_:node15oda20akx57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+_:node15onkrb9ox57 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/source/prov-xgs-provenance-mappings.csv> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
 
@@ -2432,9 +2718,293 @@ _:node15oda20akx57 a <http://inference-web.org/2.1exper/pml-provenance.owl#Antec
 <http://logd.tw.rpi.edu/source/spreadsheets-google-com/provenance_file/prov-xgs-vocabulary-mappings/version/2011-Feb-11/manual/prov-xgs-provenance-mappings.csv.e1.params.ttl> a pmlp:Information ;
 	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
 
-<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15oda20akx63 .
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
 
-_:node15oda20akx63 scovo:dimension void:numberOfTriples ;
-	rdf:value "1649"^^xsd:integer .
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
 
-<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1649"^^xsd:integer .
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> .
+
+<http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> a foaf:OnlineAccount ;
+	foaf:accountName "lebot" ;
+	sioc:account_of <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1dataset> a void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI ;
+	conversion:source_identifier "spreadsheets-google-com" ;
+	conversion:dataset_identifier "prov-xgs-vocabulary-mappings" ;
+	conversion:version_identifier "2011-Feb-11" .
+
+_:node15onkrbcdx1 a conversion:EnhancementConversionProcess ;
+	conversion:enhancement_identifier "1" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/lebot_macbook#lebot> .
+
+_:node15onkrbcdx2 conversion:symbol "-" ;
+	conversion:interpretation conversion:null .
+
+_:node15onkrbcdx1 conversion:interpret _:node15onkrbcdx2 .
+
+_:node15onkrbcdx3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VisR" ;
+	a conversion:Omitted ;
+	conversion:label "VisR" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx3 .
+
+_:node15onkrbcdx4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Reference Term Curie" .
+
+_:node15onkrbcdx5 ov:csvCol "19"^^xsd:integer .
+
+_:node15onkrbcdx4 conversion:bundled_by _:node15onkrbcdx5 ;
+	conversion:label "Reference Term Curie" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx4 .
+
+_:node15onkrbcdx6 ov:csvCol "3"^^xsd:integer , "4"^^xsd:integer , "5"^^xsd:integer , "6"^^xsd:integer , "7"^^xsd:integer , "8"^^xsd:integer , "9"^^xsd:integer , "10"^^xsd:integer , "11"^^xsd:integer ;
+	conversion:domain_name "Term Mapping" .
+
+_:node15onkrbcdx7 conversion:symbol "equivalent" ;
+	conversion:interpretation skos:equivalent .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx7 .
+
+_:node15onkrbcdx8 conversion:symbol "skos:broadMatch" ;
+	conversion:interpretation skos:broadMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx8 .
+
+_:node15onkrbcdx9 conversion:symbol "skos:broader" ;
+	conversion:interpretation skos:broader .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx9 .
+
+_:node15onkrbcdx10 conversion:symbol "skos:closeMatch" ;
+	conversion:interpretation skos:closeMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx10 .
+
+_:node15onkrbcdx11 conversion:symbol "skos:exactMatch" ;
+	conversion:interpretation skos:exactMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx11 .
+
+_:node15onkrbcdx12 conversion:symbol "skos:narrowMatch" ;
+	conversion:interpretation skos:narrowMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx12 .
+
+_:node15onkrbcdx13 conversion:symbol "skos:narrower" ;
+	conversion:interpretation skos:narrower .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx13 .
+
+_:node15onkrbcdx14 conversion:symbol "skos:related" ;
+	conversion:interpretation skos:related .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx14 .
+
+_:node15onkrbcdx15 conversion:symbol "skos:relatedMatch" ;
+	conversion:interpretation skos:relatedMatch .
+
+_:node15onkrbcdx6 conversion:interpret _:node15onkrbcdx15 ;
+	conversion:label "Mapping Relation" ;
+	conversion:equivalent_property owl:annotatedProperty ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx6 .
+
+_:node15onkrbcdx16 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "skos:narrower" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx16 .
+
+_:node15onkrbcdx17 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "skos:narrowMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx17 .
+
+_:node15onkrbcdx18 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "skos:related" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx18 .
+
+_:node15onkrbcdx19 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "skos:relatedMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx19 .
+
+_:node15onkrbcdx20 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "skos:closeMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx20 .
+
+_:node15onkrbcdx21 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "skos:exactMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx21 .
+
+_:node15onkrbcdx22 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "equivalent" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx22 .
+
+_:node15onkrbcdx23 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "skos:broadMatch" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx23 .
+
+_:node15onkrbcdx24 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "skos:broader" ;
+	conversion:comment "" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx24 .
+
+_:node15onkrbcdx25 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Curie" .
+
+_:node15onkrbcdx26 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx25 conversion:bundled_by _:node15onkrbcdx26 ;
+	conversion:label "Mapped Term Curie" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal ;
+	conversion:equivalent_property dcterms:identifier .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx25 .
+
+_:node15onkrbcdx27 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "VisM" ;
+	a conversion:Omitted ;
+	conversion:label "VisM" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx27 .
+
+_:node15onkrbcdx28 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary" .
+
+_:node15onkrbcdx29 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx28 conversion:bundled_by _:node15onkrbcdx29 ;
+	conversion:label "Is Defined By" ;
+	conversion:comment "" ;
+	conversion:equivalent_property rdfs:isDefinedBy ;
+	conversion:range rdfs:Resource ;
+	conversion:range_name "Vocabulary" .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx28 .
+
+_:node15onkrbcdx30 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mapped Term" ;
+	conversion:label "Mapped Term" ;
+	conversion:comment "" ;
+	conversion:equivalent_property owl:annotatedTarget ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx30 .
+
+_:node15onkrbcdx31 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mapped Term Depiction" .
+
+_:node15onkrbcdx32 ov:csvCol "15"^^xsd:integer .
+
+_:node15onkrbcdx31 conversion:bundled_by _:node15onkrbcdx32 ;
+	conversion:label "Mapped Term Depiction" ;
+	conversion:comment "" ;
+	conversion:equivalent_property foaf:depiction ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx31 .
+
+_:node15onkrbcdx33 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Mapped Vocabulary Ordinal" .
+
+_:node15onkrbcdx34 ov:csvCol "14"^^xsd:integer .
+
+_:node15onkrbcdx33 conversion:bundled_by _:node15onkrbcdx34 ;
+	conversion:label "Mapped Vocabulary Ordinal" ;
+	conversion:comment "" ;
+	conversion:range xsd:integer .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx33 .
+
+_:node15onkrbcdx35 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "rdfs:seeAlso" ;
+	a conversion:Repeat_previous_if_empty_column ;
+	conversion:label "See Also" ;
+	conversion:comment "" ;
+	conversion:equivalent_property rdfs:seeAlso ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx35 .
+
+_:node15onkrbcdx36 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Reference Term" ;
+	conversion:label "Reference Term" ;
+	conversion:comment "" ;
+	conversion:equivalent_property owl:annotatedSource ;
+	conversion:range rdfs:Resource .
+
+_:node15onkrbcdx1 conversion:enhance _:node15onkrbcdx36 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1dataset> conversion:conversion_process _:node15onkrbcdx1 .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> void:statItem _:node15onkrb9ox63 .
+
+_:node15onkrb9ox63 scovo:dimension void:numberOfTriples ;
+	rdf:value "1844"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/conversion/enhancement/1> conversion:num_triples "1844"^^xsd:integer .

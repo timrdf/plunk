@@ -1,0 +1,371 @@
+2011-02-13T09:01:58-05:00
+88 rows in source/prov-xgs-provenance-mappings.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-13 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+sampleLimit: 
+  2
+enhancementParametersURL:     
+  manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.e1.sample.ttl
+converterIdentifier:          
+  csv2rdf4lod_c9970ba817372fa4214b577e74b05f46
+==========
+BaseURIQuerylet(*) .http://logd.tw.rpi.edu.
+DatasetSourceIdentifierQuerylet(*) .spreadsheets-google-com.
+DatasetIdentifierQuerylet(*) .prov-xgs-vocabulary-mappings.
+DatasetVersionQuerylet(*) .2011-Feb-11.
+SubjectTypeQuerylet(*) .Term Mapping.
+RepeatPreviousIfEmptyColumnsQuerylet(*) .18.
+OmittedColumnsQuerylet(1)
+OmittedColumnsQuerylet(13)
+ExistingBundleQuerylet: 2 bundled by 19
+CodebookQuerylet(3) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(3) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(3) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(3) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(3) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(3) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(3) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(3) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(3) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(4) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(4) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(4) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(4) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(4) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(4) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(4) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(4) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(4) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(5) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(5) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(5) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(5) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(5) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(5) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(5) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(5) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(5) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(6) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(6) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(6) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(6) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(6) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(6) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(6) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(6) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(6) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(7) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(7) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(7) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(7) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(7) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(7) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(7) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(7) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(7) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(8) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(8) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(8) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(8) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(8) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(8) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(8) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(8) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(8) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(9) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(9) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(9) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(9) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(9) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(9) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(9) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(9) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(9) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(10) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(10) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(10) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(10) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(10) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(10) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(10) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(10) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(10) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(11) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(11) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(11) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(11) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(11) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(11) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(11) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(11) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(11) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+ExistingBundleQuerylet: 12 bundled by 15
+ExistingBundleQuerylet: 14 bundled by 15
+TypedResourcePromotionQuerylet(14) .Vocabulary.
+ExistingBundleQuerylet: 17 bundled by 14
+ExistingBundleQuerylet: 16 bundled by 15
+InterpretedAsNullQuerylet(*) .-.
+
+subjectNS:   :  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/
+predicateNS: e1:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/
+objectNS:    _global_value:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/
+
+headers present at row 1: "VisR","Reference Term Curie","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Term Depiction","Mapped Vocabulary Ordinal","rdfs:seeAlso","Reference Term"
+
+1: "VisR" -> "VisR" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/visr (rdfs:Literal)
+2: "Reference Term Curie" -> "Reference Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/reference_term_curie (rdfs:Literal)
+EquivalentPropertyQuerylet(3) .http://www.w3.org/2002/07/owl#annotatedProperty.
+3: "skos:narrower" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(4) .http://www.w3.org/2002/07/owl#annotatedProperty.
+4: "skos:narrowMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(5) .http://www.w3.org/2002/07/owl#annotatedProperty.
+5: "skos:related" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(6) .http://www.w3.org/2002/07/owl#annotatedProperty.
+6: "skos:relatedMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(7) .http://www.w3.org/2002/07/owl#annotatedProperty.
+7: "skos:closeMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(8) .http://www.w3.org/2002/07/owl#annotatedProperty.
+8: "skos:exactMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(9) .http://www.w3.org/2002/07/owl#annotatedProperty.
+9: "equivalent" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(10) .http://www.w3.org/2002/07/owl#annotatedProperty.
+10: "skos:broadMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(11) .http://www.w3.org/2002/07/owl#annotatedProperty.
+11: "skos:broader" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(12) .http://purl.org/dc/terms/identifier.
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term_curie (rdfs:Literal)
+13: "VisM" -> "VisM" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/vism (rdfs:Literal)
+EquivalentPropertyQuerylet(14) .http://www.w3.org/2000/01/rdf-schema#isDefinedBy.
+14: "Mapped Vocabulary" -> "Is Defined By" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/is_defined_by (rdfs:Resource)
+EquivalentPropertyQuerylet(15) .http://www.w3.org/2002/07/owl#annotatedTarget.
+15: "Mapped Term" -> "Mapped Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term (rdfs:Resource)
+EquivalentPropertyQuerylet(16) .http://xmlns.com/foaf/0.1/depiction.
+16: "Mapped Term Depiction" -> "Mapped Term Depiction" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term_depiction (rdfs:Resource)
+17: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_vocabulary_ordinal (xsd:integer)
+EquivalentPropertyQuerylet(18) .http://www.w3.org/2000/01/rdf-schema#seeAlso.
+18: "rdfs:seeAlso" -> "See Also" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/see_also (rdfs:Resource)
+EquivalentPropertyQuerylet(19) .http://www.w3.org/2002/07/owl#annotatedSource.
+19: "Reference Term" -> "Reference Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/reference_term (rdfs:Resource)
+3: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+VersionedDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+Resulting size: 515 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 2 examples rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2011-Feb-13 initiated:
+fileName:                    
+  source/prov-xgs-provenance-mappings.csv
+enhancementParametersURL:     
+  manual/prov-xgs-provenance-mappings.csv.e1.params.ttl
+VoIDDumpExtensions:              
+  ttl.tgz,nt
+VoIDDumpExtension:              
+  ttl.tgz
+VoIDDumpExtension:              
+  nt
+outputFileName:               
+  automatic/prov-xgs-provenance-mappings.csv.e1.ttl
+converterIdentifier:          
+  csv2rdf4lod_c9970ba817372fa4214b577e74b05f46
+==========
+BaseURIQuerylet(*) .http://logd.tw.rpi.edu.
+DatasetSourceIdentifierQuerylet(*) .spreadsheets-google-com.
+DatasetIdentifierQuerylet(*) .prov-xgs-vocabulary-mappings.
+DatasetVersionQuerylet(*) .2011-Feb-11.
+SubjectTypeQuerylet(*) .Term Mapping.
+RepeatPreviousIfEmptyColumnsQuerylet(*) .18.
+OmittedColumnsQuerylet(1)
+OmittedColumnsQuerylet(13)
+ExistingBundleQuerylet: 2 bundled by 19
+CodebookQuerylet(3) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(3) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(3) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(3) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(3) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(3) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(3) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(3) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(3) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(4) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(4) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(4) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(4) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(4) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(4) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(4) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(4) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(4) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(5) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(5) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(5) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(5) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(5) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(5) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(5) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(5) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(5) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(6) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(6) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(6) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(6) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(6) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(6) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(6) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(6) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(6) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(7) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(7) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(7) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(7) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(7) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(7) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(7) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(7) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(7) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(8) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(8) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(8) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(8) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(8) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(8) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(8) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(8) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(8) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(9) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(9) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(9) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(9) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(9) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(9) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(9) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(9) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(9) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(10) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(10) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(10) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(10) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(10) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(10) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(10) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(10) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(10) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+CodebookQuerylet(11) .equivalent. -> .http://www.w3.org/2004/02/skos/core#equivalent.
+CodebookQuerylet(11) .skos:broadMatch. -> .http://www.w3.org/2004/02/skos/core#broadMatch.
+CodebookQuerylet(11) .skos:broader. -> .http://www.w3.org/2004/02/skos/core#broader.
+CodebookQuerylet(11) .skos:closeMatch. -> .http://www.w3.org/2004/02/skos/core#closeMatch.
+CodebookQuerylet(11) .skos:exactMatch. -> .http://www.w3.org/2004/02/skos/core#exactMatch.
+CodebookQuerylet(11) .skos:narrowMatch. -> .http://www.w3.org/2004/02/skos/core#narrowMatch.
+CodebookQuerylet(11) .skos:narrower. -> .http://www.w3.org/2004/02/skos/core#narrower.
+CodebookQuerylet(11) .skos:related. -> .http://www.w3.org/2004/02/skos/core#related.
+CodebookQuerylet(11) .skos:relatedMatch. -> .http://www.w3.org/2004/02/skos/core#relatedMatch.
+ExistingBundleQuerylet: 12 bundled by 15
+ExistingBundleQuerylet: 14 bundled by 15
+TypedResourcePromotionQuerylet(14) .Vocabulary.
+ExistingBundleQuerylet: 17 bundled by 14
+ExistingBundleQuerylet: 16 bundled by 15
+InterpretedAsNullQuerylet(*) .-.
+
+subjectNS:   :  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/version/2011-Feb-11/
+predicateNS: e1:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/
+objectNS:    _global_value:  http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/
+
+headers present at row 1: "VisR","Reference Term Curie","skos:narrower","skos:narrowMatch","skos:related","skos:relatedMatch","skos:closeMatch","skos:exactMatch","equivalent","skos:broadMatch","skos:broader","Mapped Term Curie","VisM","Mapped Vocabulary","Mapped Term","Mapped Term Depiction","Mapped Vocabulary Ordinal","rdfs:seeAlso","Reference Term"
+
+1: "VisR" -> "VisR" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/visr (rdfs:Literal)
+2: "Reference Term Curie" -> "Reference Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/reference_term_curie (rdfs:Literal)
+EquivalentPropertyQuerylet(3) .http://www.w3.org/2002/07/owl#annotatedProperty.
+3: "skos:narrower" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(4) .http://www.w3.org/2002/07/owl#annotatedProperty.
+4: "skos:narrowMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(5) .http://www.w3.org/2002/07/owl#annotatedProperty.
+5: "skos:related" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(6) .http://www.w3.org/2002/07/owl#annotatedProperty.
+6: "skos:relatedMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(7) .http://www.w3.org/2002/07/owl#annotatedProperty.
+7: "skos:closeMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(8) .http://www.w3.org/2002/07/owl#annotatedProperty.
+8: "skos:exactMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(9) .http://www.w3.org/2002/07/owl#annotatedProperty.
+9: "equivalent" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(10) .http://www.w3.org/2002/07/owl#annotatedProperty.
+10: "skos:broadMatch" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(11) .http://www.w3.org/2002/07/owl#annotatedProperty.
+11: "skos:broader" -> "Mapping Relation" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapping_relation (rdfs:Resource)
+EquivalentPropertyQuerylet(12) .http://purl.org/dc/terms/identifier.
+12: "Mapped Term Curie" -> "Mapped Term Curie" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term_curie (rdfs:Literal)
+13: "VisM" -> "VisM" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/vism (rdfs:Literal)
+EquivalentPropertyQuerylet(14) .http://www.w3.org/2000/01/rdf-schema#isDefinedBy.
+14: "Mapped Vocabulary" -> "Is Defined By" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/is_defined_by (rdfs:Resource)
+EquivalentPropertyQuerylet(15) .http://www.w3.org/2002/07/owl#annotatedTarget.
+15: "Mapped Term" -> "Mapped Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term (rdfs:Resource)
+EquivalentPropertyQuerylet(16) .http://xmlns.com/foaf/0.1/depiction.
+16: "Mapped Term Depiction" -> "Mapped Term Depiction" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_term_depiction (rdfs:Resource)
+17: "Mapped Vocabulary Ordinal" -> "Mapped Vocabulary Ordinal" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/mapped_vocabulary_ordinal (xsd:integer)
+EquivalentPropertyQuerylet(18) .http://www.w3.org/2000/01/rdf-schema#seeAlso.
+18: "rdfs:seeAlso" -> "See Also" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/see_also (rdfs:Resource)
+EquivalentPropertyQuerylet(19) .http://www.w3.org/2002/07/owl#annotatedSource.
+19: "Reference Term" -> "Reference Term" -> http://logd.tw.rpi.edu/source/spreadsheets-google-com/dataset/prov-xgs-vocabulary-mappings/vocab/enhancement/1/reference_term (rdfs:Resource)
+3: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+4: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+5: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+6: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+7: repeating value http://www.w3.org/2005/Incubator/prov/wiki/Provenance_Vocabulary_Mappings#Mappings for column 18
+skipping dcmitype-Event mapped_term_depiction b/c templated value deficient: ..
+skipping Event mapped_term_depiction b/c templated value deficient: ..
+skipping dcmitype-Collection mapped_term_depiction b/c templated value deficient: ..
+skipping classes-BibliographicResource mapped_term_depiction b/c templated value deficient: ..
+skipping classes-PhysicalResource mapped_term_depiction b/c templated value deficient: ..
+skipping MethodOfAccrual mapped_term_depiction b/c templated value deficient: ..
+skipping Object mapped_term_depiction b/c templated value deficient: ..
+skipping classes-Agent mapped_term_depiction b/c templated value deficient: ..
+skipping Agent mapped_term_depiction b/c templated value deficient: ..
+skipping classes-ProvenanceStatement mapped_term_depiction b/c templated value deficient: ..
+skipping replaces mapped_term_depiction b/c templated value deficient: ..
+skipping source mapped_term_depiction b/c templated value deficient: ..
+skipping hasPart mapped_term_depiction b/c templated value deficient: ..
+skipping references mapped_term_depiction b/c templated value deficient: ..
+skipping relatedObjectIdentification mapped_term_depiction b/c templated value deficient: ..
+skipping requires mapped_term_depiction b/c templated value deficient: ..
+skipping isRequiredBy mapped_term_depiction b/c templated value deficient: ..
+skipping linkingObjectIdentifier mapped_term_depiction b/c templated value deficient: ..
+skipping source mapped_term_depiction b/c templated value deficient: ..
+skipping relatedEventIdentification mapped_term_depiction b/c templated value deficient: ..
+skipping contributor mapped_term_depiction b/c templated value deficient: ..
+skipping linkingAgentIdentifier mapped_term_depiction b/c templated value deficient: ..
+skipping source mapped_term_depiction b/c templated value deficient: ..
+VersionedDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+Resulting size: 1672 triples
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+convert-aggregate.sh publishing raw and enhancements.
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.sample.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.sample.ttl
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.e1.ttl)
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.raw.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.pml.ttl
+  (including source/prov-xgs-provenance-mappings.csv.pml.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.void.ttl
+  (including automatic/prov-xgs-provenance-mappings.csv.e1.void.ttl)
+  (including automatic/prov-xgs-provenance-mappings.csv.raw.void.ttl)
+  (including publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.pml.ttl)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sameas.nt (95 triples)
+publish/spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/bin/ln-to-www-root-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-spreadsheets-google-com-prov-xgs-vocabulary-mappings-2011-Feb-11.sh.
