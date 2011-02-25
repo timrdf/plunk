@@ -1,0 +1,10 @@
+prefix irw:  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#>
+prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#>
+prefix pmlt: <http://inference-web.org/2.0/pml-justification.owl#>
+
+select ?url
+where {
+   ?url a pmlp:Source .
+   optional { ?url irw:redirectsTo ?none }
+   filter(!bound(?none))
+}
