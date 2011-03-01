@@ -38,3 +38,57 @@ Let me know if you have any questions about these materials
 
 Thanks,
 James""" .
+
+[] void:dumpFile <http://logd.tw.rpi.edu/query/results/>;                a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "PML for sparql query results cached nightly for LOGD dataset statistics.";
+.
+
+
+[] void:dumpFile <http://rio.cs.utep.edu/ciserver/CI-Projects/>       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Jitin/UTEP"; .
+
+[] void:dumpFile <http://rio.cs.utep.edu/ciserver/person/>            a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu:8080/service-output/proofs/> a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu/astronomy/>                  a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu/earthscience/>               a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu/environmentalscience/>       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu/registry/>                   a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://iw.cs.utep.edu/visko/transformers/>         a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://inference-web.org/registry/>                a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2.0/>                        a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2010/>                       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2009/>                       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2008/>                       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2007/01/>                    a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2007/02/>                    a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
+[]  void:dumpFile <http://trust.utep.edu/2006/>                       a pml:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "#Reported by Jitin/UTEP"; .
+
