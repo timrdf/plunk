@@ -1,0 +1,11 @@
+prefix void: <http://rdfs.org/ns/void#>
+prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#>
+
+select ?location
+where {
+   [] 
+      a pmlp:Website;
+      void:dumpFile   ?location;
+      void:vocabulary <http://inference-web.org/2.0/pml>
+   .
+}
