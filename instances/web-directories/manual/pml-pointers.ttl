@@ -3,6 +3,16 @@
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 
 #
+# This RDF file lists the web directories that contain PML files.
+# 
+# This is queried using a SPARQL query (https://github.com/timrdf/plunk/blob/master/bin/rq/web-directories.rq)
+#     and crawled using wget (wget --mirror -e robots=off -A owl,rdf,ttl,nt --no-parent $web_directory)
+#     to make a local mirror of the files so they can be analyzed.
+
+
+
+
+#
 [] void:dumpFile <http://inference-web.org/proofs/wino/>;                    a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml> .
 
 #
