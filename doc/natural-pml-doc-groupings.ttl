@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# See http://inference-web.org/wiki/PML_2.1_-_a_Layered_Approach#Natural_.22groups.22_of_PML_documents
+
+[] vann:preferredNamespaceUri <http://trust.utep.edu>;
+   vann:preferredNamespacePrefix "utep"; .
+
+[] vann:preferredNamespaceUri <http://escience.rpi.edu>
+   vann:preferredNamespacePrefix "escience";
+   skos:narrower [
+      vann:preferredNamespaceUri <http://escience.rpi.edu/2010/mlso/PML/>;
+      vann:preferredNamespacePrefix "spcdis";
+   ];
+.
+
+[] vann:preferredNamespaceUri <http://www.rpi.edu/~michaj6>;
+   vann:preferredNamespacePrefix "spcdis"; .
+
+[] vann:preferredNamespaceUri <http://inference-web.org>
+   vann:preferredNamespacePrefix "iw"; .
+   skos:narrower [
+      vann:preferredNamespaceUri <http://inference-web.org/proofs/wino/>;
+      vann:preferredNamespacePrefix "wine-agent";
+   ]; .
+
+[] vann:preferredNamespaceUri <http://logd.tw.rpi.edu>;
+   vann:preferredNamespacePrefix "logd";
+   rdfs:comment "Only contains provenance from cache-queries.sh.";
+   skos:narrower [
+      vann:preferredNamespaceUri <http://logd.tw.rpi.edu/query/results/>;
+      vann:preferredNamespacePrefix "logd-cache-queries";
+      rdfs:comment "Only contains provenance from cache-queries.sh.";
+   ]; .
