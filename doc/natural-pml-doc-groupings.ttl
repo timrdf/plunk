@@ -33,3 +33,10 @@
       vann:preferredNamespacePrefix "logd-cache-queries";
       rdfs:comment "Only contains provenance from cache-queries.sh.";
    ]; .
+
+[] vann:preferredNamespaceUri <http://inference-web.org/2.0/pml-provenance.owl#>
+   vann:preferredNamespacePrefix "pmlp"; .
+[] vann:preferredNamespaceUri <http://inference-web.org/2.0/pml-justification.owl#>
+   vann:preferredNamespacePrefix "pmlj"; .
+[] vann:preferredNamespaceUri <http://inference-web.org/2.0/pml-trust.owl#>
+   vann:preferredNamespacePrefix "pmlt"; .
