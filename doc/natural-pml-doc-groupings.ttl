@@ -7,7 +7,7 @@
 [] vann:preferredNamespaceUri <http://trust.utep.edu>;
    vann:preferredNamespacePrefix "utep"; .
 
-[] vann:preferredNamespaceUri <http://escience.rpi.edu>
+[] vann:preferredNamespaceUri <http://escience.rpi.edu>;
    vann:preferredNamespacePrefix "escience";
    skos:narrower [
       vann:preferredNamespaceUri <http://escience.rpi.edu/2010/mlso/PML/>;
@@ -18,8 +18,8 @@
 [] vann:preferredNamespaceUri <http://www.rpi.edu/~michaj6>;
    vann:preferredNamespacePrefix "spcdis"; .
 
-[] vann:preferredNamespaceUri <http://inference-web.org>
-   vann:preferredNamespacePrefix "iw"; .
+[] vann:preferredNamespaceUri <http://inference-web.org>;
+   vann:preferredNamespacePrefix "iw";
    skos:narrower [
       vann:preferredNamespaceUri <http://inference-web.org/proofs/wino/>;
       vann:preferredNamespacePrefix "wine-agent";
