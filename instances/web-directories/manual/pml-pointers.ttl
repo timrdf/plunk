@@ -62,44 +62,53 @@ James""" .
    rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu:8080/service-output/proofs/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu/astronomy/>;                  a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu/earthscience/>;               a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu/environmentalscience/>;       a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu/registry/>;                   a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://iw.cs.utep.edu/visko/transformers/>;         a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://inference-web.org/registry/>;                a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2.0/>;                        a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2010/>;                       a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2009/>;                       a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2008/>;                       a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2007/01/>;                    a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2007/02/>;                    a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
 
 [] void:dumpFile <http://trust.utep.edu/2006/>;                       a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "#Reported by Jitin/UTEP"; .
+   rdfs:comment "Reported by Jitin/UTEP"; .
+
+
+
+[] void:dumpFile <http://inference-web.org/proofs/tptp/Problems/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI"; .
+[] void:dumpFile <http://inference-web.org/proofs/tptp/Solutions/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI"; .
+[] void:dumpFile <http://inference-web.org/proofs/tptp/MizarProofs/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI"; .
 
