@@ -105,10 +105,9 @@ James""" .
 
 
 
-[] void:dumpFile <http://inference-web.org/proofs/tptp/Problems/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+[] void:dumpFile <http://inference-web.org/proofs/tptp/Problems/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
    rdfs:comment "Reported by Cynthia/RPI"; .
-[] void:dumpFile <http://inference-web.org/proofs/tptp/Solutions/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+[] void:dumpFile <http://inference-web.org/proofs/tptp/Solutions/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
    rdfs:comment "Reported by Cynthia/RPI"; .
-[] void:dumpFile <http://inference-web.org/proofs/tptp/MizarProofs/> a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
-   rdfs:comment "Reported by Cynthia/RPI"; .
-
+[] void:dumpFile <http://inference-web.org/proofs/tptp/MizarProofs/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI"; . 
