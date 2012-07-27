@@ -1,10 +1,22 @@
-prefix irw:  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#>
 prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#>
-prefix pmlt: <http://inference-web.org/2.0/pml-justification.owl#>
+prefix irw:  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#>
 
 select ?url
 where {
-   ?url a pmlp:Source .
+              ?url a pmlp:Source .
    optional { ?url irw:redirectsTo ?none }
-   filter(!bound(?none))
+                     filter(!bound(?none))
 }
+
+#PREFIX pmlp: <http://inference-web.org/2.0/pml-provenance.owl#>
+#PREFIX irw:  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#>
+#
+#SELECT ?url
+#WHERE {
+#  GRAPH <http://logd.tw.rpi.edu/source/twc-rpi-edu/dataset/data-pointer-http-headers/version/2011-Mar-02> {
+#    [] irw:redirectsTo ?url .
+#                       ?url a pmlp:Source .
+#            optional { ?url irw:redirectsTo ?none }
+#                              filter(!bound(?none))
+#  }
+#}

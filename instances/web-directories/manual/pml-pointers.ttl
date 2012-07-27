@@ -128,3 +128,9 @@ James""" .
 [] void:dataDump <http://rio.cs.utep.edu/ciserver/ciserver/viewresource/ESIP-Network-Members>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
    rdfs:comment "I wouldn't really know about the PML for PNNL, my understanding is that it is only behind their firewall. But that PML was captured with the same mechanism as the ESIP projects. We have available PML for Organizations and People here.";
    rdfs:comment "Reported by Antonio/UTEP 2012 Jul 2012"; .
+
+
+[] void:dataDump <http://escience.rpi.edu/pml/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "some very preliminary PML at http://escience.rpi.edu/pml/ from way way back.  This PML is not at all representative of the current state of provenance representation in SPCDIS";
+   rdfs:comment "Reported by Stephan/RPI 2012 Jul 2012"; .
+
