@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://github.com/nicholasdelrio/visko-rdf/blob/master/rdf/queries/nodeset-query.rdf>
+   rdfs:comment "All hasAnswer values should bet dereferenced to get all of UTEP's [interesting] PML?";
+   rdfs:comment "these URIs came from a student's querying interface found here: http://trust.utep.edu:8080/sparql-pml/query/execute";
+   prov:wasAssociatedWith <http://purl.org/twc/id/person/NicholasDelRio>;
+.
