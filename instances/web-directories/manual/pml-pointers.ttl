@@ -111,3 +111,10 @@ James""" .
    rdfs:comment "Reported by Cynthia/RPI"; .
 [] void:dataDump <http://inference-web.org/proofs/tptp/MizarProofs/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
    rdfs:comment "Reported by Cynthia/RPI"; . 
+
+[] void:dataDump <http://inference-web.org/proofs/RamaziOwnsGourmetFoods/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI 2012 Jun 2012"; .
+[] void:dataDump <http://inference-web.org/proofs/RamaziHasOffice/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI 2012 Jun 2012"; .
+[] void:dataDump <http://inference-web.org/proofs/MississippiAutomatedSystem/>; a pmlp:Website, void:Dataset; void:vocabulary <http://inference-web.org/2.0/pml>;
+   rdfs:comment "Reported by Cynthia/RPI 2012 Jun 2012"; .
