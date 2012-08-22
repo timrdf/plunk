@@ -5,7 +5,7 @@ The following directories contain pointers to PML and intermediate materials tha
 * [web-directories](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
 * [sparql-listings](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings)
-    * SPARQL-queries for SPARQL XML Bindings.
+    * Uses `*.rq` queries against the SPARQL endpoint in `*.ep` to obtain PML file URLs encoded in SPARQL XML Bindings.
 * [sparql-listing-results-in-pml](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml)
     * SPARQL-queries for PML-encoded query results. (need special non-recommendation handling for this)
 
