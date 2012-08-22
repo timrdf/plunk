@@ -1,6 +1,4 @@
-Some pointers to PML data and automation to grab it.
-
-https://github.com/timrdf/plunk
+[plunk](https://github.com/timrdf/plunk/tree/master/bin): Some pointers to PML data and automation to grab it.
 
 * [instances/](https://github.com/timrdf/plunk/tree/master/instances)
     * The meat of the analysis starts with this skeleton.
