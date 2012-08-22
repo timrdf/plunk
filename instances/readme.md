@@ -3,11 +3,11 @@
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
 
 The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
-* [web-directories](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
+* [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
-* [sparql-listings](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings)
+* [sparql-listings/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings)
     * Uses `*.rq` queries against the SPARQL endpoint in `*.ep` to obtain PML file URLs encoded in SPARQL XML Bindings.
-* [sparql-listing-results-in-pml](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml)
+* [sparql-listing-results-in-pml/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml)
     * SPARQL-queries for PML-encoded query results. (From UTEP-land; need special non-recommendation handling for this)
 
 Uncommitted working materials:
