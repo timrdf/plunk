@@ -1,6 +1,6 @@
 * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)
     * Catch-all location for emailed files, direct-link PML pointers, and the files that result from the following directories.
-    * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl pointers to individual documents.
+    * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
 
 The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
 * [web-directories](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
