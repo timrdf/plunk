@@ -8,3 +8,4 @@ https://github.com/timrdf/plunk
 * [doc/](https://github.com/timrdf/plunk/tree/master/doc)
 * [queries/](https://github.com/timrdf/plunk/tree/master/queries)
 * [ontologies/](https://github.com/timrdf/plunk/tree/master/ontologies)
+    * Anscillary; not related to gathering instances.
