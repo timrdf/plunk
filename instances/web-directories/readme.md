@@ -7,8 +7,7 @@ wget --mirror -e robots=off -A owl,rdf,ttl,nt,n3 --no-parent http://iw.cs.utep.e
   -|- skipped -|- http://rio.cs.utep.edu/ciserver/person/ - local directory already exists; skipping to avoid duplication.
 ```
 
-Use the `-w` flag to perform the `wget` commands.
-
+Use the `-w` flag to perform the `wget` commands.  
 `./2source.sh -w` will add directories and files into `source/`.
 
 Running `2documents.sh` will populate [../documents](https://github.com/timrdf/plunk/tree/master/instances/documents)/automatic/ with Turtle files describing the PML files mirrored in `source/`. For example:
