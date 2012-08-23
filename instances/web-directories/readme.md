@@ -14,7 +14,7 @@ Use the `-w` flag to perform the `wget` commands.
 
 ----
 
-Running `2documents.sh` will populate [../documents](https://github.com/timrdf/plunk/tree/master/instances/documents)/automatic/ with Turtle files describing the PML files mirrored in `source/`. For example:
+Running `2documents.sh` will populate [../documents](https://github.com/timrdf/plunk/tree/master/instances/documents)/automatic/ with Turtle files describing the PML files mirrored in `source/`, e.g.:
 
 ```
 source/www.rpi.edu/~michaj6/escience/pml/rule/chip/MakeIntensityFile.owl now described in ../documents/automatic/web-directory-55eb30ff927bf2c2b9494aa9ef14ac2f.ttl 
