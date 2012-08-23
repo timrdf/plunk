@@ -1,5 +1,4 @@
-[pml-pointers.ttl](https://github.com/timrdf/plunk/blob/master/instances/web-directories/manual/pml-pointers.ttl) lists the web directories that can be crawled with `2source.sh`.
-* This is maintained by humans.
+[pml-pointers.ttl](https://github.com/timrdf/plunk/blob/master/instances/web-directories/manual/pml-pointers.ttl) lists the web directories that can be crawled with `2source.sh`. It is maintained by humans.
 
 `./2source.sh` will show the `wget` commands that it will use to mirror web directories (into `source/`). For example,
 
