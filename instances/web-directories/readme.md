@@ -1,5 +1,7 @@
 [pml-pointers.ttl](https://github.com/timrdf/plunk/blob/master/instances/web-directories/manual/pml-pointers.ttl) lists the web directories that can be crawled with `2source.sh`. It is maintained by humans.
 
+----
+
 `./2source.sh` will show the `wget` commands that it will use to mirror web directories (into `source/`). For example,
 
 ```
@@ -9,6 +11,8 @@ wget --mirror -e robots=off -A owl,rdf,ttl,nt,n3 --no-parent http://iw.cs.utep.e
 
 Use the `-w` flag to perform the `wget` commands.  
 `./2source.sh -w` will add directories and files into `source/`.
+
+----
 
 Running `2documents.sh` will populate [../documents](https://github.com/timrdf/plunk/tree/master/instances/documents)/automatic/ with Turtle files describing the PML files mirrored in `source/`. For example:
 
