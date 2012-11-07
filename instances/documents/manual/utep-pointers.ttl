@@ -883,3 +883,5 @@
    rdfs:comment "Reported by Nick/UTEP"; .
 [] void:dumpFile <http://rio.cs.utep.edu/ciserver/ciprojects/pmlj/music.txt_040116505486837883.owl>; a pmlp:Document; 
    rdfs:comment "Reported by Nick/UTEP"; .
+[] void:dumpFile <https://raw.github.com/nicholasdelrio/prolog2pml/master/pml/pml-proof.owl>; a pmlp:Document; 
+   rdfs:comment "Reported by Nick/UTEP"; .
