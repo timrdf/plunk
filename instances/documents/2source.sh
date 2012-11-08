@@ -3,8 +3,8 @@
 export CLASSPATH=$CLASSPATH`../../bin/pl-situate-classpath.sh`
 
 see='https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD-not-set'
-CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source csv2rdf4lod/source-me.sh or see $see"}
-CLASSPATH=$CLASSPATH`$CSV2RDF4LOD_HOME/bin/util/cr-situate-classpaths.sh`
+export CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source csv2rdf4lod/source-me.sh or see $see"}
+export CLASSPATH=$CLASSPATH`$CSV2RDF4LOD_HOME/bin/util/cr-situate-classpaths.sh`
 
 sparql="java -Xmx2048m edu.rpi.tw.data.rdf.utils.pipes.stops.SPARQL"
 sparql="java           edu.rpi.tw.data.rdf.utils.pipes.stops.SPARQL"
