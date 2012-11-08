@@ -14,7 +14,8 @@ if [[ "$1" == "--write" || "$1" == "-w" ]]; then
    dryrun="false"
 fi
 
-let total=`find -f automatic manual -name "*.ttl" | wc -l | awk '{printf("%s",$1)}'`
+# -f not avail. on ubuntu: let total=`find -f automatic manual -name "*.ttl" | wc -l | awk '{printf("%s",$1)}'`
+let total=`find . -mindepth 1 -maxdepth 2 -name "*.ttl" | sed 's/^\.\///' | grep -E "^manual|^automatic" | wc -l | awk '{printf("%s",$1)}'`
 echo $total
 
 let "d=0"
