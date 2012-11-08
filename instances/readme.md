@@ -13,9 +13,11 @@ The following directories contain pointers to PML and intermediate materials tha
 * [sparql-listings/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings)
     * Uses `*.rq` queries against the SPARQL endpoint in `*.ep` to obtain PML file URLs encoded in SPARQL XML Bindings.
     * `cd sparql-listings; ./2documents.sh -w`
+    * Places listings in [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl
 * [sparql-listing-results-in-pml/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml)
     * SPARQL-queries for PML-encoded query results. (From UTEP-land; need special non-recommendation handling for this)
     * `cd sparql-listing-results-in-pml; ./2documents.sh -w`
+    * Places listings in [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl
 
 Uncommitted working materials:
 * analyses
