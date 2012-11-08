@@ -2,9 +2,11 @@
     * Catch-all location for emailed files, direct-link PML pointers, and the files that result from the following directories.
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
 
-The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
+
+The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
+
 * [sparql-listings/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings)
     * Uses `*.rq` queries against the SPARQL endpoint in `*.ep` to obtain PML file URLs encoded in SPARQL XML Bindings.
 * [sparql-listing-results-in-pml/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml)
