@@ -8,6 +8,10 @@ if [[ "$1" == '--write' || "$1" == '-w' ]]; then
    dryrun="false"
 fi
 
+if [ ! -e source ]; then
+   mkdir source
+fi
+
 pushd source &> /dev/null
 
    sparql="java -Xmx2048m edu.rpi.tw.data.rdf.utils.pipes.stops.SPARQL"
