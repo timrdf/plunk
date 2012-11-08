@@ -3,11 +3,11 @@ prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#>
 
 select ?location
 where {
-   graph ?g {
+#   graph ?g {
       [] 
          a pmlp:Website;
-         void:dumpFile   ?location;
+         void:dataDump   ?location;
          void:vocabulary <http://inference-web.org/2.0/pml>
       .
-   }
+#   }
 }
