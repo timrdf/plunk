@@ -19,7 +19,8 @@ for rdf in `find source -name "*.rdf" -o -name "*.ttl" -o -name "*.nt"`; do
       url_md5=`md5.sh -qs $answer`
 
       listing="../documents/automatic/sparql-listing-in-pml-$url_md5.ttl"
-      echo "$answer now described in $listing"
+      abbreviated=`echo $answer | sed 's/\(\/\/[^\/]*\/\).*\//\1...\//'`
+      echo "$abbreviated now described in $listing"
 
       if [ "$dryrun" != "true" ]; then
          echo '@prefix void: <http://rdfs.org/ns/void#> .'                          > $listing
