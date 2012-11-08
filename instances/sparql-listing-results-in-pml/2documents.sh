@@ -3,7 +3,7 @@
 # Note: -w not needed b/c they hash into a file corresponding to the URL.
 #
 
-CLASSPATH=$CLASSPATH`../../bin/pl-situate-classpath.sh`
+export CLASSPATH=$CLASSPATH`../../bin/pl-situate-classpath.sh`
 sparql="java -Xmx2048m edu.rpi.tw.data.rdf.utils.pipes.stops.SPARQL"
 
 dryrun="true"
