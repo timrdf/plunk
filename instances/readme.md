@@ -5,6 +5,7 @@
     * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)`source/` contains the downloaded files listed in [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl and [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents/)`automatic/*.ttl`.
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
+    * [documents/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)`source/` contains the mirroed files.
     * Maintained to complement [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents) to avoid duplicating the mirrored website files.
 
 The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
