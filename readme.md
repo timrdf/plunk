@@ -10,6 +10,8 @@
     * Anscillary; not related to gathering instances.
 * [doc/](https://github.com/timrdf/plunk/tree/master/doc)
     * Figures
+* [lib/](https://github.com/timrdf/plunk/tree/master/lib)
+    * Dependencies (csv2rdf4lod.jar, sesame.jar, etc)
 
 Dependencies:
 
