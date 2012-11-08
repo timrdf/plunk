@@ -31,6 +31,9 @@ for listing in `find . -mindepth 1 -maxdepth 2 -name "*.ttl" | sed 's/^\.\///' |
       if [[ $document =~ http* ]]; then # Make sure http:// URI
          document=${document%#*}                             # Strip off the fragment identifier.
          local=`echo $document | perl -pi -e 's|http?://||'` # Strip off the protocol
+         if [ ! -e source ]; then
+            mkdir source
+         fi
          pushd source &> /dev/null
             if [ ! -e $local ]; then 
                if [ "$dryrun" != "true" ]; then
