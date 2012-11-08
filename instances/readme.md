@@ -3,6 +3,7 @@
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
+    * Maintained to complement `documents/` to avoid duplicating the mirrored website files.
 
 The following directories contain pointers to PML and intermediate materials that result in instances in [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents).
 
