@@ -16,7 +16,7 @@ post='>; a pmlp:Document .'
 
 for rdf in `find source -name "*.rdf" -o -name "*.ttl" -o -name "*.nt"`; do
    for answer in `rapper -q -g -o ntriples $rdf | $sparql ../../../plunk/bin/rq/pmlj-hasAnswer.rq`; do
-      url_md5=`md5 -qs $answer`
+      url_md5=`md5.sh -qs $answer`
 
       listing="../documents/automatic/sparql-listing-in-pml-$url_md5.ttl"
       echo "$result now described in $listing"
