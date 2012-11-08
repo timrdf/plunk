@@ -18,7 +18,8 @@ let total=`find -f automatic manual -name "*.ttl" | wc -l | awk '{printf("%s",$1
 echo $total
 
 let "d=0"
-for listing in `find -f automatic manual -name "*.ttl" | $CSV2RDF4LOD_HOME/bin/util/randomize-line-order.py`; do
+# -f not avail. on ubuntu: for listing in `find -f automatic manual -name "*.ttl" | $CSV2RDF4LOD_HOME/bin/util/randomize-line-order.py`; do
+for listing in `find . -mindepth 1 -maxdepth 2 -name "*.ttl" | sed 's/^\.\///' | grep -E "^manual|^automatic" | $CSV2RDF4LOD_HOME/bin/util/randomize-line-order.py`; do
    let "d=d+1"
 
    documents=`rapper -q -g -o ntriples $listing | $sparql ../../bin/rq/documents.rq 2> /dev/null`
