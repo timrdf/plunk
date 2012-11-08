@@ -34,7 +34,7 @@ for rq in *.rq; do
    for result in `saxon.sh $xsl source/$today/$query.rq.xml`; do
       result=`echo $result | sed 's/void.ttl.gz$/void.ttl/'`   # <---- HACK
       result=`echo $result | sed 's/void.ttl.tgz$/void.ttl/'`  # <---- HACK
-      url_md5=`md5 -qs $result`
+      url_md5=`md5.sh -qs $result`
       listing="../../documents/automatic/sparql-listing-$url_md5.ttl"
 
       echo "$result now described in ../documents/automatic/sparql-listing-$url_md5.ttl"
