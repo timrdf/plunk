@@ -1,6 +1,8 @@
 * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)
     * Catch-all location for emailed files, direct-link PML pointers, and the files that result from the following directories.
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
+    * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)`automatic/` contains files from sparql-listings and sparql-listing-results-in-pml (below).
+    * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)`source/` contains the downloaded files listed in [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl and [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents/)`automatic/*.ttl`.
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
     * Maintained to complement [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents) to avoid duplicating the mirrored website files.
