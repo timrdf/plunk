@@ -36,6 +36,9 @@ for rq in *.rq; do
       result=`echo $result | sed 's/void.ttl.tgz$/void.ttl/'`  # <---- HACK
       url_md5=`md5.sh -qs $result`
       listing="../../documents/automatic/sparql-listing-$url_md5.ttl"
+      if [ ! -e `dirname $listing` ]; then
+         mkdir -p `dirname $listing`
+      fi
 
       echo "$result now described in ../documents/automatic/sparql-listing-$url_md5.ttl"
 
