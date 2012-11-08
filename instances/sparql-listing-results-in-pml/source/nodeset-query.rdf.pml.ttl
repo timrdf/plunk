@@ -1,0 +1,124 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix pmlp:       <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj:       <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix oboro:      <http://obofoundry.org/ro/ro.owl#> .
+@prefix oprov:      <http://openprovenance.org/ontology#> .
+@prefix hartigprov: <http://purl.org/net/provenance/ns#> .
+@prefix irw:        <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> .
+@prefix nfo:        <http://www.semanticdesktop.org/ontologies/nfo/#> .
+@prefix conv:       <http://purl.org/twc/vocab/conversion/> .
+@prefix httphead:   <http://inference-web.org/registry/MPR/HTTP_1_1_HEAD.owl#> .
+@prefix httpget:    <http://inference-web.org/registry/MPR/HTTP_1_1_GET.owl#> .
+@prefix httppost:   <http://inference-web.org/registry/MPR/HTTP_1_1_POST.owl#> .
+
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+<http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot> .
+<http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>
+   a foaf:OnlineAccount;
+   foaf:accountName "lebot";
+   dcterms:isPartOf <http://purl.org/twc/id/machine/lebot/MacBookPro6_2>;
+   sioc:account_of  <http://tw.rpi.edu/instances/TimLebo>;
+.
+
+<https://github.com/nicholasdelrio/visko-rdf/blob/master/rdf/queries/nodeset-query.rdf>
+   a pmlp:Source;
+.
+
+<https://github.com/nicholasdelrio/visko-rdf/blob/master/rdf/queries/nodeset-query.rdf>
+   a pmlp:Source;
+.
+
+<nodeset-query.rdf>
+   a pmlp:Information;
+   pmlp:hasReferenceSourceUsage <sourceUsage_content>;
+.
+<nodeset-query.rdf>
+   a pmlp:Information;
+   nfo:hasHash <md5_d41d8cd98f00b204e9800998ecf8427e_time_1345824537>;
+.
+<md5_d41d8cd98f00b204e9800998ecf8427e_time_1345824537>
+   a nfo:FileHash; 
+   dcterms:date      "2012-08-24T12:08:57-04:00"^^xsd:dateTime;
+   nfo:hashAlgorithm "md5";
+   nfo:hashValue     "d41d8cd98f00b204e9800998ecf8427e";
+.
+
+<nodeSet_content>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <nodeset-query.rdf>;
+   pmlj:isConsequentOf <inferenceStep_content>;
+.
+<inferenceStep_content>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsage_content>;
+   pmlj:hasInferenceEngine conv:curl_md5_0f432c9204d07a8f1450ebf69a59cfc5;
+   pmlj:hasInferenceRule   httpget:HTTP_1_1_GET;
+   oboro:has_agent          <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+   hartigprov:involvedActor <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+.
+
+<sourceUsage_content>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <https://github.com/nicholasdelrio/visko-rdf/blob/master/rdf/queries/nodeset-query.rdf>;
+   pmlp:hasUsageDateTime "2012-08-24T12:07:40-04:00"^^xsd:dateTime;
+.
+
+<wasControlledBy_content>
+   a oprov:WasControlledBy;
+   oprov:cause  <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+   oprov:effect <inferenceStep_content>;
+   oprov:endTime "2012-08-24T12:07:40-04:00"^^xsd:dateTime;
+.
+ 
+<info_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """""";
+   pmlp:hasReferenceSourceUsage <sourceUsage_url_header>;
+.
+ 
+<nodeSet_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <info_url_header>;
+   pmlj:isConsequentOf <inferenceStep_url_header>;
+.
+<inferenceStep_url_header>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsage_url_header>;
+   pmlj:hasInferenceEngine conv:curl_md5_0f432c9204d07a8f1450ebf69a59cfc5;
+   pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   oboro:has_agent          <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+   hartigprov:involvedActor <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+.
+
+<sourceUsage_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <https://github.com/nicholasdelrio/visko-rdf/blob/master/rdf/queries/nodeset-query.rdf>;
+   pmlp:hasUsageDateTime "2012-08-24T12:07:40-04:00"^^xsd:dateTime;
+.
+<wasControlledBy_url_header>
+   a oprov:WasControlledBy;
+   oprov:cause  <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+   oprov:effect <nodeSet_url_header>;
+   oprov:endTime "2012-08-24T12:07:40-04:00"^^xsd:dateTime;
+.
+
+
+conv:curl_md5_0f432c9204d07a8f1450ebf69a59cfc5
+   a pmlp:InferenceEngine, conv:Curl;
+   dcterms:identifier "md5_0f432c9204d07a8f1450ebf69a59cfc5";
+   dcterms:description """curl 7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8r zlib/1.2.5
+Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smtp smtps telnet tftp 
+Features: AsynchDNS GSS-Negotiate IPv6 Largefile NTLM SSL libz """;
+.
+
+conv:Curl rdfs:subClassOf pmlp:InferenceEngine .
