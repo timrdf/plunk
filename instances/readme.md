@@ -1,7 +1,6 @@
 * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)
     * Catch-all location for emailed files, direct-link PML pointers, and the files that result from the following directories.
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
-
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
 
