@@ -3,7 +3,7 @@
     * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)`source/` contains the downloaded files listed in [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl and [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents/)`automatic/*.ttl`.
     * [documents/manual/](https://github.com/timrdf/plunk/tree/master/instances/documents/manual)*.ttl list pointers to individual documents.
     * [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents)`automatic/` contains files from [sparql-listings/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listings) and [sparql-listing-results-in-pml/](https://github.com/timrdf/plunk/tree/master/instances/sparql-listing-results-in-pml) (see below).
-    * How much is there? Run: 
+    * How much is there? Run: `du -sh documents/source/; find documents/source/ | wc -l`
 * [web-directories/](https://github.com/timrdf/plunk/tree/master/instances/web-directories)
     * Uses `wget` on a `pmlp:Website` to fetch files.
     * Maintained to complement [documents/](https://github.com/timrdf/plunk/tree/master/instances/documents) to avoid duplicating the mirrored website files.
